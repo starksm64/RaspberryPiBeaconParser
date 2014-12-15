@@ -1,0 +1,32 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://repo.maven.apache.org/maven2"
+    }
+    maven {
+        url "https://repo.eclipse.org/content/repositories/paho-releases/"
+    }
+}
+
+dependencies {
+    compile 'com.beust:jcommander:1.35'
+    compile 'org.eclipse.paho:mqtt-client:0.4.0'
+    compile "org.jboss.logging:jboss-logging:3.1.4.GA"
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+task full_jar(type: Jar, dependsOn: classes) {
+	manifest {
+		attributes 'Main-Class': "org.jboss.summit2015.beacon.HCIDumpParser"
+	}
+	from configurations.compile.collect {it.directory ? it : zipTree(it)}
+	from files(compileJava)
+	baseName = "${project.archivesBaseName}-full"
+}
