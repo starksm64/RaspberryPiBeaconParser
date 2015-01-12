@@ -13,20 +13,11 @@ package org.jboss.summit2015.beacon;
  * limitations under the License.
  */
 
-import com.beust.jcommander.Parameter;
-import java.io.Serializable;
-
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
-public class CommandArgs implements Serializable {
-   private static final long serialVersionUID = 1;
+public class ScannerLocator {
+   public static void main(String[] args) {
 
-   @Parameter(names = "--help", help = true)
-   private boolean help;
-
-
-   @Parameter(names = "-rawDumpFile",
-      description = "Specify a path to an hcidump file to parse for testing")
-   public String rawDumpFile = null;
+   }
 }

@@ -19,11 +19,15 @@ import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
 public class Beacon {
+   private static SimpleDateFormat TIME_FORMAT = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS");
+
    /** The current byte[] version */
    private static final int VERSION = 1;
    private String uuid;
@@ -33,8 +37,35 @@ public class Beacon {
    private int minor;
    private int power;
    private int rssi;
+   private long time;
 
+   public Beacon() {
+   }
+   /**
+    * Create a beacon
+    * @param uuid - proximity uuid
+    * @param code - beacon type code
+    * @param manufacturer - manufacturer code
+    * @param major - beacon major code
+    * @param minor - beacon minor code
+    * @param power - transmit power
+    * @param rssi - received signal strength indicator
+    */
    public Beacon(String uuid, int code, int manufacturer, int major, int minor, int power, int rssi) {
+      this(uuid,code,manufacturer,major,minor,power,rssi,System.currentTimeMillis());
+   }
+   /**
+    * Create a beacon
+    * @param uuid - proximity uuid
+    * @param code - beacon type code
+    * @param manufacturer - manufacturer code
+    * @param major - beacon major code
+    * @param minor - beacon minor code
+    * @param power - transmit power
+    * @param rssi - received signal strength indicator
+    * @param time - timestamp of receipt of beacon information
+    */
+   public Beacon(String uuid, int code, int manufacturer, int major, int minor, int power, int rssi, long time) {
       this.uuid = uuid;
       this.code = code;
       this.manufacturer = manufacturer;
@@ -42,6 +73,7 @@ public class Beacon {
       this.minor = minor;
       this.power = power;
       this.rssi = rssi;
+      this.time = time;
    }
 
    public String getUUID() {
@@ -110,8 +142,9 @@ public class Beacon {
       int minor = dis.readInt();
       int power = dis.readInt();
       int rssi = dis.readInt();
+      long time = dis.readLong();
       dis.close();
-      Beacon beacon = new Beacon(uuid, code, manufacturer, major, minor, power, rssi);
+      Beacon beacon = new Beacon(uuid, code, manufacturer, major, minor, power, rssi, time);
       return beacon;
    }
 
@@ -133,7 +166,13 @@ public class Beacon {
       dos.writeInt(minor);
       dos.writeInt(power);
       dos.writeInt(rssi);
+      dos.writeLong(time);
       dos.close();
       return baos.toByteArray();
+   }
+
+   public String toString() {
+      Date date = new Date(time);
+      return String.format("{[%s,%d,%d]code=%d,manufacturer=%d,power=%d,rssi=%d,time=%s}", uuid, major, minor, code, manufacturer, power, rssi, TIME_FORMAT.format(date));
    }
 }

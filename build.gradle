@@ -5,6 +5,14 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 version = '1.0'
 
+ext {
+     raspberryHost = '192.168.1.95'
+}
+
+configurations {
+    sshAntTask
+}
+
 repositories {
     mavenCentral()
     maven {
@@ -19,14 +27,53 @@ dependencies {
     compile 'com.beust:jcommander:1.35'
     compile 'org.eclipse.paho:mqtt-client:0.4.0'
     compile "org.jboss.logging:jboss-logging:3.1.4.GA"
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.jboss.logmanager:jboss-logmanager:1.5.4.Final'
+    compile 'com.jcraft:jsch:0.1.51'
+    testCompile 'junit:junit:4.11'
+    sshAntTask 'org.apache.ant:ant-jsch:1.7.1'
 }
 
 task full_jar(type: Jar, dependsOn: classes) {
 	manifest {
 		attributes 'Main-Class': "org.jboss.summit2015.beacon.HCIDumpParser"
 	}
-	from configurations.compile.collect {it.directory ? it : zipTree(it)}
+	//from configurations.compile.collect {it.directory ? it : zipTree(it)}
+    from files(sourceSets.main.output.classesDir)
+    from files(sourceSets.main.output.resourcesDir)
+    from configurations.runtime.asFileTree.files.collect { zipTree(it) }
 	from files(compileJava)
 	baseName = "${project.archivesBaseName}-full"
+}
+
+task runStreamServer(type: JavaExec, dependsOn: classes) {
+    main = 'org.jboss.summit2015.beacon.HCIDumpParser'
+    systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
+    args = ['-rawDumpFile', '/tmp/hcidump.raw', 'stream']
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}
+
+// Sample task which uses the scp Ant optional task.
+task copy_jar(dependsOn: full_jar) << {
+    description = 'Copy full_jar output to remote server.'
+
+    /* Get passphrase from user input.
+    def console = System.console()
+    def passphrase = console.readPassword('%s: ', "Please enter the sshPassword for root@${raspberryHost}")
+    */
+
+    // Redefine scp Ant task, with the classpath property set to our newly defined
+    // sshAntTask configuration classpath.
+    ant.taskdef(name: 'scp', classname: 'org.apache.tools.ant.taskdefs.optional.ssh.Scp',
+            classpath: configurations.sshAntTask.asPath)
+
+    // Invoke the scp Ant task. (Use gradle -i update to see the output of the Ant task.)
+    ant.scp(todir: "root@${raspberryHost}:",
+            // sshPassword: passphrase as String, // Use phassphrase entered by the user.
+            password: "raspberrypi",
+            verbose: 'true') {
+        fileset(dir: 'build/libs') {
+            include(name: '*.jar')
+        }
+    }
 }

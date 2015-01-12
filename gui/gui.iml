@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="RaspberryPiBeaconParser" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":gui" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="RaspberryPiBeaconParser" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/classes/main" />
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
@@ -16,10 +16,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.eclipse.paho:mqtt-client:0.4.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.jboss.logging:jboss-logging:3.1.4.GA" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: com.beust:jcommander:1.35" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.jboss.logmanager:jboss-logmanager:1.5.4.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: com.jcraft:jsch:0.1.51" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: javax.jmdns:jmdns:3.4.1" level="project" />
   </component>
 </module>

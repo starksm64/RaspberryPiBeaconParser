@@ -26,7 +26,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.sql.Timestamp;
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -121,10 +120,7 @@ public class MqttPublisher implements MqttCallback {
 
    public void stop() {
       if(publishService != null) {
-         List<Runnable> incomplete = publishService.shutdownNow();
-         if(incomplete != null && incomplete.size() > 0) {
-            log.warnf("Stop saw incomplete tasks(%d): %s\n", incomplete.size(), incomplete);
-         }
+         publishService.shutdown();
          publishService = null;
       }
       if(client != null) {
