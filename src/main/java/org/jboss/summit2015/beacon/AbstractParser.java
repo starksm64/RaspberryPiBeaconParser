@@ -29,7 +29,15 @@ public abstract class AbstractParser {
    /** Flag indicating that finite length test data is being used and the client should be disconnected when all data is written */
    private volatile boolean usingTestData;
    private volatile boolean running;
+   private String scannerID;
 
+   public String getScannerID() {
+      return scannerID;
+   }
+
+   public void setScannerID(String scannerID) {
+      this.scannerID = scannerID;
+   }
    /**
     * Utility method for opening the input stream representing the hcidump raw output.
     * @param testDataPath - a file or resource path to use if not null. If null, System.in will be used.

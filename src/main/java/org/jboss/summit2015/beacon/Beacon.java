@@ -29,7 +29,8 @@ public class Beacon {
    private static SimpleDateFormat TIME_FORMAT = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS");
 
    /** The current byte[] version */
-   private static final int VERSION = 1;
+   private static final int VERSION = 2;
+   private String scannerID;
    private String uuid;
    private int code;
    private int manufacturer;
@@ -51,11 +52,12 @@ public class Beacon {
     * @param power - transmit power
     * @param rssi - received signal strength indicator
     */
-   public Beacon(String uuid, int code, int manufacturer, int major, int minor, int power, int rssi) {
-      this(uuid,code,manufacturer,major,minor,power,rssi,System.currentTimeMillis());
+   public Beacon(String scannerID, String uuid, int code, int manufacturer, int major, int minor, int power, int rssi) {
+      this(scannerID, uuid,code,manufacturer,major,minor,power,rssi,System.currentTimeMillis());
    }
    /**
     * Create a beacon
+    * @param scannerID - the id of the scanner which detected the beacon event
     * @param uuid - proximity uuid
     * @param code - beacon type code
     * @param manufacturer - manufacturer code
@@ -65,7 +67,8 @@ public class Beacon {
     * @param rssi - received signal strength indicator
     * @param time - timestamp of receipt of beacon information
     */
-   public Beacon(String uuid, int code, int manufacturer, int major, int minor, int power, int rssi, long time) {
+   public Beacon(String scannerID, String uuid, int code, int manufacturer, int major, int minor, int power, int rssi, long time) {
+      this.scannerID = scannerID;
       this.uuid = uuid;
       this.code = code;
       this.manufacturer = manufacturer;
@@ -74,6 +77,14 @@ public class Beacon {
       this.power = power;
       this.rssi = rssi;
       this.time = time;
+   }
+
+   public String getScannerID() {
+      return scannerID;
+   }
+
+   public void setScannerID(String scannerID) {
+      this.scannerID = scannerID;
    }
 
    public String getUUID() {
@@ -128,6 +139,13 @@ public class Beacon {
       this.rssi = rssi;
    }
 
+   public long getTime() {
+      return time;
+   }
+
+   public void setTime(long time) {
+      this.time = time;
+   }
 
    public static Beacon fromByteMsg(byte[] msg) throws IOException {
       ByteArrayInputStream bais = new ByteArrayInputStream(msg);
@@ -135,7 +153,15 @@ public class Beacon {
       int version = dis.readInt();
       if(version != VERSION)
          throw new IOException(String.format("Msg version: %d does not match current version: %d", version, VERSION));
-      String uuid = dis.readUTF();
+
+      int length = dis.readInt();
+      byte[] scannerBytes = new byte[length];
+      dis.readFully(scannerBytes);
+      String scannerID = new String(scannerBytes);
+      length = dis.readInt();
+      byte[] uuidBytes = new byte[length];
+      dis.readFully(uuidBytes);
+      String uuid = new String(uuidBytes);
       int code = dis.readInt();
       int manufacturer = dis.readInt();
       int major = dis.readInt();
@@ -144,7 +170,7 @@ public class Beacon {
       int rssi = dis.readInt();
       long time = dis.readLong();
       dis.close();
-      Beacon beacon = new Beacon(uuid, code, manufacturer, major, minor, power, rssi, time);
+      Beacon beacon = new Beacon(scannerID, uuid, code, manufacturer, major, minor, power, rssi, time);
       return beacon;
    }
 
@@ -159,7 +185,10 @@ public class Beacon {
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       DataOutputStream dos = new DataOutputStream(baos);
       dos.writeInt(VERSION);
-      dos.writeUTF(uuid);
+      dos.writeInt(scannerID.length());
+      dos.writeBytes(scannerID);
+      dos.writeInt(uuid.length());
+      dos.writeBytes(uuid);
       dos.writeInt(code);
       dos.writeInt(manufacturer);
       dos.writeInt(major);

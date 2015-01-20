@@ -26,6 +26,10 @@ public class CommandArgs implements Serializable {
    private boolean help;
 
 
+   @Parameter(names = "-scannerID",
+      description = "Specify the name of the scanner generating the beacon events")
+   public String scannerID = "Default";
+
    @Parameter(names = "-rawDumpFile",
       description = "Specify a path to an hcidump file to parse for testing")
    public String rawDumpFile = null;

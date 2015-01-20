@@ -193,7 +193,7 @@ public class ParserLogic extends AbstractParser {
          rssi,
          irssi
       );
-      Beacon beacon = new Beacon(uuid.toString(), code, manufacturer, imajor, iminor, ipower, irssi);
+      Beacon beacon = new Beacon(getScannerID(), uuid.toString(), code, manufacturer, imajor, iminor, ipower, irssi);
       return beacon;
    }
 

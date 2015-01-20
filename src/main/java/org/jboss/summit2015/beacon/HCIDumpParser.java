@@ -83,6 +83,7 @@ public class HCIDumpParser {
       log.info("Begin streamHCI");
       StreamServer streamServer = new StreamServer(streamCmd);
       parser = streamServer;
+      parser.setScannerID(cmdArgs.scannerID);
       InputStream is = streamServer.getInputStream(cmdArgs.rawDumpFile);
       streamServer.processHCIStream(is);
       streamServer.cleanup();
@@ -92,6 +93,7 @@ public class HCIDumpParser {
       log.info("Begin streamHCI_SSH");
       SSHStreamParser streamServer = new SSHStreamParser(streamCmd);
       parser = streamServer;
+      parser.setScannerID(cmdArgs.scannerID);
       streamServer.setBeacons(beacons);
       InputStream is = streamServer.getInputStream(cmdArgs.rawDumpFile);
       streamServer.processHCIStream(is);
@@ -102,6 +104,7 @@ public class HCIDumpParser {
       log.info("Begin scanHCI");
       ParserLogic streamParser = new ParserLogic(parseCmd);
       parser = streamParser;
+      parser.setScannerID(cmdArgs.scannerID);
       streamParser.setBeacons(beacons);
       InputStream is = streamParser.getInputStream(cmdArgs.rawDumpFile);
       streamParser.processHCIStream(is);
