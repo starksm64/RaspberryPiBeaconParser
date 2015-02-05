@@ -29,7 +29,7 @@ public class Beacon {
    private static SimpleDateFormat TIME_FORMAT = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS");
 
    /** The current byte[] version */
-   private static final int VERSION = 2;
+   private static final int VERSION = 3;
    private String scannerID;
    private String uuid;
    private int code;
@@ -37,6 +37,7 @@ public class Beacon {
    private int major;
    private int minor;
    private int power;
+   private int calibratedPower;
    private int rssi;
    private long time;
 
@@ -131,6 +132,14 @@ public class Beacon {
       this.power = power;
    }
 
+   public int getCalibratedPower() {
+      return calibratedPower;
+   }
+
+   public void setCalibratedPower(int calibratedPower) {
+      this.calibratedPower = calibratedPower;
+   }
+
    public int getRssi() {
       return rssi;
    }
@@ -167,10 +176,12 @@ public class Beacon {
       int major = dis.readInt();
       int minor = dis.readInt();
       int power = dis.readInt();
+      int calibratedPower = dis.readInt();
       int rssi = dis.readInt();
       long time = dis.readLong();
       dis.close();
       Beacon beacon = new Beacon(scannerID, uuid, code, manufacturer, major, minor, power, rssi, time);
+      beacon.setCalibratedPower(calibratedPower);
       return beacon;
    }
 
@@ -194,6 +205,7 @@ public class Beacon {
       dos.writeInt(major);
       dos.writeInt(minor);
       dos.writeInt(power);
+      dos.writeInt(calibratedPower);
       dos.writeInt(rssi);
       dos.writeLong(time);
       dos.close();

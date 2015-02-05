@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cf6509-7d92-4853-bef3-907c4a2b5fb9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/java/AuthHeadersRequestFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/java/gimbal/BeaconConfiguration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/java/ConfigurationCreator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/GimbalManager.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/java/GimbalManagerProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/java/IGimbalManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/test/java/RGB565.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/test/java/RegisterBeacons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/java/ResteasyGimbalManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/test/java/TestBarcodeImages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/test/java/TestGimalManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/test/java/TestJsonApi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestURIs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/java/TrafficLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/cms.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/test/resources/logging.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.ipr" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.iws" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="RaspberryPiBeaconParser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,6 +38,14 @@
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/gui/.gradle/" />
     <ignored path="$PROJECT_DIR$/gui/build/" />
+    <ignored path="$PROJECT_DIR$/GimbalManager/.gradle/" />
+    <ignored path="$PROJECT_DIR$/GimbalManager/build/" />
+    <ignored path="$PROJECT_DIR$/Proton/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Proton/build/" />
+    <ignored path="$PROJECT_DIR$/cms/.gradle/" />
+    <ignored path="$PROJECT_DIR$/cms/build/" />
+    <ignored path="$PROJECT_DIR$/ActiveMQ/.gradle/" />
+    <ignored path="$PROJECT_DIR$/ActiveMQ/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,76 +66,224 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HCIDumpParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java">
+      <file leaf-file-name="ActiveMQConnection.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/448923e906a3ec2db1361f8db42b4829e560bb20/activemq-all-5.10.1-sources.jar!/org/apache/activemq/ActiveMQConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="2071">
-              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandArgs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/CommandArgs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="779">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParseCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="1007">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MqttPublisher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MqttPublisher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="3496">
-              <caret line="51" column="91" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MqttQOS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MqttQOS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="1273">
-              <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="60" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParserLogic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParserLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1691" max-vertical-offset="3591">
-              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/AbstractParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1634">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="18601" max-vertical-offset="46455">
+              <caret line="1134" column="33" selection-start-line="1134" selection-start-column="33" selection-end-line="1134" selection-end-column="33" />
               <folding>
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#12430#12431#0" expanded="false" />
+                <element signature="e#12477#12478#0" expanded="false" />
+                <element signature="e#12528#12529#0" expanded="false" />
+                <element signature="e#12575#12576#0" expanded="false" />
+                <element signature="e#14004#14005#0" expanded="false" />
+                <element signature="e#14032#14033#0" expanded="false" />
+                <element signature="e#39491#39492#0" expanded="false" />
+                <element signature="e#39527#39528#0" expanded="false" />
+                <element signature="e#39624#39625#0" expanded="false" />
+                <element signature="e#39659#39660#0" expanded="false" />
+                <element signature="e#39781#39782#0" expanded="false" />
+                <element signature="e#39817#39818#0" expanded="false" />
+                <element signature="e#39934#39935#0" expanded="false" />
+                <element signature="e#39978#39979#0" expanded="false" />
+                <element signature="e#40094#40095#0" expanded="false" />
+                <element signature="e#40131#40132#0" expanded="false" />
+                <element signature="e#40388#40389#0" expanded="false" />
+                <element signature="e#40440#40441#0" expanded="false" />
+                <element signature="e#40502#40503#0" expanded="false" />
+                <element signature="e#40534#40535#0" expanded="false" />
+                <element signature="e#40951#40952#0" expanded="false" />
+                <element signature="e#41000#41001#0" expanded="false" />
+                <element signature="e#41436#41437#0" expanded="false" />
+                <element signature="e#41483#41484#0" expanded="false" />
+                <element signature="e#41866#41867#0" expanded="false" />
+                <element signature="e#41901#41902#0" expanded="false" />
+                <element signature="e#42216#42217#0" expanded="false" />
+                <element signature="e#42264#42265#0" expanded="false" />
+                <element signature="e#42359#42360#0" expanded="false" />
+                <element signature="e#42391#42392#0" expanded="false" />
+                <element signature="e#42440#42441#0" expanded="false" />
+                <element signature="e#42485#42486#0" expanded="false" />
+                <element signature="e#42917#42918#0" expanded="false" />
+                <element signature="e#42963#42964#0" expanded="false" />
+                <element signature="e#43412#43413#0" expanded="false" />
+                <element signature="e#43452#43453#0" expanded="false" />
+                <element signature="e#43797#43798#0" expanded="false" />
+                <element signature="e#43855#43856#0" expanded="false" />
+                <element signature="e#44059#44060#0" expanded="false" />
+                <element signature="e#44116#44117#0" expanded="false" />
+                <element signature="e#44305#44306#0" expanded="false" />
+                <element signature="e#44350#44351#0" expanded="false" />
+                <element signature="e#45138#45139#0" expanded="false" />
+                <element signature="e#45172#45173#0" expanded="false" />
+                <element signature="e#45449#45450#0" expanded="false" />
+                <element signature="e#45495#45496#0" expanded="false" />
+                <element signature="e#45582#45583#0" expanded="false" />
+                <element signature="e#45627#45628#0" expanded="false" />
+                <element signature="e#45751#45752#0" expanded="false" />
+                <element signature="e#45802#45803#0" expanded="false" />
+                <element signature="e#63745#63746#0" expanded="false" />
+                <element signature="e#63773#63774#0" expanded="false" />
+                <element signature="e#65735#65736#0" expanded="false" />
+                <element signature="e#65778#65779#0" expanded="false" />
+                <element signature="e#66024#66025#0" expanded="false" />
+                <element signature="e#66059#66060#0" expanded="false" />
+                <element signature="e#66427#66428#0" expanded="false" />
+                <element signature="e#66475#66476#0" expanded="false" />
+                <element signature="e#66581#66582#0" expanded="false" />
+                <element signature="e#66623#66624#0" expanded="false" />
+                <element signature="e#66795#66796#0" expanded="false" />
+                <element signature="e#66847#66848#0" expanded="false" />
+                <element signature="e#66958#66959#0" expanded="false" />
+                <element signature="e#67010#67011#0" expanded="false" />
+                <element signature="e#70655#70656#0" expanded="false" />
+                <element signature="e#70688#70689#0" expanded="false" />
+                <element signature="e#71771#71772#0" expanded="false" />
+                <element signature="e#71812#71813#0" expanded="false" />
+                <element signature="e#72269#72270#0" expanded="false" />
+                <element signature="e#72329#72330#0" expanded="false" />
+                <element signature="e#72439#72440#0" expanded="false" />
+                <element signature="e#72481#72482#0" expanded="false" />
+                <element signature="e#72765#72766#0" expanded="false" />
+                <element signature="e#72827#72828#0" expanded="false" />
+                <element signature="e#73160#73161#0" expanded="false" />
+                <element signature="e#73209#73210#0" expanded="false" />
+                <element signature="e#73269#73270#0" expanded="false" />
+                <element signature="e#73327#73328#0" expanded="false" />
+                <element signature="e#74166#74167#0" expanded="false" />
+                <element signature="e#74200#74201#0" expanded="false" />
+                <element signature="e#74334#74335#0" expanded="false" />
+                <element signature="e#74380#74381#0" expanded="false" />
+                <element signature="e#74469#74470#0" expanded="false" />
+                <element signature="e#74505#74506#0" expanded="false" />
+                <element signature="e#74633#74634#0" expanded="false" />
+                <element signature="e#74683#74684#0" expanded="false" />
+                <element signature="e#74787#74788#0" expanded="false" />
+                <element signature="e#74821#74822#0" expanded="false" />
+                <element signature="e#75192#75193#0" expanded="false" />
+                <element signature="e#75224#75225#0" expanded="false" />
+                <element signature="e#75420#75421#0" expanded="false" />
+                <element signature="e#75464#75465#0" expanded="false" />
+                <element signature="e#75665#75666#0" expanded="false" />
+                <element signature="e#75711#75712#0" expanded="false" />
+                <element signature="e#75770#75771#0" expanded="false" />
+                <element signature="e#75828#75829#0" expanded="false" />
+                <element signature="e#78808#78809#0" expanded="false" />
+                <element signature="e#78910#78911#0" expanded="false" />
+                <element signature="e#80418#80419#0" expanded="false" />
+                <element signature="e#80472#80473#0" expanded="false" />
+                <element signature="e#81286#81287#0" expanded="false" />
+                <element signature="e#81408#81409#0" expanded="false" />
+                <element signature="e#82183#82184#0" expanded="false" />
+                <element signature="e#82287#82288#0" expanded="false" />
+                <element signature="e#86913#86914#0" expanded="false" />
+                <element signature="e#86953#86954#0" expanded="false" />
+                <element signature="e#87022#87023#0" expanded="false" />
+                <element signature="e#87072#87073#0" expanded="false" />
+                <element signature="e#87113#87114#0" expanded="false" />
+                <element signature="e#87150#87151#0" expanded="false" />
+                <element signature="e#87287#87288#0" expanded="false" />
+                <element signature="e#87339#87340#0" expanded="false" />
+                <element signature="e#87828#87829#0" expanded="false" />
+                <element signature="e#87864#87865#0" expanded="false" />
+                <element signature="e#88702#88703#0" expanded="false" />
+                <element signature="e#88752#88753#0" expanded="false" />
+                <element signature="e#88812#88813#0" expanded="false" />
+                <element signature="e#88868#88869#0" expanded="false" />
+                <element signature="e#96247#96248#0" expanded="false" />
+                <element signature="e#96288#96289#0" expanded="false" />
+                <element signature="e#96371#96372#0" expanded="false" />
+                <element signature="e#96415#96416#0" expanded="false" />
+                <element signature="e#96493#96494#0" expanded="false" />
+                <element signature="e#96533#96534#0" expanded="false" />
+                <element signature="e#96614#96615#0" expanded="false" />
+                <element signature="e#96657#96658#0" expanded="false" />
+                <element signature="e#98993#98994#0" expanded="false" />
+                <element signature="e#99051#99052#0" expanded="false" />
+                <element signature="e#99305#99306#0" expanded="false" />
+                <element signature="e#99352#99353#0" expanded="false" />
+                <element signature="e#99391#99392#0" expanded="false" />
+                <element signature="e#99435#99436#0" expanded="false" />
+                <element signature="e#99477#99478#0" expanded="false" />
+                <element signature="e#99518#99519#0" expanded="false" />
+                <element signature="e#99583#99584#0" expanded="false" />
+                <element signature="e#99643#99644#0" expanded="false" />
+                <element signature="e#99692#99693#0" expanded="false" />
+                <element signature="e#99749#99750#0" expanded="false" />
+                <element signature="e#99989#99990#0" expanded="false" />
+                <element signature="e#100049#100050#0" expanded="false" />
+                <element signature="e#100434#100435#0" expanded="false" />
+                <element signature="e#100474#100475#0" expanded="false" />
+                <element signature="e#103057#103058#0" expanded="false" />
+                <element signature="e#103116#103117#0" expanded="false" />
+                <element signature="e#103865#103866#0" expanded="false" />
+                <element signature="e#103901#103902#0" expanded="false" />
+                <element signature="e#103970#103971#0" expanded="false" />
+                <element signature="e#104001#104002#0" expanded="false" />
+                <element signature="e#104100#104101#0" expanded="false" />
+                <element signature="e#104146#104147#0" expanded="false" />
+                <element signature="e#104294#104295#0" expanded="false" />
+                <element signature="e#104354#104355#0" expanded="false" />
+                <element signature="e#104404#104405#0" expanded="false" />
+                <element signature="e#104450#104451#0" expanded="false" />
+                <element signature="e#104647#104648#0" expanded="false" />
+                <element signature="e#104691#104692#0" expanded="false" />
+                <element signature="e#104879#104880#0" expanded="false" />
+                <element signature="e#104922#104923#0" expanded="false" />
+                <element signature="e#107240#107241#0" expanded="false" />
+                <element signature="e#107282#107283#0" expanded="false" />
+                <element signature="e#107323#107324#0" expanded="false" />
+                <element signature="e#107363#107364#0" expanded="false" />
+                <element signature="e#107426#107427#0" expanded="false" />
+                <element signature="e#107484#107485#0" expanded="false" />
+                <element signature="e#107798#107799#0" expanded="false" />
+                <element signature="e#107840#107841#0" expanded="false" />
+                <element signature="e#108421#108422#0" expanded="false" />
+                <element signature="e#108476#108477#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="228">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1596">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ActiveMQ/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="342">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestJmsBridge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1045">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,70 +292,24 @@
       <file leaf-file-name="Beacon.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47956732" vertical-offset="0" max-vertical-offset="3287">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestBeaconSerialization.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestBeaconSerialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="551">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.7900553" vertical-offset="2972" max-vertical-offset="3515">
+              <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3657#3658#0" expanded="true" />
+                <element signature="e#3692#3693#0" expanded="true" />
+                <element signature="e#3750#3751#0" expanded="true" />
+                <element signature="e#3801#3802#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataOutputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/DataOutputStream.java">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4450" max-vertical-offset="7543">
-              <caret line="272" column="22" selection-start-line="272" selection-start-column="22" selection-end-line="272" selection-end-column="22" />
-              <folding>
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1295#1296#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataInputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/DataInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3367" max-vertical-offset="12274">
-              <caret line="215" column="21" selection-start-line="215" selection-start-column="21" selection-end-line="215" selection-end-column="21" />
-              <folding>
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1051#1052#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,7 +323,8 @@
     <option name="tasksExpandState">
       <map>
         <entry key="" value="true" />
-        <entry key=":gui/RaspberryPiBeaconParser/" value="true" />
+        <entry key=":GimbalManager/RaspberryPiBeaconParser/" value="false" />
+        <entry key=":gui/RaspberryPiBeaconParser/" value="false" />
         <entry key="RaspberryPiBeaconParser/" value="true" />
       </map>
     </option>
@@ -205,8 +340,16 @@
           <value>
             <list>
               <ExternalProjectPojo>
+                <option name="name" value=":GimbalManager" />
+                <option name="path" value="$PROJECT_DIR$/GimbalManager" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
                 <option name="name" value=":gui" />
                 <option name="path" value="$PROJECT_DIR$/gui" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":ActiveMQ" />
+                <option name="path" value="$PROJECT_DIR$/ActiveMQ" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="RaspberryPiBeaconParser" />
@@ -313,6 +456,254 @@
                 <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="install" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ActiveMQ">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ActiveMQ" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/GimbalManager">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Proton">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
+                <option name="name" value="testClasses" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -430,6 +821,218 @@
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/ActiveMQ">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/41aac9e3534aa330c6086ce9bf2f51358c237755/mqtt-client-0.4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/a2fa636c76e804854661f1607fdd8492d89b8e7a/jboss-logging-3.1.4.GA-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/5d58661526aeec56496f22174074ba9261d1f3ba/jsch-0.1.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/448923e906a3ec2db1361f8db42b4829e560bb20/activemq-all-5.10.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/2ef3283ea459dfac2707ed3ca50c03792823c7d1/activemq-all-5.10.1.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/ActiveMQ" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/GimbalManager">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/41aac9e3534aa330c6086ce9bf2f51358c237755/mqtt-client-0.4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/a2fa636c76e804854661f1607fdd8492d89b8e7a/jboss-logging-3.1.4.GA-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/5d58661526aeec56496f22174074ba9261d1f3ba/jsch-0.1.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/jaxrs-api/3.0.10.Final/8761e0a1fb2f48b327b9d9b63fb4e14fdf576dd4/jaxrs-api-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/jaxrs-api/3.0.10.Final/a4b66b0d60a81d3e69a933ce652a2cb49532967c/jaxrs-api-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.10.Final/534cabef198acf7c7ad0cba8480b49451c39d43d/resteasy-jaxrs-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.10.Final/7b8a7b195dbb0a8be85b6b19443a4d3da80775c8/resteasy-jaxrs-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxb-provider/3.0.10.Final/566bd83fb19423be757e01c3e7e183c1771ead6f/resteasy-jaxb-provider-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxb-provider/3.0.10.Final/4e3f931424fa3214d1d5e68ca26a184aa6342b61/resteasy-jaxb-provider-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-links/3.0.10.Final/975e7368029527704d5d5bd17782fc5609ab02c3/resteasy-links-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-links/3.0.10.Final/263df5ad2eb4c81693b10c33272c2e367b2461df/resteasy-links-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jackson-provider/3.0.10.Final/e0246655f006f50b8845e349c248e559a06f854/resteasy-jackson-provider-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jackson-provider/3.0.10.Final/d75ab85bcc4ad83fd23535a8332bf669c2810405/resteasy-jackson-provider-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-crypto/3.0.10.Final/4e297a94942ead86ce2d9edffe4eec42c7388dd9/resteasy-crypto-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-crypto/3.0.10.Final/3c65b738f83d6bfd1e77a157015f78871e89a36f/resteasy-crypto-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-cache-core/3.0.10.Final/4f75b2b1aa4681792c2db73845f5884f284655d6/resteasy-cache-core-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-cache-core/3.0.10.Final/f411118e818726c83ccee26d1b8134826c106646/resteasy-cache-core-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-cdi/3.0.10.Final/b8444b1c60336ce0b15171241baa441d5f5126e3/resteasy-cdi-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-cdi/3.0.10.Final/1eafd9f975a5e4e0a8b18a7ad248622d436e003/resteasy-cdi-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-fastinfoset-provider/3.0.10.Final/ede23ca1895890515f150c2168c981d6758b482/resteasy-fastinfoset-provider-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-fastinfoset-provider/3.0.10.Final/edd24458f5554e6044236dc830848eea94673e11/resteasy-fastinfoset-provider-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jettison-provider/3.0.10.Final/b305a2dc05de8414cc911ae1c07b5c30f2a8d33e/resteasy-jettison-provider-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jettison-provider/3.0.10.Final/aeb5001eca3463a6c26060ba06dc425ebdef9b95/resteasy-jettison-provider-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jsapi/3.0.10.Final/9f59fb070d1e45c6e190fffc6786ef8f328c754/resteasy-jsapi-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jsapi/3.0.10.Final/260e205e5582d8a529469b08190516f2774c13e4/resteasy-jsapi-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-multipart-provider/3.0.10.Final/6c015585cc2362aaeffa913e7524488a58b778a6/resteasy-multipart-provider-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-multipart-provider/3.0.10.Final/370ea164ceb2342526d12e825f1fb2956bd3a4e8/resteasy-multipart-provider-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-oauth/3.0.10.Final/fde4520de9c40607c8e0d1b07657965a63572187/resteasy-oauth-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-oauth/3.0.10.Final/c126ccaedd39f2bd0ac48f12a5fff9fcbeddbf06/resteasy-oauth-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/async-http-servlet-3.0/3.0.10.Final/58f96930917cac3a055c1a749cd7a7641e8625fd/async-http-servlet-3.0-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/async-http-servlet-3.0/3.0.10.Final/d148134ca3f152b388beb69c4cd446ff278ce7bf/async-http-servlet-3.0-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.json/javax.json-api/1.0/fbe493e2f03a114cca5d7e9ab7de837654b91135/javax.json-api-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.json/javax.json-api/1.0/a74939ecbf7294b40accb4048929577f5ddcee2/javax.json-api-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/aed48c8b8ca5820d0c2d0d8a00f4322379b37746/jboss-annotations-api_1.1_spec-1.0.1.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/8f9335f966885529d1254793182ff3df1c515eb8/jboss-annotations-api_1.1_spec-1.0.1.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.6/b4e00fa279b1d45af3cb6daebcc1fee3f5402392/httpclient-4.2.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.6/e4ca30a6a3a075053a61c6fc850d2432dc012ba7/httpclient-4.2.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.1/46773a62217d7f630dfe6bae0bc645bbd92ffd09/commons-io-2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.1/fd51f906669f49a4ffd06650666c3b8147a6106e/commons-io-2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/d853625d8001c00d40abed553e670279504699f9/jcip-annotations-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/afba4942caaeaf46aab0b976afd57cc7c181467e/jcip-annotations-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-impl/2.2.7/628ed8524d22baaa9d3e5a26cd1ce5523e795c8e/jaxb-impl-2.2.7-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-impl/2.2.7/a29e53347934e694c9551981cecd242fad05022b/jaxb-impl-2.2.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/574f65373b46a038332eb1a14acc3142bd9e9810/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.el/jboss-el-api_3.0_spec/1.0.0.Final/c745107bb8e5c75bc05bf25a2c6a71de7b83aa4d/jboss-el-api_3.0_spec-1.0.0.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.el/jboss-el-api_3.0_spec/1.0.0.Final/14b1d418763424f162571eb4117a0c3648da1963/jboss-el-api_3.0_spec-1.0.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.el/3.0.0/9a2a19399140efdd86a5b350e7bff8cd1eb05579/javax.el-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.el/3.0.0/dd532526e7c8de48e40419e6af1183658a973379/javax.el-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.12/ed7928072c458d8576c969cc491af707151492fb/jackson-core-asl-1.9.12-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.12/ecfc6f73a841c4c3c653b59651a3f9d5f1286469/jackson-core-asl-1.9.12.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.12/446f3d18401f02ac6741ff980d1a7566786936c/jackson-mapper-asl-1.9.12-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.12/8b290aae44213e2f6da00c07af59b0d442068f4d/jackson-mapper-asl-1.9.12.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-jaxrs/1.9.12/7f398bf900be8ed32efa007d624e24f7df950a46/jackson-jaxrs-1.9.12-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-jaxrs/1.9.12/8bc0bc2e095fd1b83af48b03f67f2ad16e829c01/jackson-jaxrs-1.9.12.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.9.12/50c529446e1a5a9b97fd56f77575aefeaeb1bc3a/jackson-xc-1.9.12-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.9.12/2ec470401d7ac760481c84e95be8c66f19f92d2e/jackson-xc-1.9.12.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-client/3.0.10.Final/4674362aeb9bacd430600662fa183d2adc75510a/resteasy-client-3.0.10.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-client/3.0.10.Final/4f6e2c16d1958e25811f73efd2d63d2828c867f2/resteasy-client-3.0.10.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk16/1.46/d2b70567594225923450d7e3f80cd022c852725e/bcprov-jdk16-1.46-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk16/1.46/ce091790943599535cbb4de8ede84535b0c1260c/bcprov-jdk16-1.46.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk16/1.46/3ebd62bc56854767512dc5deec0a17795f2e671d/bcmail-jdk16-1.46-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk16/1.46/8a9233bfd6ad38ea32df5e6ff91035b650584b9/bcmail-jdk16-1.46.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.5.0-b01/6d8fc554cfd16e0313cced20d2a6f112d0a48c50/mail-1.5.0-b01-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.5.0-b01/c128515e42609622ce3f7dc0b431026d80bdb688/mail-1.5.0-b01.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j/0.6/16691d73bd331c11ac1c7c269b9ff2cb1cda17ac/apache-mime4j-0.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j/0.6/945007627e8d12275d755081a9e609c018e1210d/apache-mime4j-0.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-core/5.1.6.FINAL/71eac38d91ae95ad50b2b0375bab6855a4d309c5/infinispan-core-5.1.6.FINAL-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-core/5.1.6.FINAL/7279d0e392bd0fb8396af158f909be7243606f18/infinispan-core-5.1.6.FINAL.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.0.6.RELEASE/ab7d5bc1f197801bf4cc20d86d98605d05f61c03/spring-webmvc-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.0.6.RELEASE/d6a1e328253c0588de0cc7c853dceb2b13dcdaae/spring-webmvc-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jettison/jettison/1.3.2/d64c918472e6ca96b870ef4720d104893ab35ad9/jettison-1.3.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jettison/jettison/1.3.2/8267834dd6908f6055702422ca873c68d6648378/jettison-1.3.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth-provider/20100527/6bc662aa46348458db50328cd2f99661044f0c5c/oauth-provider-20100527-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth-provider/20100527/165bfc97e63e5af8e052a47f4dee832ce06bf7d7/oauth-provider-20100527.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.2.5/4fd9ac94cd3c26551bc7aecd62fce8e49f076635/httpcore-4.2.5-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.2.5/472f0f5f8dba5d1962cb9d7739feed739a31c30d/httpcore-4.2.5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-core/2.2.7/112d8d05249708fb9842e211f9486e331549a305/jaxb-core-2.2.7-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-core/2.2.7/f327817188a7dce503ae3c667c5931077630b0a1/jaxb-core-2.2.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jgroups/jgroups/3.0.11.Final/de48b7d9382af5018213b4fddd56890c56725c75/jgroups-3.0.11.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jgroups/jgroups/3.0.11.Final/8aee02f6a2f9825eaad053f28f87486e827f1c0a/jgroups-3.0.11.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/9bbc5381224289a1cf67988c661a1dcdc165b9ff/jboss-transaction-api_1.1_spec-1.0.0.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/2ab6236535e085d86f37fd97ddfdd35c88c1a419/jboss-transaction-api_1.1_spec-1.0.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling-river/1.3.11.GA/1dc5f847b0d6f86c76b994c7a9245ee038546fbb/jboss-marshalling-river-1.3.11.GA-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling-river/1.3.11.GA/a0ab649dacbff16efedb51e9a9dc574c5b27d3a0/jboss-marshalling-river-1.3.11.GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling/1.3.11.GA/3e5610f8efa490a8c634eaf548b17f05b154bcc/jboss-marshalling-1.3.11.GA-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling/1.3.11.GA/47f1c30f5198d5b1babd6622f36d67ea913fb555/jboss-marshalling-1.3.11.GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.1.1/1efb7e023a2767ce11df124186a5fd0560a1588b/woodstox-core-asl-4.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.1.1/1fc79e0ddf0c72408ddbbc7e558f46a15d7ba84f/woodstox-core-asl-4.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.1/cb342dff0332b73ca4db2ebc395e7f8aaf1964ad/stax2-api-3.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.1/466eab062e9d1a3ce2c4631b6d09b5e5c0cbd1b/stax2-api-3.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.rhq.helpers/rhq-pluginAnnotations/3.0.4/a85045a75aba841c2ae583956d0b0a044db013b0/rhq-pluginAnnotations-3.0.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.rhq.helpers/rhq-pluginAnnotations/3.0.4/7a8f94fa824189f8bcf977c105607727c20b0595/rhq-pluginAnnotations-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-asm/3.0.6.RELEASE/3510e81ccc72cec842edb32f2e59f2158a9a36ae/spring-asm-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-asm/3.0.6.RELEASE/c94d676f9595ab0d62c16adbd499deb25f16cac1/spring-asm-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.0.6.RELEASE/9bf74edb26df85f307691883e2b3af7e349e2f97/spring-beans-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.0.6.RELEASE/58481cd52dedd062356a0a62f6e92eb46607fdaf/spring-beans-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.0.6.RELEASE/9006a1e4053468e4e7e3631c702d62dcee728feb/spring-context-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.0.6.RELEASE/aa4d3ecca6cd28262d7f7417eda96e61fc7e7c90/spring-context-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.0.6.RELEASE/940350ebcf0090448b3af1e25d79ce3a771bd529/spring-context-support-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.0.6.RELEASE/28e9ab6392f7b9c5d4507c0f2ac16ddd6c1b8244/spring-context-support-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.0.6.RELEASE/4dc3ec9e4b6840d487478c041688c600b052b127/spring-core-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.0.6.RELEASE/c70e04d81ef9810983e98ff5c7c6af0bfd8a8b9/spring-core-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.0.6.RELEASE/e0514e0fb53fce1dc6e6867981eb2d9baba1b77b/spring-expression-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.0.6.RELEASE/cc9c0739350d107b0d7d738cd43526a6ead26a52/spring-expression-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.0.6.RELEASE/a9976afa556384dd58b7d66c3d3495e84335925/spring-web-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.0.6.RELEASE/ee17a27f7ca27b6c2324fde15303c656480b442e/spring-web-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth/20100527/77528b5b523803cd44917fec25e193fff061c780/oauth-20100527-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth/20100527/a84c5331e225bc25a5a288db328048d6b1bb6fd5/oauth-20100527.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.7/5fb055d3773b48d759d43290f33e5533b25d2d62/jaxb-api-2.2.7-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.7/2f51c4bb4724ea408096ee9100ff2827e07e5b7c/jaxb-api-2.2.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.16/553f3b0152c1f5bd757799867e567a28604ab6f2/istack-commons-runtime-2.16-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.16/927eb6fbb003f40d536efd96e7cbcb7ea4c1c2d0/istack-commons-runtime-2.16.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.6.RELEASE/a558c2b713a5d2034eb0c43c8dacf181adf7a663/spring-aop-3.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.6.RELEASE/663f531c1b82f91c0cd1142b6ebed07b0c58dbf3/spring-aop-3.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.xml.fastinfoset/FastInfoset/1.2.12/98ddd31ad3dddb3ee2f43e3e6b7b39d0c5ccdea5/FastInfoset-1.2.12-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.xml.fastinfoset/FastInfoset/1.2.12/e8c1c096162a146c2d84135c5036edf54c1b1d38/FastInfoset-1.2.12.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jsr173_api/1.0/c79b8431c3104315c0aeaed7bf23d0ab0edbaa09/jsr173_api-1.0.jar" />
+                            <option value="$PROJECT_DIR$/unresolved dependency - org.jboss.resteasy async-http-jbossweb 3.0.10.Final" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/GimbalManager" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/Proton">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/41aac9e3534aa330c6086ce9bf2f51358c237755/mqtt-client-0.4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/a2fa636c76e804854661f1607fdd8492d89b8e7a/jboss-logging-3.1.4.GA-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/5d58661526aeec56496f22174074ba9261d1f3ba/jsch-0.1.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/Proton" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/cms">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/41aac9e3534aa330c6086ce9bf2f51358c237755/mqtt-client-0.4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/a2fa636c76e804854661f1607fdd8492d89b8e7a/jboss-logging-3.1.4.GA-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/5d58661526aeec56496f22174074ba9261d1f3ba/jsch-0.1.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/cms" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -564,32 +1167,32 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MqttPublisher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/StreamCommand.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ssh/StreamHCIDump.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ssh/SSHStreamer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/StreamServer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StreamHCIDump.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TstSSHStreamParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParseCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ssh/StreamSSHCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ssh/SSHStreamParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/bluetooth/Utils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ParseCompanyIDs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/bluetooth/CompanyIDs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TstHCIDumpParser.java" />
-        <option value="$PROJECT_DIR$/gui/build.gradle" />
-        <option value="$PROJECT_DIR$/gui/src/test/java/test/mdns/TestListBeaconScanners.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ScannerLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestBeaconSerialization.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/AbstractParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParserLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/CommandArgs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/ConfigurationCreator.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/DebugMessageBodyReaderInterceptor.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/AuthHeadersRequestFilter.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/TrafficLogger.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/Bitmap.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/RGB565.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/TestBarcodeImages.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestURIs.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/gimbal/BeaconConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/logging.properties" />
+        <option value="$PROJECT_DIR$/GimbalManager/build.gradle" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/TestJsonApi.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/ResteasyGimbalManager.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/IGimbalManager.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/GimbalManagerProxy.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/TestGimalManager.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/RegisterBeacons.java" />
+        <option value="$PROJECT_DIR$/Proton/build.gradle" />
+        <option value="$PROJECT_DIR$/Proton/src/test/java/TestJmsBridge.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4.properties" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java" />
       </list>
     </option>
   </component>
@@ -600,8 +1203,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="315" />
-    <option name="y" value="124" />
+    <option name="x" value="863" />
+    <option name="y" value="22" />
     <option name="width" value="1679" />
     <option name="height" value="986" />
   </component>
@@ -631,7 +1234,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -650,8 +1252,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ActiveMQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ActiveMQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ActiveMQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ActiveMQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -670,12 +1357,12 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="preferences.JavaFX" />
+    <property name="options.lastSelected" value="project.propDebugger" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Bonjour/jmdns-code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DevNation2014" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -684,113 +1371,49 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GimbalManager/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.jboss.summit2015.beacon" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestBeaconSerialization.testReadBeacon">
-    <configuration default="false" name="TstHCIDumpParser.testHcidumpParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestJmsBridge.testBrowseTopic">
+    <configuration default="false" name="RegisterBeacons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="RaspberryPiBeaconParser" />
+      <option name="MAIN_CLASS_NAME" value="RegisterBeacons" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TstHCIDumpParser" />
-      <option name="METHOD_NAME" value="testHcidumpParser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="GimbalManager" />
       <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TstHCIDumpParser.testHcidumpStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="RaspberryPiBeaconParser" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TstHCIDumpParser" />
-      <option name="METHOD_NAME" value="testHcidumpStream" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TstHCIDumpParser.testHcidumpStreamRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="RaspberryPiBeaconParser" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TstHCIDumpParser" />
-      <option name="METHOD_NAME" value="testHcidumpStreamRead" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TestListBeaconScanners.queryBeaconScanners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.mdns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="gui" />
+    <configuration default="false" name="TestGimalManager.testActivateBeaconWithConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GimbalManager" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.mdns" />
-      <option name="MAIN_CLASS_NAME" value="test.mdns.TestListBeaconScanners" />
-      <option name="METHOD_NAME" value="queryBeaconScanners" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
+      <option name="METHOD_NAME" value="testActivateBeaconWithConfig" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="VM_PARAMETERS" value="-ea -Djava.util.logging.manager=org.jboss.logmanager.LogManager" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -808,14 +1431,37 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TestBeaconSerialization.testReadBeacon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestGimalManager.testDeleteConfigurationByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="RaspberryPiBeaconParser" />
+      <module name="GimbalManager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
+      <option name="METHOD_NAME" value="testDeleteConfigurationByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Djava.util.logging.manager=org.jboss.logmanager.LogManager" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestGimalManager.testGetConfigurationByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GimbalManager" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestBeaconSerialization" />
-      <option name="METHOD_NAME" value="testReadBeacon" />
+      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
+      <option name="METHOD_NAME" value="testGetConfigurationByName" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -827,13 +1473,30 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestJmsBridge.testBrowseTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ActiveMQ" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJmsBridge" />
+      <option name="METHOD_NAME" value="testBrowseTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1289,19 +1952,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Remote.RaspberryPi" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TstHCIDumpParser.testHcidumpParser" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TstHCIDumpParser.testHcidumpStream" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TstHCIDumpParser.testHcidumpStreamRead" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestListBeaconScanners.queryBeaconScanners" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestBeaconSerialization.testReadBeacon" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RegisterBeacons" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testActivateBeaconWithConfig" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testDeleteConfigurationByName" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetConfigurationByName" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestJmsBridge.testBrowseTopic" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestBeaconSerialization.testReadBeacon" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestListBeaconScanners.queryBeaconScanners" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TstHCIDumpParser.testHcidumpStreamRead" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TstHCIDumpParser.testHcidumpStream" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TstHCIDumpParser.testHcidumpParser" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJmsBridge.testBrowseTopic" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RegisterBeacons" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetConfigurationByName" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testDeleteConfigurationByName" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testActivateBeaconWithConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -1326,7 +1989,11 @@
       <workItem from="1420953352916" duration="175000" />
       <workItem from="1421367321257" duration="17569000" />
       <workItem from="1421736629305" duration="202000" />
-      <workItem from="1421736840888" duration="294000" />
+      <workItem from="1421736840888" duration="333000" />
+      <workItem from="1421977466894" duration="55454000" />
+      <workItem from="1422576307786" duration="20000" />
+      <workItem from="1422576335558" duration="6399000" />
+      <workItem from="1423159795911" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary="Add a scannerId to the beacon object and sync up the wire format with that used by the NativeRaspberryPiBeaconParser">
       <created>1421736733052</created>
@@ -1334,43 +2001,51 @@
       <option name="project" value="LOCAL" />
       <updated>1421736733052</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refer to the native scanner repository">
+      <created>1421737171119</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1421737171119</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103070000" />
+    <option name="totallyTimeSpent" value="166147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="315" y="124" width="1679" height="986" extended-state="0" />
+    <frame x="863" y="22" width="1679" height="986" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495424" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328341" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32949308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495424" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1391,7 +2066,8 @@
     </option>
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="Add a scannerId to the beacon object and sync up the wire format with that used by the NativeRaspberryPiBeaconParser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a scannerId to the beacon object and sync up the wire format with that used by the NativeRaspberryPiBeaconParser" />
+    <MESSAGE value="Refer to the native scanner repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refer to the native scanner repository" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1414,8 +2090,20 @@
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/GimbalManager/src/test/java/TestBarcodeImages.java</url>
+          <line>277</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-client/3.0.10.Final/4674362aeb9bacd430600662fa183d2adc75510a/resteasy-client-3.0.10.Final-sources.jar!/org/jboss/resteasy/client/jaxrs/internal/proxy/ClientInvoker.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="48" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1424,216 +2112,394 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.jmdns/jmdns/3.4.1/6827b32c8ea39faf9577bf037238b93d50458a24/jmdns-3.4.1-sources.jar!/javax/jmdns/impl/JmDNSImpl.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-client/3.0.10.Final/4674362aeb9bacd430600662fa183d2adc75510a/resteasy-client-3.0.10.Final-sources.jar!/org/jboss/resteasy/client/jaxrs/engines/ApacheHttpClient4Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36347" max-vertical-offset="39140">
-          <caret line="2045" column="0" selection-start-line="2045" selection-start-column="0" selection-end-line="2045" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3734" max-vertical-offset="10469">
+          <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.6/b4e00fa279b1d45af3cb6daebcc1fee3f5402392/httpclient-4.2.6-sources.jar!/org/apache/http/impl/client/DefaultRequestDirector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19615385" vertical-offset="6522" max-vertical-offset="10165">
-          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
+        <state vertical-scroll-proportion="-417.26923" vertical-offset="0" max-vertical-offset="20786">
+          <caret line="654" column="33" selection-start-line="654" selection-start-column="29" selection-end-line="654" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ScannerLocator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/logging.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32884616" vertical-offset="0" max-vertical-offset="1040">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ParseCompanyIDs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logging.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12788461" vertical-offset="0" max-vertical-offset="1040">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="88" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/bluetooth/CompanyIDs.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar!/org/jboss/logmanager/DefaultConfigurationLocator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="8873">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="665">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/DataOutput.java">
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/resources/logging.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="6403">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-client/3.0.10.Final/4674362aeb9bacd430600662fa183d2adc75510a/resteasy-client-3.0.10.Final-sources.jar!/org/jboss/resteasy/client/jaxrs/internal/proxy/ClientInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1796" max-vertical-offset="2299">
+          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-client/3.0.10.Final/4674362aeb9bacd430600662fa183d2adc75510a/resteasy-client-3.0.10.Final-sources.jar!/org/jboss/resteasy/client/jaxrs/ResteasyWebTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33260393" vertical-offset="399" max-vertical-offset="1862">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar!/org/jboss/logmanager/LogManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7116" max-vertical-offset="9785">
+          <caret line="452" column="0" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-client/3.0.10.Final/4674362aeb9bacd430600662fa183d2adc75510a/resteasy-client-3.0.10.Final-sources.jar!/org/jboss/resteasy/client/jaxrs/internal/ClientInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5653" max-vertical-offset="7999">
+          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.6/b4e00fa279b1d45af3cb6daebcc1fee3f5402392/httpclient-4.2.6-sources.jar!/org/apache/http/impl/client/AbstractHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14450" max-vertical-offset="19722">
+          <caret line="913" column="35" selection-start-line="913" selection-start-column="35" selection-end-line="913" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="318" max-vertical-offset="893">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/java/TestJsonApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <caret line="20" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/IGimbalManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="939" max-vertical-offset="2470">
+          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/GimbalManagerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="939" max-vertical-offset="3097">
+          <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1234#1235#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1361#1362#0" expanded="false" />
+            <element signature="e#1537#1538#0" expanded="false" />
+            <element signature="e#1602#1603#0" expanded="false" />
+            <element signature="e#5530#5531#0" expanded="false" />
+            <element signature="e#5586#5587#0" expanded="false" />
+            <element signature="e#5726#5727#0" expanded="false" />
+            <element signature="e#5775#5776#0" expanded="false" />
+            <element signature="e#5887#5888#0" expanded="false" />
+            <element signature="e#5928#5929#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/java/TestGimalManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="703" max-vertical-offset="1862">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/java/RegisterBeacons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="874">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/ResteasyGimbalManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17370325" vertical-offset="597" max-vertical-offset="1900">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/448923e906a3ec2db1361f8db42b4829e560bb20/activemq-all-5.10.1-sources.jar!/javax/jms/TopicSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2291918" vertical-offset="0" max-vertical-offset="829">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/448923e906a3ec2db1361f8db42b4829e560bb20/activemq-all-5.10.1-sources.jar!/org/apache/activemq/ActiveMQConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18401" max-vertical-offset="46227">
+          <caret line="1134" column="33" selection-start-line="1134" selection-start-column="33" selection-end-line="1134" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#12430#12431#0" expanded="false" />
+            <element signature="e#12477#12478#0" expanded="false" />
+            <element signature="e#12528#12529#0" expanded="false" />
+            <element signature="e#12575#12576#0" expanded="false" />
+            <element signature="e#14004#14005#0" expanded="false" />
+            <element signature="e#14032#14033#0" expanded="false" />
+            <element signature="e#39491#39492#0" expanded="false" />
+            <element signature="e#39527#39528#0" expanded="false" />
+            <element signature="e#39624#39625#0" expanded="false" />
+            <element signature="e#39659#39660#0" expanded="false" />
+            <element signature="e#39781#39782#0" expanded="false" />
+            <element signature="e#39817#39818#0" expanded="false" />
+            <element signature="e#39934#39935#0" expanded="false" />
+            <element signature="e#39978#39979#0" expanded="false" />
+            <element signature="e#40094#40095#0" expanded="false" />
+            <element signature="e#40131#40132#0" expanded="false" />
+            <element signature="e#40388#40389#0" expanded="false" />
+            <element signature="e#40440#40441#0" expanded="false" />
+            <element signature="e#40502#40503#0" expanded="false" />
+            <element signature="e#40534#40535#0" expanded="false" />
+            <element signature="e#40951#40952#0" expanded="false" />
+            <element signature="e#41000#41001#0" expanded="false" />
+            <element signature="e#41436#41437#0" expanded="false" />
+            <element signature="e#41483#41484#0" expanded="false" />
+            <element signature="e#41866#41867#0" expanded="false" />
+            <element signature="e#41901#41902#0" expanded="false" />
+            <element signature="e#42216#42217#0" expanded="false" />
+            <element signature="e#42264#42265#0" expanded="false" />
+            <element signature="e#42359#42360#0" expanded="false" />
+            <element signature="e#42391#42392#0" expanded="false" />
+            <element signature="e#42440#42441#0" expanded="false" />
+            <element signature="e#42485#42486#0" expanded="false" />
+            <element signature="e#42917#42918#0" expanded="false" />
+            <element signature="e#42963#42964#0" expanded="false" />
+            <element signature="e#43412#43413#0" expanded="false" />
+            <element signature="e#43452#43453#0" expanded="false" />
+            <element signature="e#43797#43798#0" expanded="false" />
+            <element signature="e#43855#43856#0" expanded="false" />
+            <element signature="e#44059#44060#0" expanded="false" />
+            <element signature="e#44116#44117#0" expanded="false" />
+            <element signature="e#44305#44306#0" expanded="false" />
+            <element signature="e#44350#44351#0" expanded="false" />
+            <element signature="e#45138#45139#0" expanded="false" />
+            <element signature="e#45172#45173#0" expanded="false" />
+            <element signature="e#45449#45450#0" expanded="false" />
+            <element signature="e#45495#45496#0" expanded="false" />
+            <element signature="e#45582#45583#0" expanded="false" />
+            <element signature="e#45627#45628#0" expanded="false" />
+            <element signature="e#45751#45752#0" expanded="false" />
+            <element signature="e#45802#45803#0" expanded="false" />
+            <element signature="e#63745#63746#0" expanded="false" />
+            <element signature="e#63773#63774#0" expanded="false" />
+            <element signature="e#65735#65736#0" expanded="false" />
+            <element signature="e#65778#65779#0" expanded="false" />
+            <element signature="e#66024#66025#0" expanded="false" />
+            <element signature="e#66059#66060#0" expanded="false" />
+            <element signature="e#66427#66428#0" expanded="false" />
+            <element signature="e#66475#66476#0" expanded="false" />
+            <element signature="e#66581#66582#0" expanded="false" />
+            <element signature="e#66623#66624#0" expanded="false" />
+            <element signature="e#66795#66796#0" expanded="false" />
+            <element signature="e#66847#66848#0" expanded="false" />
+            <element signature="e#66958#66959#0" expanded="false" />
+            <element signature="e#67010#67011#0" expanded="false" />
+            <element signature="e#70655#70656#0" expanded="false" />
+            <element signature="e#70688#70689#0" expanded="false" />
+            <element signature="e#71771#71772#0" expanded="false" />
+            <element signature="e#71812#71813#0" expanded="false" />
+            <element signature="e#72269#72270#0" expanded="false" />
+            <element signature="e#72329#72330#0" expanded="false" />
+            <element signature="e#72439#72440#0" expanded="false" />
+            <element signature="e#72481#72482#0" expanded="false" />
+            <element signature="e#72765#72766#0" expanded="false" />
+            <element signature="e#72827#72828#0" expanded="false" />
+            <element signature="e#73160#73161#0" expanded="false" />
+            <element signature="e#73209#73210#0" expanded="false" />
+            <element signature="e#73269#73270#0" expanded="false" />
+            <element signature="e#73327#73328#0" expanded="false" />
+            <element signature="e#74166#74167#0" expanded="false" />
+            <element signature="e#74200#74201#0" expanded="false" />
+            <element signature="e#74334#74335#0" expanded="false" />
+            <element signature="e#74380#74381#0" expanded="false" />
+            <element signature="e#74469#74470#0" expanded="false" />
+            <element signature="e#74505#74506#0" expanded="false" />
+            <element signature="e#74633#74634#0" expanded="false" />
+            <element signature="e#74683#74684#0" expanded="false" />
+            <element signature="e#74787#74788#0" expanded="false" />
+            <element signature="e#74821#74822#0" expanded="false" />
+            <element signature="e#75192#75193#0" expanded="false" />
+            <element signature="e#75224#75225#0" expanded="false" />
+            <element signature="e#75420#75421#0" expanded="false" />
+            <element signature="e#75464#75465#0" expanded="false" />
+            <element signature="e#75665#75666#0" expanded="false" />
+            <element signature="e#75711#75712#0" expanded="false" />
+            <element signature="e#75770#75771#0" expanded="false" />
+            <element signature="e#75828#75829#0" expanded="false" />
+            <element signature="e#78808#78809#0" expanded="false" />
+            <element signature="e#78910#78911#0" expanded="false" />
+            <element signature="e#80418#80419#0" expanded="false" />
+            <element signature="e#80472#80473#0" expanded="false" />
+            <element signature="e#81286#81287#0" expanded="false" />
+            <element signature="e#81408#81409#0" expanded="false" />
+            <element signature="e#82183#82184#0" expanded="false" />
+            <element signature="e#82287#82288#0" expanded="false" />
+            <element signature="e#86913#86914#0" expanded="false" />
+            <element signature="e#86953#86954#0" expanded="false" />
+            <element signature="e#87022#87023#0" expanded="false" />
+            <element signature="e#87072#87073#0" expanded="false" />
+            <element signature="e#87113#87114#0" expanded="false" />
+            <element signature="e#87150#87151#0" expanded="false" />
+            <element signature="e#87287#87288#0" expanded="false" />
+            <element signature="e#87339#87340#0" expanded="false" />
+            <element signature="e#87828#87829#0" expanded="false" />
+            <element signature="e#87864#87865#0" expanded="false" />
+            <element signature="e#88702#88703#0" expanded="false" />
+            <element signature="e#88752#88753#0" expanded="false" />
+            <element signature="e#88812#88813#0" expanded="false" />
+            <element signature="e#88868#88869#0" expanded="false" />
+            <element signature="e#96247#96248#0" expanded="false" />
+            <element signature="e#96288#96289#0" expanded="false" />
+            <element signature="e#96371#96372#0" expanded="false" />
+            <element signature="e#96415#96416#0" expanded="false" />
+            <element signature="e#96493#96494#0" expanded="false" />
+            <element signature="e#96533#96534#0" expanded="false" />
+            <element signature="e#96614#96615#0" expanded="false" />
+            <element signature="e#96657#96658#0" expanded="false" />
+            <element signature="e#98993#98994#0" expanded="false" />
+            <element signature="e#99051#99052#0" expanded="false" />
+            <element signature="e#99305#99306#0" expanded="false" />
+            <element signature="e#99352#99353#0" expanded="false" />
+            <element signature="e#99391#99392#0" expanded="false" />
+            <element signature="e#99435#99436#0" expanded="false" />
+            <element signature="e#99477#99478#0" expanded="false" />
+            <element signature="e#99518#99519#0" expanded="false" />
+            <element signature="e#99583#99584#0" expanded="false" />
+            <element signature="e#99643#99644#0" expanded="false" />
+            <element signature="e#99692#99693#0" expanded="false" />
+            <element signature="e#99749#99750#0" expanded="false" />
+            <element signature="e#99989#99990#0" expanded="false" />
+            <element signature="e#100049#100050#0" expanded="false" />
+            <element signature="e#100434#100435#0" expanded="false" />
+            <element signature="e#100474#100475#0" expanded="false" />
+            <element signature="e#103057#103058#0" expanded="false" />
+            <element signature="e#103116#103117#0" expanded="false" />
+            <element signature="e#103865#103866#0" expanded="false" />
+            <element signature="e#103901#103902#0" expanded="false" />
+            <element signature="e#103970#103971#0" expanded="false" />
+            <element signature="e#104001#104002#0" expanded="false" />
+            <element signature="e#104100#104101#0" expanded="false" />
+            <element signature="e#104146#104147#0" expanded="false" />
+            <element signature="e#104294#104295#0" expanded="false" />
+            <element signature="e#104354#104355#0" expanded="false" />
+            <element signature="e#104404#104405#0" expanded="false" />
+            <element signature="e#104450#104451#0" expanded="false" />
+            <element signature="e#104647#104648#0" expanded="false" />
+            <element signature="e#104691#104692#0" expanded="false" />
+            <element signature="e#104879#104880#0" expanded="false" />
+            <element signature="e#104922#104923#0" expanded="false" />
+            <element signature="e#107240#107241#0" expanded="false" />
+            <element signature="e#107282#107283#0" expanded="false" />
+            <element signature="e#107323#107324#0" expanded="false" />
+            <element signature="e#107363#107364#0" expanded="false" />
+            <element signature="e#107426#107427#0" expanded="false" />
+            <element signature="e#107484#107485#0" expanded="false" />
+            <element signature="e#107798#107799#0" expanded="false" />
+            <element signature="e#107840#107841#0" expanded="false" />
+            <element signature="e#108421#108422#0" expanded="false" />
+            <element signature="e#108476#108477#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1596">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1596">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/ByteArrayOutputStream.java">
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325444" vertical-offset="1562" max-vertical-offset="4655">
-          <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/OutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24260356" vertical-offset="441" max-vertical-offset="2603">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/lang/Float.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28757396" vertical-offset="12943" max-vertical-offset="17138">
-          <caret line="755" column="24" selection-start-line="755" selection-start-column="24" selection-end-line="755" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/src/test/java/test/mdns/TestListBeaconScanners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38224852" vertical-offset="0" max-vertical-offset="1406">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/DataInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3367" max-vertical-offset="12274">
-          <caret line="215" column="21" selection-start-line="215" selection-start-column="21" selection-end-line="215" selection-end-column="21" />
-          <folding>
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/DataOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4450" max-vertical-offset="7543">
-          <caret line="272" column="22" selection-start-line="272" selection-start-column="22" selection-end-line="272" selection-end-column="22" />
-          <folding>
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/DataInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.128994" vertical-offset="10023" max-vertical-offset="10868">
-          <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/AbstractParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1634">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TstHCIDumpParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18335344" vertical-offset="0" max-vertical-offset="2660">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestBeaconSerialization.java">
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1045">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/CommandArgs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="779">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParserLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1691" max-vertical-offset="3591">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="2071">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MqttQOS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="1273">
-          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="60" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MqttPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="3496">
-          <caret line="51" column="91" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="1007">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47956732" vertical-offset="0" max-vertical-offset="3287">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.7900553" vertical-offset="2972" max-vertical-offset="3515">
+          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+          <folding>
+            <element signature="e#3657#3658#0" expanded="true" />
+            <element signature="e#3692#3693#0" expanded="true" />
+            <element signature="e#3750#3751#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1690,7 +2556,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>gui</last-edited>
+          <last-edited>Proton</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1715,7 +2581,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: com.beust:jcommander:1.35</last-edited>
+          <last-edited>Gradle: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

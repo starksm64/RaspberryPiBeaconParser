@@ -1,4 +1,6 @@
 rootProject.name = 'RaspberryPiBeaconParser'
 
 include 'gui'
+include 'GimbalManager'
+include 'ActiveMQ'
 
