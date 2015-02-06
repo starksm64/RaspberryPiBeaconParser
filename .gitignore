@@ -22,6 +22,9 @@ gradle-app.setting
 hs_err_pid*
 *.log
 
+# ActiveMQ
+activemq-data
+
 # Intellij
 RaspberryPiBeaconParser.iml
 RaspberryPiBeaconParser.ipr
