@@ -18,7 +18,6 @@ import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.UserInfo;
-import org.eclipse.paho.client.mqttv3.MqttException;
 import org.jboss.logging.Logger;
 import org.jboss.summit2015.beacon.AbstractParser;
 import org.jboss.summit2015.beacon.Beacon;
@@ -123,7 +122,7 @@ public class SSHStreamParser extends AbstractParser {
    }
 
    @Override
-   public void processHCIStream(final InputStream is) throws IOException, MqttException {
+   public void processHCIStream(final InputStream is) throws Exception {
       parser = new ParserLogic(streamCmd.parserCmd);
       parser.setScannerID(getScannerID());
       parser.setBeacons(beacons);

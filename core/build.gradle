@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.beust:jcommander:1.35'
+    compile 'org.eclipse.paho:mqtt-client:0.4.0'
+    compile "org.jboss.logging:jboss-logging:3.1.4.GA"
+    compile 'org.jboss.logmanager:jboss-logmanager:1.5.4.Final'
+    compile 'com.jcraft:jsch:0.1.51'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

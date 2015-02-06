@@ -50,7 +50,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ActiveMQ" />
             <option value="$PROJECT_DIR$/GimbalManager" />
+            <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/gui" />
+            <option value="$PROJECT_DIR$/proton" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -192,10 +194,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" filepath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/GimbalManager/GimbalManager.iml" filepath="$PROJECT_DIR$/GimbalManager/GimbalManager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Proton/Proton.iml" filepath="$PROJECT_DIR$/Proton/Proton.iml" />
       <module fileurl="file://$PROJECT_DIR$/RaspberryPiBeaconParser.iml" filepath="$PROJECT_DIR$/RaspberryPiBeaconParser.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms/cms.iml" filepath="$PROJECT_DIR$/cms/cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/gui/gui.iml" filepath="$PROJECT_DIR$/gui/gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proton/proton.iml" filepath="$PROJECT_DIR$/proton/proton.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8latest" project-jdk-type="JavaSDK">
@@ -557,6 +560,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j/0.6/16691d73bd331c11ac1c7c269b9ff2cb1cda17ac/apache-mime4j-0.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.qpid:proton-j:0.7">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/a698e12a9374f71ea6df7214fa42fa34e4c9a774/proton-j-0.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.bouncycastle:bcmail-jdk16:1.46">

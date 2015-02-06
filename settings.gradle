@@ -4,3 +4,7 @@ include 'gui'
 include 'GimbalManager'
 include 'ActiveMQ'
 
+include 'proton'
+
+include 'core'
+

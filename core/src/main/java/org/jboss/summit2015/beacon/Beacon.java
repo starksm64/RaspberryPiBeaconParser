@@ -21,6 +21,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
@@ -90,6 +92,9 @@ public class Beacon {
 
    public String getUUID() {
       return uuid;
+   }
+   public void setUUID(String uuid) {
+      this.uuid = uuid;
    }
 
    public int getCode() {
@@ -185,6 +190,20 @@ public class Beacon {
       return beacon;
    }
 
+   public static Beacon fromProperties(Map<String, Object> beaconProps) {
+      Beacon beacon = new Beacon();
+      beacon.setScannerID(beaconProps.get("scannerID").toString());
+      beacon.setUUID(beaconProps.get("uuid").toString());
+      beacon.setCode((Integer) beaconProps.get("code"));
+      beacon.setManufacturer((Integer) beaconProps.get("manufacturer"));
+      beacon.setMajor((Integer) beaconProps.get("major"));
+      beacon.setMinor((Integer) beaconProps.get("minor"));
+      beacon.setPower((Integer) beaconProps.get("power"));
+      beacon.setRssi((Integer) beaconProps.get("rssi"));
+      beacon.setTime((Long) beaconProps.get("time"));
+      return beacon;
+   }
+
    /**
     * Write the current beacon to a serialized binary form using a DataOutputStream for use as the form to send
     * to a mqtt broker. To unserialize a msg use #fromByteMsg()
@@ -210,6 +229,20 @@ public class Beacon {
       dos.writeLong(time);
       dos.close();
       return baos.toByteArray();
+   }
+
+   public Map<String, Object> toProperties() {
+      HashMap<String, Object> beaconProps = new HashMap<>();
+      beaconProps.put("scannerID", getScannerID());
+      beaconProps.put("uuid", getUUID());
+      beaconProps.put("code", getCode());
+      beaconProps.put("manufacturer", getManufacturer());
+      beaconProps.put("major", getMajor());
+      beaconProps.put("minor", getMinor());
+      beaconProps.put("power", getPower());
+      beaconProps.put("rssi", getRssi());
+      beaconProps.put("time", getTime());
+      return beaconProps;
    }
 
    public String toString() {

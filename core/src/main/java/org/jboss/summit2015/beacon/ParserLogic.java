@@ -13,7 +13,6 @@ package org.jboss.summit2015.beacon;
  * limitations under the License.
  */
 
-import org.eclipse.paho.client.mqttv3.MqttException;
 import org.jboss.logging.Logger;
 
 import java.io.BufferedReader;
@@ -61,7 +60,7 @@ public class ParserLogic extends AbstractParser {
    private static final String ALTBEACON_FORMAT = "^4 ...";
    private Pattern ibeaconRE;
    private ParseCommand parseCmd;
-   private MqttPublisher publisherClient;
+   private MsgPublisher publisherClient;
    private LinkedBlockingDeque<Beacon> beacons;
 
    public ParserLogic(ParseCommand parseCmd) {
@@ -69,7 +68,7 @@ public class ParserLogic extends AbstractParser {
    }
 
    @Override
-   public void processHCIStream(InputStream is) throws IOException, MqttException {
+   public void processHCIStream(InputStream is) throws Exception {
       setRunning(true);
       ibeaconRE = Pattern.compile(IBEACON_FORMAT);
       startPublisherClient();
@@ -110,7 +109,7 @@ public class ParserLogic extends AbstractParser {
          line = br.readLine();
       }
    }
-   private void parseStream(BufferedReader br) throws IOException, MqttException {
+   private void parseStream(BufferedReader br) throws Exception {
       String line = br.readLine();
       StringBuilder packet = new StringBuilder();
       while(isRunning() && line != null) {
@@ -147,13 +146,13 @@ public class ParserLogic extends AbstractParser {
 
    }
 
-   private void startPublisherClient() throws IOException, MqttException {
+   private void startPublisherClient() throws Exception {
       if(!parseCmd.skipPublish) {
          publisherClient = new MqttPublisher(parseCmd.brokerURL, parseCmd.username, parseCmd.password, parseCmd.clientID);
-         publisherClient.start();
+         publisherClient.start(false);
       }
    }
-   private void stopPublisherClient() throws IOException, MqttException {
+   private void stopPublisherClient() throws Exception {
       if(publisherClient != null)
          publisherClient.stop();
    }

@@ -16,21 +16,8 @@ configurations {
 repositories {
     mavenCentral()
     maven {
-        url "http://repo.maven.apache.org/maven2"
-    }
-    maven {
         url "https://repo.eclipse.org/content/repositories/paho-releases/"
     }
-}
-
-dependencies {
-    compile 'com.beust:jcommander:1.35'
-    compile 'org.eclipse.paho:mqtt-client:0.4.0'
-    compile "org.jboss.logging:jboss-logging:3.1.4.GA"
-    compile 'org.jboss.logmanager:jboss-logmanager:1.5.4.Final'
-    compile 'com.jcraft:jsch:0.1.51'
-    testCompile 'junit:junit:4.11'
-    sshAntTask 'org.apache.ant:ant-jsch:1.7.1'
 }
 
 task full_jar(type: Jar, dependsOn: classes) {

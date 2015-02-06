@@ -14,7 +14,6 @@ package org.jboss.summit2015.beacon;
  */
 
 import com.beust.jcommander.JCommander;
-import org.eclipse.paho.client.mqttv3.MqttException;
 import org.jboss.logging.Logger;
 import org.jboss.summit2015.beacon.ssh.SSHStreamParser;
 import org.jboss.summit2015.beacon.ssh.StreamSSHCommand;
@@ -102,7 +101,7 @@ public class HCIDumpParser {
       streamServer.cleanup();
       log.info("End streamHCI_SSH");
    }
-   public void scanHCI(ParseCommand parseCmd) throws IOException, MqttException {
+   public void scanHCI(ParseCommand parseCmd) throws Exception {
       log.info("Begin scanHCI");
       ParserLogic streamParser = new ParserLogic(parseCmd);
       parser = streamParser;

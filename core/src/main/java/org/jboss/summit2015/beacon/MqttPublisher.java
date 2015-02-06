@@ -32,7 +32,7 @@ import java.util.concurrent.Executors;
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
-public class MqttPublisher implements MqttCallback {
+public class MqttPublisher implements MqttCallback, MsgPublisher {
    private static Logger log = Logger.getLogger(MqttPublisher.class);
    private ExecutorService publishService;
    private MqttClient client;
@@ -118,6 +118,8 @@ public class MqttPublisher implements MqttCallback {
    public void deliveryComplete(IMqttDeliveryToken token) {
    }
 
+
+   @Override
    public void stop() {
       if(publishService != null) {
          publishService.shutdown();
@@ -133,7 +135,8 @@ public class MqttPublisher implements MqttCallback {
       }
    }
 
-   public void start() throws IOException, MqttException {
+   @Override
+   public void start(boolean asyncMode) throws IOException, MqttException {
       publishService = Executors.newSingleThreadExecutor();
 
       //This sample stores in a temporary directory... where messages temporarily
