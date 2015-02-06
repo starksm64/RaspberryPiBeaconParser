@@ -126,6 +126,7 @@ public class ParserLogic extends AbstractParser {
             packet.append(' ');
             packet.append(line.trim());
             Beacon beacon = parseBeacon(packet);
+            beacon.setScannerID(getScannerID());
             byte[] msg = beacon.toByteMsg();
             if(beacons != null)
                beacons.addLast(beacon);

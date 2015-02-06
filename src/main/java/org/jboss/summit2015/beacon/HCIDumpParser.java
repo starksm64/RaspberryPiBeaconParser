@@ -31,6 +31,8 @@ import java.util.concurrent.LinkedBlockingDeque;
  * the vm arguments. To specify an override to the bundled logging.properties, use
  * -Dlogging.configuration=file:path-to-logging.properties
  *
+ * Sample command lines:
+ *
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
 public class HCIDumpParser {

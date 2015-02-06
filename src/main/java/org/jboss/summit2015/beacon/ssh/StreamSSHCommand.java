@@ -40,7 +40,7 @@ public class StreamSSHCommand {
    public String hcidump = "/usr/local/bin/hcidump -R";
 
    @Parameter(names = "-verbose",
-      description = "Specify the hcidump command to run")
+      description = "Enable verbose mode on the SSH connection")
    public boolean verbose = false;
 
    @ParametersDelegate

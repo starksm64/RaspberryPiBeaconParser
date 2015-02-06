@@ -125,6 +125,7 @@ public class SSHStreamParser extends AbstractParser {
    @Override
    public void processHCIStream(final InputStream is) throws IOException, MqttException {
       parser = new ParserLogic(streamCmd.parserCmd);
+      parser.setScannerID(getScannerID());
       parser.setBeacons(beacons);
       parser.processHCIStream(is);
    }
