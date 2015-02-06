@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: org.jboss.summit2015.beacon.HCIDumpParser
-
