@@ -14,11 +14,15 @@ package org.jboss.summit2015.beacon;
  * limitations under the License.
  */
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -27,7 +31,9 @@ import java.util.Map;
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
-public class Beacon {
+public class Beacon implements Serializable {
+   /** version prior to toJSON addition */
+   private static final long serialVersionUID = 1112483274306465419L;
    private static SimpleDateFormat TIME_FORMAT = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS");
 
    /** The current byte[] version */
@@ -229,6 +235,12 @@ public class Beacon {
       dos.writeLong(time);
       dos.close();
       return baos.toByteArray();
+   }
+
+   public String toJSON() {
+      Gson gson = new GsonBuilder().setPrettyPrinting().create();
+      String jsonOutput = gson.toJson(this);
+      return jsonOutput;
    }
 
    public Map<String, Object> toProperties() {

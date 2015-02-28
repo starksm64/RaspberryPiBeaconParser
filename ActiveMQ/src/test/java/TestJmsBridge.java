@@ -57,7 +57,20 @@ public class TestJmsBridge implements ExceptionListener {
       Message msg = consumer.receive(5000);
       System.out.printf("Received msg: %s\n", msg);
       if(msg != null) {
-         if(msg instanceof BytesMessage) {
+         // See if the message has a scannerID property
+         if(msg.getStringProperty("scannerID") != null ) {
+            Beacon beacon = new Beacon();
+            beacon.setScannerID(msg.getStringProperty("scannerID"));
+            beacon.setUUID(msg.getStringProperty("uuid"));
+            beacon.setCode(msg.getIntProperty("code"));
+            beacon.setManufacturer(msg.getIntProperty("manufacturer"));
+            beacon.setMajor(msg.getIntProperty("major"));
+            beacon.setMinor(msg.getIntProperty("minor"));
+            beacon.setPower(msg.getIntProperty("power"));
+            beacon.setRssi(msg.getIntProperty("rssi"));
+            beacon.setTime(msg.getLongProperty("time"));
+            System.out.printf("Read beacon from properties: %s\n", beacon);
+         } else if(msg instanceof BytesMessage) {
             BytesMessage bmsg = BytesMessage.class.cast(msg);
             int length = (int) bmsg.getBodyLength();
             byte data[] = new byte[length];

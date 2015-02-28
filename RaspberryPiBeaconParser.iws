@@ -2,46 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cf6509-7d92-4853-bef3-907c4a2b5fb9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MsgPublisher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MsgPublisherFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proton/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proton/proton.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/AbstractParser.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/AbstractParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/Beacon.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/CommandArgs.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/CommandArgs.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MqttPublisher.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MqttPublisher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MqttQOS.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MqttQOS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParseCommand.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ParseCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParserLogic.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ParserLogic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ScannerLocator.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ScannerLocator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/StreamCommand.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/StreamCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/StreamServer.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/StreamServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/bluetooth/CompanyIDs.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/bluetooth/CompanyIDs.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ssh/SSHStreamParser.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ssh/SSHStreamParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ssh/StreamSSHCommand.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ssh/StreamSSHCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/logging.properties" afterPath="$PROJECT_DIR$/core/src/main/resources/logging.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ParseCompanyIDs.java" afterPath="$PROJECT_DIR$/core/src/test/java/ParseCompanyIDs.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/TestBeaconSerialization.java" afterPath="$PROJECT_DIR$/core/src/test/java/TestBeaconSerialization.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/TestURIs.java" afterPath="$PROJECT_DIR$/core/src/test/java/TestURIs.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/TstHCIDumpParser.java" afterPath="$PROJECT_DIR$/core/src/test/java/TstHCIDumpParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/TstJSch.java" afterPath="$PROJECT_DIR$/core/src/test/java/TstJSch.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/TstSSHStreamParser.java" afterPath="$PROJECT_DIR$/core/src/test/java/TstSSHStreamParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/hcidump.raw" afterPath="$PROJECT_DIR$/core/src/test/resources/hcidump.raw" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/logging.properties" afterPath="$PROJECT_DIR$/core/src/test/resources/logging.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/beaconEvents.ser" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MsgType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/testWriteJson.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GimbalManager/GimbalManager.iml" afterPath="$PROJECT_DIR$/GimbalManager/GimbalManager.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/Beacon.java" afterPath="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/Beacon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.iml" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.ipr" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.iws" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/java/TestBeaconSerialization.java" afterPath="$PROJECT_DIR$/core/src/test/java/TestBeaconSerialization.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java" afterPath="$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java" afterPath="$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/build.gradle" afterPath="$PROJECT_DIR$/ActiveMQ/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/cms.iml" afterPath="$PROJECT_DIR$/cms/cms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build.gradle" afterPath="$PROJECT_DIR$/core/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties" afterPath="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties" />
     </list>
     <ignored path="RaspberryPiBeaconParser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,22 +62,78 @@
       <file leaf-file-name="TestJmsBridge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="1539">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1002" max-vertical-offset="1748">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1518#1519#0" expanded="true" />
-                <element signature="e#1551#1552#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <file leaf-file-name="TestCloud.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestCloud.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="503" max-vertical-offset="2261">
+              <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2057#2058#0" expanded="true" />
+                <element signature="e#2105#2106#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSendRecv.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2593" max-vertical-offset="3971">
+              <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testWriteJson.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/testWriteJson.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="752305">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBeaconSerialization.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/java/TestBeaconSerialization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="1292">
+              <caret line="48" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -108,24 +142,29 @@
       <file leaf-file-name="Beacon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/Beacon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.672727" vertical-offset="2764" max-vertical-offset="4028">
-              <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-              <folding>
-                <element signature="e#3059#3060#0" expanded="true" />
-                <element signature="e#3088#3089#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="4142">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSendRecv.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java">
+      <file leaf-file-name="MsgType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MsgType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.2541437" vertical-offset="543" max-vertical-offset="2128">
-              <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="646">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ActiveMQ/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -471,87 +510,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/Proton">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Proton" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/core">
           <value>
             <list>
@@ -799,7 +757,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="9958387416000" />
+        <entry key="$PROJECT_DIR$" value="9962037042000" />
         <entry key="$PROJECT_DIR$/../../../Trading/SITrading" value="5670673329000" />
       </map>
     </option>
@@ -1026,6 +984,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/5d58661526aeec56496f22174074ba9261d1f3ba/jsch-0.1.51-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/563dcb685903c96ce8abbd03adf7fa49e19aa8b4/gson-2.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar" />
                             <option value="$PROJECT_DIR$/unresolved dependency - org.eclipse.paho mqtt-client 0.4.0" />
                           </list>
                         </option>
@@ -1167,13 +1127,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/TestGimalManager.java" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/RegisterBeacons.java" />
-        <option value="$PROJECT_DIR$/Proton/build.gradle" />
-        <option value="$PROJECT_DIR$/Proton/src/test/java/TestJmsBridge.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4.properties" />
-        <option value="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/Beacon.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ssh/StreamSSHCommand.java" />
@@ -1184,14 +1139,19 @@
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/MsgPublisher.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/summit2015/beacon/ParserLogic.java" />
         <option value="$PROJECT_DIR$/proton/build.gradle" />
-        <option value="$PROJECT_DIR$/core/build.gradle" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ssh/SSHStreamParser.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/ActiveMQ/build.gradle" />
-        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java" />
         <option value="$PROJECT_DIR$/proton/src/test/java/TestSend.java" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java" />
+        <option value="$PROJECT_DIR$/ActiveMQ/build.gradle" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MsgType.java" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/TestCloud.java" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/core/build.gradle" />
+        <option value="$PROJECT_DIR$/core/src/test/java/TestBeaconSerialization.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/Beacon.java" />
+        <option value="$PROJECT_DIR$/data/testWriteJson.json" />
         <option value="$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java" />
       </list>
     </option>
@@ -1203,8 +1163,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="734" />
-    <option name="y" value="261" />
+    <option name="x" value="865" />
+    <option name="y" value="22" />
     <option name="width" value="1679" />
     <option name="height" value="986" />
   </component>
@@ -1233,6 +1193,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1262,7 +1223,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActiveMQ" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1276,41 +1237,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActiveMQ" />
+              <option name="myItemId" value=".gradle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="2.2.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPiBeaconParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPiBeaconParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActiveMQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="taskArtifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1324,17 +1259,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActiveMQ" />
+              <option name="myItemId" value=".gradle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="2.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taskArtifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1358,7 +1296,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DevNation2014" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Trading/SITrading" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -1382,100 +1320,15 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSendRecv.testRecvProperties">
-    <configuration default="false" name="TestSendRecv.testSendBytes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestSendRecv.testReadJsonFile">
+    <configuration default="false" name="TestSendRecv.testReadBeaconFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="proton" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSendRecv" />
-      <option name="METHOD_NAME" value="testSendBytes" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestJmsBridge.testBrowseQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ActiveMQ" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestJmsBridge" />
-      <option name="METHOD_NAME" value="testBrowseQueue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestSendRecv.testRecvBytes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="proton" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSendRecv" />
-      <option name="METHOD_NAME" value="testRecvBytes" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestSendRecv.testSendProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="proton" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSendRecv" />
-      <option name="METHOD_NAME" value="testSendProperties" />
+      <option name="METHOD_NAME" value="testReadBeaconFile" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1491,14 +1344,83 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TestSendRecv.testRecvProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestBeaconSerialization.testWriteJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBeaconSerialization" />
+      <option name="METHOD_NAME" value="testWriteJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestBeaconSerialization.testReadJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBeaconSerialization" />
+      <option name="METHOD_NAME" value="testReadJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestSendRecv.testCovertSerFileToJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="proton" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSendRecv" />
-      <option name="METHOD_NAME" value="testRecvProperties" />
+      <option name="METHOD_NAME" value="testCovertSerFileToJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestSendRecv.testReadJsonFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="proton" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSendRecv" />
+      <option name="METHOD_NAME" value="testReadJsonFile" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -2005,20 +1927,20 @@
     <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.HCIDumpParser-Pi" />
       <item index="1" class="java.lang.String" itemvalue="Application.HCIDumpParser-Nuc" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testSendBytes" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestJmsBridge.testBrowseQueue" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testRecvBytes" />
-      <item index="5" class="java.lang.String" itemvalue="Remote.RaspberryPi" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testSendProperties" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testRecvProperties" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.RaspberryPi" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testReadBeaconFile" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestBeaconSerialization.testWriteJson" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestBeaconSerialization.testReadJson" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testCovertSerFileToJson" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testReadJsonFile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testRecvProperties" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testSendProperties" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestJmsBridge.testBrowseQueue" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testSendBytes" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testRecvBytes" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testReadJsonFile" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testCovertSerFileToJson" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestBeaconSerialization.testReadJson" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestBeaconSerialization.testWriteJson" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestSendRecv.testReadBeaconFile" />
       </list>
     </recent_temporary>
   </component>
@@ -2050,7 +1972,8 @@
       <workItem from="1423159795911" duration="1325000" />
       <workItem from="1423174073729" duration="70000" />
       <workItem from="1423185753249" duration="2221000" />
-      <workItem from="1423188149379" duration="8737000" />
+      <workItem from="1423188149379" duration="11502000" />
+      <workItem from="1424921192095" duration="23455000" />
     </task>
     <task id="LOCAL-00001" summary="Add a scannerId to the beacon object and sync up the wire format with that used by the NativeRaspberryPiBeaconParser">
       <created>1421736733052</created>
@@ -2094,15 +2017,21 @@
       <option name="project" value="LOCAL" />
       <updated>1423188197841</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactor top source into a core module&#10;proton-j api tests">
+      <created>1423233620859</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1423233620859</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177335000" />
+    <option name="totallyTimeSpent" value="203555000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="734" y="261" width="1679" height="986" extended-state="0" />
-    <editor active="false" />
+    <frame x="865" y="22" width="1679" height="986" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2117,7 +2046,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32949308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2160,7 +2089,8 @@
     <MESSAGE value="Ignore log files" />
     <MESSAGE value="Correct propagation of the scannerID to the parser" />
     <MESSAGE value="Ignore activemq-data dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignore activemq-data dir" />
+    <MESSAGE value="Refactor top source into a core module&#10;proton-j api tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor top source into a core module&#10;proton-j api tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2197,13 +2127,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java</url>
-          <line>64</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java</url>
-          <line>46</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
@@ -2217,213 +2147,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/CommandArgs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="779">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/HCIDumpParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="887" max-vertical-offset="2242">
-          <caret line="103" column="53" selection-start-line="103" selection-start-column="53" selection-end-line="103" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ssh/StreamSSHCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33213645" vertical-offset="100" max-vertical-offset="1026">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/ssh/SSHStreamParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5625" vertical-offset="0" max-vertical-offset="2622">
-          <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/41aac9e3534aa330c6086ce9bf2f51358c237755/mqtt-client-0.4.0-sources.jar!/org/eclipse/paho/client/mqttv3/IMqttDeliveryToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42010772" vertical-offset="336" max-vertical-offset="893">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MqttPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="3819">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="1349">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proton/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/BeforeClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="760">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/AfterClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="855">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/amqp/Binary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.389234" vertical-offset="2367" max-vertical-offset="2850">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-          <folding>
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1179#1180#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/messenger/Messenger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="994" max-vertical-offset="4731">
-          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/codec/messaging/DataType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="969">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#1817#1818#0" expanded="false" />
-            <element signature="e#1854#1855#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/codec/FloatingSizePrimitiveTypeEncoding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="124" max-vertical-offset="608">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/codec/AbstractDescribedType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1321" max-vertical-offset="1957">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <element signature="e#3770#3771#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/codec/EncoderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="12379" max-vertical-offset="13585">
-          <caret line="730" column="0" selection-start-line="730" selection-start-column="0" selection-end-line="730" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/message/impl/MessageImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="12265" max-vertical-offset="14592">
-          <caret line="735" column="0" selection-start-line="735" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
-          <folding>
-            <element signature="e#12975#12976#0" expanded="false" />
-            <element signature="e#13003#13004#0" expanded="false" />
-            <element signature="e#13833#13834#0" expanded="false" />
-            <element signature="e#13861#13862#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/codec/WritableBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="580" max-vertical-offset="1558">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#1489#1490#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ActiveMQ/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53629035" vertical-offset="0" max-vertical-offset="496">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/messenger/impl/MessengerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="4019" max-vertical-offset="26201">
-          <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="1539">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/amqp/messaging/ApplicationProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30645162" vertical-offset="0" max-vertical-offset="496">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/message/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326613" vertical-offset="1925" max-vertical-offset="3192">
@@ -2432,24 +2155,213 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="304">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/448923e906a3ec2db1361f8db42b4829e560bb20/activemq-all-5.10.1-sources.jar!/org/apache/activemq/ActiveMQConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3182" max-vertical-offset="19513">
+          <caret line="241" column="22" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/tmp/ScannerSim/ScannerSim.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="556">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/javax/naming/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15357" max-vertical-offset="20558">
+          <caret line="841" column="11" selection-start-line="841" selection-start-column="11" selection-end-line="841" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/qpid-client/0.30/b091d541b757fe4316d1b361fd4593b2e0744477/qpid-client-0.30-sources.jar!/org/apache/qpid/jndi/PropertiesFileInitialContextFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3315" max-vertical-offset="5909">
+          <caret line="238" column="32" selection-start-line="238" selection-start-column="32" selection-end-line="238" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/qpid-client/0.30/b091d541b757fe4316d1b361fd4593b2e0744477/qpid-client-0.30-sources.jar!/org/apache/qpid/client/AMQConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="7619">
+          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/qpid-client/0.30/b091d541b757fe4316d1b361fd4593b2e0744477/qpid-client-0.30-sources.jar!/org/apache/qpid/client/AMQConnectionURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="5795">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/qpid-client/0.30/b091d541b757fe4316d1b361fd4593b2e0744477/qpid-client-0.30-sources.jar!/org/apache/qpid/jms/ConnectionURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="2223">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/qpid-common/0.30/aeb59b73ab1ae17cb291b52c14ebf6d4df1e8df8/qpid-common-0.30-sources.jar!/org/apache/qpid/url/URLHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2152" max-vertical-offset="3040">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/qpid-client/0.30/b091d541b757fe4316d1b361fd4593b2e0744477/qpid-client-0.30-sources.jar!/org/apache/qpid/client/url/URLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="921" max-vertical-offset="4313">
+          <caret line="115" column="67" selection-start-line="115" selection-start-column="67" selection-end-line="115" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MqttQOS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="1273">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/MsgType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="646">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestCloud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="503" max-vertical-offset="2261">
+          <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1002" max-vertical-offset="1748">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/org/apache/qpid/proton/messenger/Messenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.923077" vertical-offset="1744" max-vertical-offset="4731">
+          <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/TstHCIDumpParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.32965" vertical-offset="817" max-vertical-offset="2660">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.json/javax.json-api/1.0/fbe493e2f03a114cca5d7e9ab7de837654b91135/javax.json-api-1.0-sources.jar!/javax/json/Json.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="4370">
+          <caret line="112" column="31" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/TestBeaconSerialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1292">
+          <caret line="48" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/Beacon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.672727" vertical-offset="2764" max-vertical-offset="4028">
-          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding>
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="4142">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/testWriteJson.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="752305">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proton/src/test/java/TestSendRecv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2541437" vertical-offset="543" max-vertical-offset="2128">
-          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2593" max-vertical-offset="3971">
+          <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

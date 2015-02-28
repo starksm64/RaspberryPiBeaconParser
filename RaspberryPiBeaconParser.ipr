@@ -357,6 +357,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: com.google.code.gson:gson:2.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/563dcb685903c96ce8abbd03adf7fa49e19aa8b4/gson-2.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: com.jcraft:jsch:0.1.51">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar!/" />

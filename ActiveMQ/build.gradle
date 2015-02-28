@@ -10,6 +10,8 @@ repositories {
 dependencies {
     compile project(':core')
     compile 'org.apache.activemq:activemq-all:5.10.1'
-
+    //compile 'org.apache.qpid:qpid-amqp-1-0-client-jms:0.30'
+    //compile 'org.apache.qpid:qpid-client:0.30'
+    runtime fileTree(dir: 'libs', include: '*.jar')
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
