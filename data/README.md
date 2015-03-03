@@ -5,7 +5,7 @@ This directory contains example data files representing beacon events.
 * testWriteJson.json - A json represention of the beanEvents.ser objects.
 
 ### TwoScannersRun#1-2015-03-02.json.gz
-This file contains 18064 beacons events over the course of about 9 minutes. The events were gathered by two scanners identified by the scannerIDs of "Room201" and "Room202". There are four active beacons. Beacon 1 with uuid,major,minor of {DAF246CE836311E4B116123B93F75CBA,14,1} was the beacon that moved around. It first started nearest to Room201, then travelled to near Room202 where it sat for a couple of minutes, and then left Room202 to outside any scanner range for a couple of minutes, then travelled back to Room202 and ended back in Room201.
+This file contains 18064 beacon events over the course of about 9 minutes. The events were gathered by two scanners identified by the scannerIDs of "Room201" and "Room202". There are four active beacons. Beacon 1 with uuid,major,minor of {DAF246CE836311E4B116123B93F75CBA,14,1} was the beacon that moved around. It first started nearest to Room201, then travelled to near Room202 where it sat for a couple of minutes, and then left Room202 to outside any scanner range for a couple of minutes, then travelled back to Room202 and ended back in Room201.
 
 Beacon 2 {DAF246CE836311E4B116123B93F75CBA,18,2} remained in Room201 and thus closest to that scanner the entire time.
 
@@ -13,7 +13,26 @@ Beacon 3 {DAF246CE836311E4B116123B93F75CBA,0,3} was situated on top of the Room2
 
 Beacon 4 {DAF246CE836311E4B116123B93F75CBA,1,4} was situated on top of the Room202 scanner the entire time.
 
+**Note: This data has events from older incarnations of the scanner that has issues with decoding the uuid correctly. Its probably not useful data. **
 
+### TwoScannersRun#1-2015-03-03.json.gz
+This file contains 39802 beacon events over the course of 
+
+	[data 552]$ less TwoScannersRun#1-2015-03-03.json | grep minor | sort | uniq -c | sort -n
+	1306   "minor": 1,
+	3338   "minor": 2,
+	13337   "minor": 4,
+	21821   "minor": 3,
+	[data 553]$ less TwoScannersRun#1-2015-03-03.json | grep uuid | sort | uniq -c | sort -n
+	39802   "uuid": "DAF246CE836311E4B116123B93F75CBA",
+
+There are four active beacons. Beacon 1 with uuid,major,minor of {DAF246CE836311E4B116123B93F75CBA,14,1} was the beacon that moved around. It first started nearest to Room201, then travels between Room201 and Room202, then into Room202 where it sat for a couple of minutes. It travels around the two rooms and away from them until it returns walking first past Room202 and ending up in Room201 until the data ends.
+
+Beacon 2 {DAF246CE836311E4B116123B93F75CBA,18,2} remained in Room201 and thus closest to that scanner the entire time.
+
+Beacon 3 {DAF246CE836311E4B116123B93F75CBA,0,3} was situated on top of the Room201 scanner the entire time.
+
+Beacon 4 {DAF246CE836311E4B116123B93F75CBA,1,4} was situated on top of the Room202 scanner the entire time.
 
 ## Estimating beacon distance
 http://stackoverflow.com/questions/20416218/understanding-ibeacon-distancing
