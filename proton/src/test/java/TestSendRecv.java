@@ -19,9 +19,13 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.zip.GZIPInputStream;
 
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
@@ -96,7 +100,7 @@ public class TestSendRecv {
       int count = 0;
       messenger.recv();
       try {
-         while (count < 3600) {
+         while (count < 18064) {
             Message msg = messenger.get();
             Data data = (Data) msg.getBody();
             byte[] bytes = data.getValue().getArray();
@@ -132,19 +136,20 @@ public class TestSendRecv {
       FileInputStream fis = new FileInputStream("/tmp/beaconEvents.ser");
       ObjectInputStream ois = new ObjectInputStream(fis);
       Beacon beacon = (Beacon) ois.readObject();
-
-      FileWriter fw = new FileWriter("/tmp/testWriteJson.json");
+      System.out.printf("First beacon: %s\n", beacon);
+      FileWriter fw = new FileWriter("/tmp/testWriteJson.json", true);
       int count = 1;
       while(beacon != null) {
+         String jsonOutput = beacon.toJSON();
+         fw.write(jsonOutput);
          try {
             beacon = (Beacon) ois.readObject();
+            count ++;
          } catch (EOFException e) {
             break;
          }
-         String jsonOutput = beacon.toJSON();
-         fw.write(jsonOutput);
-         count ++;
       }
+      System.out.printf("Last beacon: %s\n", beacon);
       System.out.printf("Converted %d beacons\n", count++);
       fw.close();
       ois.close();
@@ -162,6 +167,46 @@ public class TestSendRecv {
          System.out.printf("%d: %s\n", count++, beacon);
       }
       fr.close();
+   }
+
+   /**
+    * Create a graph of the
+    */
+   @Test
+   public void generateTwoScannersRun1TimeSeries() throws Exception {
+      HashMap<String, ArrayList<Beacon>> scannerData = new HashMap<>();
+      FileInputStream fis = new FileInputStream("../data/TwoScannersRun#1-2015-03-02.json.gz");
+      GZIPInputStream gzip = new GZIPInputStream(fis);
+      InputStreamReader isr = new InputStreamReader(gzip);
+      Gson gson = new Gson();
+      JsonStreamParser jsp = new JsonStreamParser(isr);
+      long firstTime = Long.MAX_VALUE;
+      while (jsp.hasNext()) {
+         JsonElement jse = jsp.next();
+         Beacon beacon = gson.fromJson(jse, Beacon.class);
+         if(beacon.getMajor() == 14 && beacon.getMinor() == 1) {
+            ArrayList<Beacon> beacon1Data = scannerData.get(beacon.getScannerID());
+            if(beacon1Data == null) {
+               beacon1Data = new ArrayList<>();
+               scannerData.put(beacon.getScannerID(), beacon1Data);
+               long time = beacon.getTime();
+               firstTime = Math.min(firstTime, time);
+            }
+            beacon1Data.add(beacon);
+         }
+      }
+      isr.close();
+
+      for (ArrayList<Beacon> beacon1Data : scannerData.values()) {
+         System.out.printf("Found %d beacon1 events for scanner: %s\n", beacon1Data.size(), beacon1Data.get(0).getScannerID());
+         for (Beacon beacon : beacon1Data) {
+            long time = beacon.getTime();
+            int rssi = beacon.getRssi();
+            int calibratedPower = beacon.getCalibratedPower();
+            double distance = estimateDistance(calibratedPower, rssi);
+            System.out.printf("%s,%d,%.0f\n", beacon.getScannerID(), (time - firstTime), distance);
+         }
+      }
    }
 
    @Test
@@ -199,5 +244,20 @@ public class TestSendRecv {
       System.out.printf("testRecvProperties, %s\n", beacon);
 
       messenger.stop();
+   }
+
+   static double estimateDistance(int calibratedPower, double rssi) {
+     if (rssi == 0) {
+       return -1.0; // if we cannot determine accuracy, return -1.
+     }
+
+     double ratio = rssi*1.0/calibratedPower;
+     if (ratio < 1.0) {
+       return Math.pow(ratio,10);
+     }
+     else {
+       double accuracy =  (0.89976)*Math.pow(ratio,7.7095) + 0.111;
+       return accuracy;
+     }
    }
 }
