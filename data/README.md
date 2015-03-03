@@ -16,7 +16,7 @@ Beacon 4 {DAF246CE836311E4B116123B93F75CBA,1,4} was situated on top of the Room2
 **Note: This data has events from older incarnations of the scanner that has issues with decoding the uuid correctly. Its probably not useful data. **
 
 ### TwoScannersRun#1-2015-03-03.json.gz
-This file contains 39802 beacon events over the course of 
+This file contains 39802 beacon events over the course of 26 minutes, beginning at around Tue Mar  3 13:16:10 PST 2015 and ending around Tue Mar  3 13:42:30 PST 2015. The time data is in the Java System.currentTimeMillis() value, the difference, measured in milliseconds, between the current time and midnight, January 1, 1970 UTC.
 
 	[data 552]$ less TwoScannersRun#1-2015-03-03.json | grep minor | sort | uniq -c | sort -n
 	1306   "minor": 1,
@@ -25,6 +25,8 @@ This file contains 39802 beacon events over the course of
 	21821   "minor": 3,
 	[data 553]$ less TwoScannersRun#1-2015-03-03.json | grep uuid | sort | uniq -c | sort -n
 	39802   "uuid": "DAF246CE836311E4B116123B93F75CBA",
+	[data 554]$ less TwoScannersRun#1-2015-03-03.json | grep code | sort | uniq -c | sort -n
+	39802   "code": 533,
 
 There are four active beacons. Beacon 1 with uuid,major,minor of {DAF246CE836311E4B116123B93F75CBA,14,1} was the beacon that moved around. It first started nearest to Room201, then travels between Room201 and Room202, then into Room202 where it sat for a couple of minutes. It travels around the two rooms and away from them until it returns walking first past Room202 and ending up in Room201 until the data ends.
 
