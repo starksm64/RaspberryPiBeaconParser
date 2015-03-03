@@ -100,7 +100,7 @@ public class TestSendRecv {
       int count = 0;
       messenger.recv();
       try {
-         while (count < 18064) {
+         while (count < 21738) {
             Message msg = messenger.get();
             Data data = (Data) msg.getBody();
             byte[] bytes = data.getValue().getArray();
@@ -174,39 +174,11 @@ public class TestSendRecv {
     */
    @Test
    public void generateTwoScannersRun1TimeSeries() throws Exception {
-      HashMap<String, ArrayList<Beacon>> scannerData = new HashMap<>();
-      FileInputStream fis = new FileInputStream("../data/TwoScannersRun#1-2015-03-02.json.gz");
-      GZIPInputStream gzip = new GZIPInputStream(fis);
-      InputStreamReader isr = new InputStreamReader(gzip);
-      Gson gson = new Gson();
-      JsonStreamParser jsp = new JsonStreamParser(isr);
-      long firstTime = Long.MAX_VALUE;
-      while (jsp.hasNext()) {
-         JsonElement jse = jsp.next();
-         Beacon beacon = gson.fromJson(jse, Beacon.class);
-         if(beacon.getMajor() == 14 && beacon.getMinor() == 1) {
-            ArrayList<Beacon> beacon1Data = scannerData.get(beacon.getScannerID());
-            if(beacon1Data == null) {
-               beacon1Data = new ArrayList<>();
-               scannerData.put(beacon.getScannerID(), beacon1Data);
-               long time = beacon.getTime();
-               firstTime = Math.min(firstTime, time);
-            }
-            beacon1Data.add(beacon);
-         }
-      }
-      isr.close();
-
-      for (ArrayList<Beacon> beacon1Data : scannerData.values()) {
-         System.out.printf("Found %d beacon1 events for scanner: %s\n", beacon1Data.size(), beacon1Data.get(0).getScannerID());
-         for (Beacon beacon : beacon1Data) {
-            long time = beacon.getTime();
-            int rssi = beacon.getRssi();
-            int calibratedPower = beacon.getCalibratedPower();
-            double distance = estimateDistance(calibratedPower, rssi);
-            System.out.printf("%s,%d,%.0f\n", beacon.getScannerID(), (time - firstTime), distance);
-         }
-      }
+      generateTwoScannersRun1TimeSeries("../data/TwoScannersRun#1-2015-03-02.json.gz");
+   }
+   @Test
+   public void generateTwoScannersRun2TimeSeries() throws Exception {
+      generateTwoScannersRun1TimeSeries("../data/TwoScannersRun#1-2015-03-03.json.gz");
    }
 
    @Test
@@ -244,6 +216,42 @@ public class TestSendRecv {
       System.out.printf("testRecvProperties, %s\n", beacon);
 
       messenger.stop();
+   }
+
+   static void generateTwoScannersRun1TimeSeries(String fileName) throws Exception {
+      HashMap<String, ArrayList<Beacon>> scannerData = new HashMap<>();
+      FileInputStream fis = new FileInputStream(fileName);
+      GZIPInputStream gzip = new GZIPInputStream(fis);
+      InputStreamReader isr = new InputStreamReader(gzip);
+      Gson gson = new Gson();
+      JsonStreamParser jsp = new JsonStreamParser(isr);
+      long firstTime = Long.MAX_VALUE;
+      while (jsp.hasNext()) {
+         JsonElement jse = jsp.next();
+         Beacon beacon = gson.fromJson(jse, Beacon.class);
+         if(beacon.getMajor() == 14 && beacon.getMinor() == 1) {
+            ArrayList<Beacon> beacon1Data = scannerData.get(beacon.getScannerID());
+            if(beacon1Data == null) {
+               beacon1Data = new ArrayList<>();
+               scannerData.put(beacon.getScannerID(), beacon1Data);
+               long time = beacon.getTime();
+               firstTime = Math.min(firstTime, time);
+            }
+            beacon1Data.add(beacon);
+         }
+      }
+      isr.close();
+
+      for (ArrayList<Beacon> beacon1Data : scannerData.values()) {
+         System.out.printf("Found %d beacon1 events for scanner: %s\n", beacon1Data.size(), beacon1Data.get(0).getScannerID());
+         for (Beacon beacon : beacon1Data) {
+            long time = beacon.getTime();
+            int rssi = beacon.getRssi();
+            int calibratedPower = beacon.getCalibratedPower();
+            double distance = estimateDistance(calibratedPower, rssi);
+            System.out.printf("%s,%d,%.0f\n", beacon.getScannerID(), (time - firstTime), distance);
+         }
+      }
    }
 
    static double estimateDistance(int calibratedPower, double rssi) {
