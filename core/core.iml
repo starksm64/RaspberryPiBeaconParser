@@ -21,7 +21,6 @@
     <orderEntry type="library" exported="" name="Gradle: org.jboss.logmanager:jboss-logmanager:1.5.4.Final" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.jcraft:jsch:0.1.51" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.paho:mqtt-client:0.4.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javax.json:javax.json-api:1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.google.code.gson:gson:2.3.1" level="project" />
   </component>
 </module>

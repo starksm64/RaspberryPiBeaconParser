@@ -1,4 +1,4 @@
-package org.jboss.summit2015.beacon;
+package org.jboss.summit2015.config;
 /*
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,15 +13,22 @@ package org.jboss.summit2015.beacon;
  * limitations under the License.
  */
 
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
 /**
- * An enum encapsulating the JMSType string and "messageType" int property used for the
- * javax.jms.Message(s) sent to broker
- *
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
-public enum MsgType {
-   SCANNER_READ,
-   SCANNER_HEARTBEAT,
-   ;
-
+public class ConfigServer {
+   /**
+    *
+    * @return
+    */
+   @GET
+   @Path("config")
+   @Produces("text/json")
+   public String getConfiguration() {
+      return "";
+   }
 }

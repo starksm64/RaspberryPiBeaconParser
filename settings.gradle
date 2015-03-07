@@ -8,3 +8,5 @@ include 'proton'
 
 include 'core'
 
+include 'ConfigManager'
+

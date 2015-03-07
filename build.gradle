@@ -1,22 +1,59 @@
-apply plugin: 'java'
-apply plugin: 'maven'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
 version = '1.0'
+
+evaluationDependsOn(':core')
+evaluationDependsOn(':ConfigManager')
+evaluationDependsOn(':GimbalManager')
 
 ext {
      raspberryHost = '192.168.1.95'
+    resteasyVersion = "3.0.10.Final"
 }
+
+List resteasy = ["org.jboss.resteasy:jaxrs-api:$resteasyVersion",
+        "org.jboss.resteasy:resteasy-jaxrs:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-jaxb-provider:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-links:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-jackson-provider:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-crypto:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-cache-core:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-cdi:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-fastinfoset-provider:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-jettison-provider:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-jsapi:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-multipart-provider:$resteasyVersion",
+                 "org.jboss.resteasy:resteasy-oauth:$resteasyVersion",
+                 "org.jboss.resteasy:async-http-servlet-3.0:$resteasyVersion",
+                 "org.jboss.resteasy:async-http-jbossweb:$resteasyVersion"
+]
 
 configurations {
     sshAntTask
 }
 
-repositories {
-    mavenCentral()
-    maven {
-        url "https://repo.eclipse.org/content/repositories/paho-releases/"
+project(':ConfigManager') {
+    dependencies {
+        compile resteasy
+    }
+}
+project(':GimbalManager') {
+    dependencies {
+        compile resteasy
+    }
+}
+
+allprojects {
+    apply plugin: 'maven'
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://repo.eclipse.org/content/repositories/paho-releases/"
+        }
     }
 }
 

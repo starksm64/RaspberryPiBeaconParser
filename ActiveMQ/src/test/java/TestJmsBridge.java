@@ -11,7 +11,11 @@ import javax.jms.ExceptionListener;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageConsumer;
+import javax.jms.Queue;
+import javax.jms.QueueBrowser;
 import javax.jms.Session;
+import java.util.Enumeration;
+import java.util.HashMap;
 
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
@@ -35,7 +39,7 @@ public class TestJmsBridge implements ExceptionListener {
    }
 
    @Test
-   public void testBrowseTopic() throws Exception {
+   public void testReceiveTopic() throws Exception {
       connection.setExceptionListener(this);
 
       Destination topic  = session.createTopic("beaconEvents");
@@ -43,9 +47,27 @@ public class TestJmsBridge implements ExceptionListener {
    }
 
    @Test
-   public void testBrowseQueue() throws Exception {
+   public void testReceiveQueue() throws Exception {
       Destination queue  = session.createQueue("beaconEvents");
       consumeDestination(queue);
+   }
+
+   @Test
+   public void testBrowseQueueForHeartbeats() throws Exception {
+      Queue queue  = session.createQueue("beaconEvents");
+      QueueBrowser browser = session.createBrowser(queue, "messageType = 1");
+      Enumeration msgs = browser.getEnumeration();
+      HashMap<String, Integer> heartbeatCounts = new HashMap<>();
+      while(msgs.hasMoreElements()) {
+         Message msg = (Message) msgs.nextElement();
+         String scannerID = msg.getStringProperty("scannerID");
+         Integer count = heartbeatCounts.get(scannerID);
+         if(count == null) {
+            count = 0;
+         }
+         heartbeatCounts.put(scannerID, count + 1);
+      }
+      System.out.printf("%s\n", heartbeatCounts);
    }
 
    public void onException(JMSException ex) {

@@ -100,7 +100,7 @@ public class TestSendRecv {
       int count = 0;
       messenger.recv();
       try {
-         while (count < 21738) {
+         while (count < 38942) {
             Message msg = messenger.get();
             Data data = (Data) msg.getBody();
             byte[] bytes = data.getValue().getArray();

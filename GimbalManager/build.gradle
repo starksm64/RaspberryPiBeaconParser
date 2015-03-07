@@ -6,33 +6,14 @@ description = 'Integration with the GimbalManager to simplify setup of beacons'
 
 ext {
     arquillianVersion = "1.1.5.Final"
-    resteasyVersion = "3.0.10.Final"
     shrinkwrapVersion = "1.2.2"
 }
-
-List resteasy = ["org.jboss.resteasy:jaxrs-api:$resteasyVersion",
-        "org.jboss.resteasy:resteasy-jaxrs:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-jaxb-provider:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-links:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-jackson-provider:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-crypto:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-cache-core:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-cdi:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-fastinfoset-provider:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-jettison-provider:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-jsapi:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-multipart-provider:$resteasyVersion",
-                 "org.jboss.resteasy:resteasy-oauth:$resteasyVersion",
-                 "org.jboss.resteasy:async-http-servlet-3.0:$resteasyVersion",
-                 "org.jboss.resteasy:async-http-jbossweb:$resteasyVersion"
-]
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile resteasy
     compile 'javax.json:javax.json-api:1.0'
     runtime 'org.glassfish:javax.json:1.0.4'
     compile "org.jboss.logging:jboss-logging:3.1.4.GA"

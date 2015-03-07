@@ -37,7 +37,7 @@ public class Beacon implements Serializable {
    private static SimpleDateFormat TIME_FORMAT = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS");
 
    /** The current byte[] version */
-   private static final int VERSION = 3;
+   private static final int VERSION = 4;
    private String scannerID;
    private String uuid;
    private int code;
@@ -47,6 +47,7 @@ public class Beacon implements Serializable {
    private int power;
    private int calibratedPower;
    private int rssi;
+   private int messageType;
    private long time;
 
    public Beacon() {
@@ -167,32 +168,29 @@ public class Beacon implements Serializable {
       this.time = time;
    }
 
+   public int getMessageType() {
+      return messageType;
+   }
+
+   public void setMessageType(int messageType) {
+      this.messageType = messageType;
+   }
+
    public static Beacon fromByteMsg(byte[] msg) throws IOException {
       ByteArrayInputStream bais = new ByteArrayInputStream(msg);
       DataInputStream dis = new DataInputStream(bais);
+      Beacon beacon = null;
       int version = dis.readInt();
-      if(version != VERSION)
-         throw new IOException(String.format("Msg version: %d does not match current version: %d", version, VERSION));
+      switch (version) {
+         case VERSION:
+            beacon = readVersion4(dis);
+            break;
+         case 3:
+            // TODO?
+         default:
+            throw new IOException(String.format("Msg version: %d does not match current version: %d", version, VERSION));
+      }
 
-      int length = dis.readInt();
-      byte[] scannerBytes = new byte[length];
-      dis.readFully(scannerBytes);
-      String scannerID = new String(scannerBytes);
-      length = dis.readInt();
-      byte[] uuidBytes = new byte[length];
-      dis.readFully(uuidBytes);
-      String uuid = new String(uuidBytes);
-      int code = dis.readInt();
-      int manufacturer = dis.readInt();
-      int major = dis.readInt();
-      int minor = dis.readInt();
-      int power = dis.readInt();
-      int calibratedPower = dis.readInt();
-      int rssi = dis.readInt();
-      long time = dis.readLong();
-      dis.close();
-      Beacon beacon = new Beacon(scannerID, uuid, code, manufacturer, major, minor, power, rssi, time);
-      beacon.setCalibratedPower(calibratedPower);
       return beacon;
    }
 
@@ -207,6 +205,7 @@ public class Beacon implements Serializable {
       beacon.setPower((Integer) beaconProps.get("power"));
       beacon.setRssi((Integer) beaconProps.get("rssi"));
       beacon.setTime((Long) beaconProps.get("time"));
+      beacon.setMessageType((Integer) beaconProps.get("messageType"));
       return beacon;
    }
 
@@ -233,6 +232,7 @@ public class Beacon implements Serializable {
       dos.writeInt(calibratedPower);
       dos.writeInt(rssi);
       dos.writeLong(time);
+      dos.writeInt(messageType);
       dos.close();
       return baos.toByteArray();
    }
@@ -254,11 +254,37 @@ public class Beacon implements Serializable {
       beaconProps.put("power", getPower());
       beaconProps.put("rssi", getRssi());
       beaconProps.put("time", getTime());
+      beaconProps.put("messageType", getMessageType());
       return beaconProps;
    }
 
    public String toString() {
       Date date = new Date(time);
       return String.format("{[%s,%d,%d]code=%d,manufacturer=%d,power=%d,rssi=%d,time=%s}", uuid, major, minor, code, manufacturer, power, rssi, TIME_FORMAT.format(date));
+   }
+
+   private static Beacon readVersion4(DataInputStream dis) throws IOException {
+      int length = dis.readInt();
+      byte[] scannerBytes = new byte[length];
+      dis.readFully(scannerBytes);
+      String scannerID = new String(scannerBytes);
+      length = dis.readInt();
+      byte[] uuidBytes = new byte[length];
+      dis.readFully(uuidBytes);
+      String uuid = new String(uuidBytes);
+      int code = dis.readInt();
+      int manufacturer = dis.readInt();
+      int major = dis.readInt();
+      int minor = dis.readInt();
+      int power = dis.readInt();
+      int calibratedPower = dis.readInt();
+      int rssi = dis.readInt();
+      long time = dis.readLong();
+      int messageType = dis.readInt();
+      dis.close();
+      Beacon beacon = new Beacon(scannerID, uuid, code, manufacturer, major, minor, power, rssi, time);
+      beacon.setCalibratedPower(calibratedPower);
+      beacon.setMessageType(messageType);
+      return beacon;
    }
 }

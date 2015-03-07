@@ -1,0 +1,21 @@
+{
+  "brokerURL": "52.10.252.216:5672",
+  "user": "admin",
+  "password": "admin",
+  "roomProperties": [
+    {
+      "scannerID": "Room201",
+      "heartbeatUUID": "DAF246CEF20111E4B116123B93F75CBA",
+      "destinationName": "beaconEvents",
+      "useQueues": "true",
+      "batchCount": "100"
+    },
+    {
+      "scannerID": "Room202",
+      "heartbeatUUID": "DAF246CEF20211E4B116123B93F75CBA",
+      "destinationName": "beaconEvents",
+      "useQueues": "true",
+      "batchCount": "100"
+    }
+  ]
+}

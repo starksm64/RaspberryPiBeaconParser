@@ -49,6 +49,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ActiveMQ" />
+            <option value="$PROJECT_DIR$/ConfigManager" />
             <option value="$PROJECT_DIR$/GimbalManager" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/gui" />
@@ -193,6 +194,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" filepath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfigManager/ConfigManager.iml" filepath="$PROJECT_DIR$/ConfigManager/ConfigManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/GimbalManager/GimbalManager.iml" filepath="$PROJECT_DIR$/GimbalManager/GimbalManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/RaspberryPiBeaconParser.iml" filepath="$PROJECT_DIR$/RaspberryPiBeaconParser.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms/cms.iml" filepath="$PROJECT_DIR$/cms/cms.iml" />
