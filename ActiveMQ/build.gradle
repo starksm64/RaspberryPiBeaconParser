@@ -1,6 +1,5 @@
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
 version = '1.0'
 
 repositories {
@@ -14,4 +13,28 @@ dependencies {
     //compile 'org.apache.qpid:qpid-client:0.30'
     runtime fileTree(dir: 'libs', include: '*.jar')
     testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+task pushDataToBroker(type: JavaExec, dependsOn: classes) {
+    main = 'PushJSONToBroker'
+    systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
+    if(project.hasProperty('destination')) {
+        args = ['-destination', project.getProperties().get('destination')]
+    } else {
+        args = ['-destination', 'beaconEvents2']
+    }
+    if(project.hasProperty('dataSet')) {
+        args += '-dataSet'
+        args += project.getProperties().get('dataSet')
+    } else {
+        args += '-dataSet'
+        args += 'FourScannersRun%231-2015-03-07.json.gz'
+    }
+    if(project.hasProperty('limitCount')) {
+        args += '-limitCount'
+        args += project.getProperties().get('limitCount')
+    }
+    //args = ['-destination', 'beaconEvents', '-dataSet', 'FourScannersRun%231-2015-03-07.json.gz', '']
+    classpath sourceSets.test.runtimeClasspath
+    classpath configurations.runtime
 }
