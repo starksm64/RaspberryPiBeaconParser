@@ -102,6 +102,69 @@ The six beacons were moved between the rooms in the following manner. The first 
 * Sat Mar  7 11:58:43 PST 2015
 	* all scanners stopped
 
+### FourScannersRun1-2015-03-10.json.gz
+This file contains 103446 beacon events of the course of 20 minutes. The only real difference between this dataset and FourScannersRun#1-2015-03-07.json.gz is that the beacons {1,2,5,6,7,8} are transmitting at maximum power vs, a much lower power level in the previous run.
+
+The data summary in terms of uuid, major, minor, code, manufacturer and messageType is:
+
+	[data 534]$ cat FourScannersRun#1-2015-03-10.json | grep uuid | sort | uniq -c | sort -n
+	7765   "uuid": "DAF246CEF20211E4B116123B93F75CBA",
+	7960   "uuid": "DAF246CEF20311E4B116123B93F75CBA",
+	8946   "uuid": "DAF246CEF20411E4B116123B93F75CBA",
+	9006   "uuid": "DAF246CEF20111E4B116123B93F75CBA",
+	69769   "uuid": "DAF246CE836311E4B116123B93F75CBA",
+	[data 535]$ cat FourScannersRun#1-2015-03-10.json | grep major | sort | uniq -c | sort -n
+	7765   "major": 202,
+	7960   "major": 203,
+	8946   "major": 204,
+	9006   "major": 201,
+	11741   "major": 1,
+	58028   "major": 0,
+	[data 536]$ cat FourScannersRun#1-2015-03-10.json | grep minor | sort | uniq -c | sort -n
+	8852   "minor": 7,
+	10692   "minor": 8,
+	10867   "minor": 1,
+	11741   "minor": 6,
+	12513   "minor": 2,
+	15104   "minor": 5,
+	33677   "minor": 20,
+	[data 537]$ cat FourScannersRun#1-2015-03-10.json | grep code | sort | uniq -c | sort -n
+	103446   "code": 533,
+	[data 538]$ cat FourScannersRun#1-2015-03-10.json | grep manufacturer | sort | uniq -c | sort -n
+	103446   "manufacturer": 19456,
+	[data 539]$ cat FourScannersRun#1-2015-03-10.json | grep messageType | sort | uniq -c | sort -n
+	33677   "messageType": 1,
+	69769   "messageType": 0, 
+
+The represents the following scenario. There are four scanners with scannerID settings of Room201, Room202, Room203 and Room204. Each scanner has a beacon next to it that has a uuid of the form DAF246CEF**RRR**11E4B116123B93F75CBA where RRR is the room number. These beacons have a major value equal to the room number, and a minor value equal to their configured transmit power times -1. The remaining six beacons have a fixed uuid of DAF246CE836311E4B116123B93F75CBA, a minor value equal to the beacon number (1,2,5,6,7,8) and a major value of 0.
+
+The six beacons were moved between the rooms in the following manner. The first time is roughly when the event begins, and the time after the description is roughly when it ends. It is only rough as the times are when I left my computer either with the beacon or to get the beacon, and when I returned to my computer either after leaving the beacon or returning with the beacon.
+
+	•	Tue Mar 10 12:41:59 PDT 2015
+		◦	All beacons start in 201
+	•	Tue Mar 10 12:42:10 PDT 2015
+		◦	1 and 2 go to 204
+		◦	Tue Mar 10 12:43:14 PDT 2015
+	•	Tue Mar 10 12:44:02 PDT 2015
+		◦	5 and 6 go to 202
+		◦	Tue Mar 10 12:45:04 PDT 2015
+	•	Tue Mar 10 12:45:44 PDT 2015
+		◦	7 and 8 go to 203
+		◦	Tue Mar 10 12:46:59 PDT 2015
+	•	Tue Mar 10 12:50:56 PDT 2015
+		◦	1 goes from 204 to 202 to meet 5, then both return to 201
+		◦	Tue Mar 10 12:52:18 PDT 2015
+	•	Tue Mar 10 12:52:30 PDT 2015
+		◦	2 returns to 201
+		◦	Tue Mar 10 12:53:28 PDT 2015
+	•	Tue Mar 10 12:53:39 PDT 2015
+		◦	7 returns to 201
+		◦	Tue Mar 10 12:54:50 PDT 2015
+	•	Tue Mar 10 12:55:08 PDT 2015
+		◦	6 goes to 203 to meet 8, then both return to 201
+		◦	Tue Mar 10 12:56:45 PDT 2015
+	•	Tue Mar 10 12:59:00 PDT 2015
+		◦	all scanners stopped
 
 ## Estimating beacon distance
 http://stackoverflow.com/questions/20416218/understanding-ibeacon-distancing

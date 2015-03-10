@@ -260,7 +260,7 @@ public class Beacon implements Serializable {
 
    public String toString() {
       Date date = new Date(time);
-      return String.format("{[%s,%d,%d]code=%d,manufacturer=%d,power=%d,rssi=%d,time=%s}", uuid, major, minor, code, manufacturer, power, rssi, TIME_FORMAT.format(date));
+      return String.format("{[%s,%d,%d]code=%d,manufacturer=%d,power=%d,rssi=%d,time=%s @ %s}", uuid, major, minor, code, manufacturer, power, rssi, TIME_FORMAT.format(date), scannerID);
    }
 
    private static Beacon readVersion4(DataInputStream dis) throws IOException {
