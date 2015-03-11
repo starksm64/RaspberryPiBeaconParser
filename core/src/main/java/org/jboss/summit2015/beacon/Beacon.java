@@ -203,6 +203,7 @@ public class Beacon implements Serializable {
       beacon.setMajor((Integer) beaconProps.get("major"));
       beacon.setMinor((Integer) beaconProps.get("minor"));
       beacon.setPower((Integer) beaconProps.get("power"));
+      beacon.setCalibratedPower(beacon.getPower());
       beacon.setRssi((Integer) beaconProps.get("rssi"));
       beacon.setTime((Long) beaconProps.get("time"));
       beacon.setMessageType((Integer) beaconProps.get("messageType"));
@@ -251,6 +252,7 @@ public class Beacon implements Serializable {
       beaconProps.put("manufacturer", getManufacturer());
       beaconProps.put("major", getMajor());
       beaconProps.put("minor", getMinor());
+      beaconProps.put("power", getPower());
       beaconProps.put("power", getPower());
       beaconProps.put("rssi", getRssi());
       beaconProps.put("time", getTime());
