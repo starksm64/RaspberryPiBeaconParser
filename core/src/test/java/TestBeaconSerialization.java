@@ -1,5 +1,6 @@
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonStreamParser;
 import org.jboss.summit2015.beacon.Beacon;
 import org.junit.Test;
@@ -58,5 +59,29 @@ public class TestBeaconSerialization {
          Beacon beacon = gson.fromJson(jse, Beacon.class);
          System.out.printf("Beacon from json:%s\n", beacon);
       }
+   }
+
+   @Test
+   public void testGetMessageTypeTime() {
+      Gson gson = new Gson();
+      String json = "{\n" +
+         "  \"scannerID\": \"Room203\",\n" +
+         "  \"uuid\": \"DAF246CEF20311E4B116123B93F75CBA\",\n" +
+         "  \"code\": 533,\n" +
+         "  \"manufacturer\": 19456,\n" +
+         "  \"major\": 203,\n" +
+         "  \"minor\": 20,\n" +
+         "  \"power\": -62,\n" +
+         "  \"calibratedPower\": -62,\n" +
+         "  \"rssi\": -67,\n" +
+         "  \"messageType\": 1,\n" +
+         "  \"time\": 1426016481227\n" +
+         "}";
+      JsonStreamParser parser = new JsonStreamParser(json);
+      JsonElement jse = parser.next();
+      JsonPrimitive messageType = jse.getAsJsonObject().getAsJsonPrimitive("messageType");
+      System.out.printf("jse.messageType = %d\n", messageType.getAsInt());
+      JsonPrimitive time = jse.getAsJsonObject().getAsJsonPrimitive("time");
+      System.out.printf("jse.time = %d\n", time.getAsLong());
    }
 }
