@@ -582,6 +582,20 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.qpid/proton-j/0.7/2eba1ca97403498242fbeca625af624e16f27c15/proton-j-0.7-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.apache.qpid:qpid-client:0.32-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/qpid/qpid-client/0.32-SNAPSHOT/qpid-client-0.32-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.qpid:qpid-common:0.32-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/qpid/qpid-common/0.32-SNAPSHOT/qpid-common-0.32-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="Gradle: org.bouncycastle:bcmail-jdk16:1.46">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk16/1.46/8a9233bfd6ad38ea32df5e6ff91035b650584b9/bcmail-jdk16-1.46.jar!/" />
@@ -931,6 +945,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.rhq.helpers/rhq-pluginAnnotations/3.0.4/a85045a75aba841c2ae583956d0b0a044db013b0/rhq-pluginAnnotations-3.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.slf4j:slf4j-api:1.6.4">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.4/2396d74b12b905f780ed7966738bb78438e8371a/slf4j-api-1.6.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.4/a045ecb292c2b2559e8e9778303a08c91f537c68/slf4j-api-1.6.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-aop:3.0.6.RELEASE">

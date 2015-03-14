@@ -136,7 +136,7 @@ The data summary in terms of uuid, major, minor, code, manufacturer and messageT
 	33677   "messageType": 1,
 	69769   "messageType": 0, 
 
-The represents the following scenario. There are four scanners with scannerID settings of Room201, Room202, Room203 and Room204. Each scanner has a beacon next to it that has a uuid of the form DAF246CEF**RRR**11E4B116123B93F75CBA where RRR is the room number. These beacons have a major value equal to the room number, and a minor value equal to their configured transmit power times -1. The remaining six beacons have a fixed uuid of DAF246CE836311E4B116123B93F75CBA, a minor value equal to the beacon number (1,2,5,6,7,8) and a major value of 0.
+The represents the following scenario. There are four scanners with scannerID settings of Room201, Room202, Room203 and Room204. Each scanner has a beacon next to it that has a uuid of the form DAF246CEF**RRR**11E4B116123B93F75CBA where RRR is the room number. These beacons have a major value equal to the room number, and a minor value equal to their configured transmit power times -1. The remaining six beacons have a fixed uuid of DAF246CE836311E4B116123B93F75CBA, a minor value equal to the beacon number {1,2,5,6,7,8} and a major value of 0.
 
 The six beacons were moved between the rooms in the following manner. The first time is roughly when the event begins, and the time after the description is roughly when it ends. It is only rough as the times are when I left my computer either with the beacon or to get the beacon, and when I returned to my computer either after leaving the beacon or returning with the beacon.
 
@@ -165,6 +165,38 @@ The six beacons were moved between the rooms in the following manner. The first 
 		◦	Tue Mar 10 12:56:45 PDT 2015
 	•	Tue Mar 10 12:59:00 PDT 2015
 		◦	all scanners stopped
+
+### FourScannersRun1-2015-03-13.json.gz
+A dataset that repeats the senario as detailed in FourScannersRun1-2015-03-10.json.gz dataset. In this run, the scanners included some additional shielding to reduce the signals between the room scanners. The scanners also were run with --skipHeartbeat to reduce the event data to only that from the six beacons with minor ids: {1,2,5,6,7,8}.
+
+The data summary in terms of uuid, major, minor, code, manufacturer and messageType is:
+
+	[data 658]$ gzcat FourScannersRun1-2015-03-13.json.gz | grep uuid | sort | uniq -c | sort -n
+	26317   "uuid": "DAF246CE836311E4B116123B93F75CBA",
+	[data 659]$ gzcat FourScannersRun1-2015-03-13.json.gz | grep major | sort | uniq -c | sort -n
+	7373   "major": 1,
+	18944   "major": 0,
+	[data 660]$ gzcat FourScannersRun1-2015-03-13.json.gz | grep minor | sort | uniq -c | sort -n
+	3831   "minor": 7,
+	4706   "minor": 8,
+	5196   "minor": 1,
+	5211   "minor": 5,
+	7373   "minor": 6,
+	[data 661]$ gzcat FourScannersRun1-2015-03-13.json.gz | grep code | sort | uniq -c | sort -n
+	26317   "code": 533,
+	[data 662]$ gzcat FourScannersRun1-2015-03-13.json.gz | grep manufacturer | sort | uniq -c | sort -n
+	26317   "manufacturer": 19456,
+	[data 663]$ gzcat FourScannersRun1-2015-03-13.json.gz | grep messageType | sort | uniq -c | sort -n
+	26317   "messageType": 0,
+	[data 664]$ 
+
+
+
+### FourScannersBeacon5Run2-2015-03-13.json.gz
+A test run of beacon with minor id 5 that walks between the room 1-4 scanners. In this run the scanners had additional screening between the scanners to attempt to reduce the cross reception between the scanners.
+
+### FourScannersBeacon5Run1-2015-03-13.json.gz
+A test run of beacon with minor id 5 that walks between the room 1-4 scanners.
 
 ## Estimating beacon distance
 http://stackoverflow.com/questions/20416218/understanding-ibeacon-distancing
