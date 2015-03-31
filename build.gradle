@@ -23,8 +23,7 @@ List resteasy = ["org.jboss.resteasy:jaxrs-api:$resteasyVersion",
                  "org.jboss.resteasy:resteasy-jsapi:$resteasyVersion",
                  "org.jboss.resteasy:resteasy-multipart-provider:$resteasyVersion",
                  "org.jboss.resteasy:resteasy-oauth:$resteasyVersion",
-                 "org.jboss.resteasy:async-http-servlet-3.0:$resteasyVersion",
-                 "org.jboss.resteasy:async-http-jbossweb:$resteasyVersion"
+                 "org.jboss.resteasy:async-http-servlet-3.0:$resteasyVersion"
 ]
 
 configurations {
@@ -50,6 +49,7 @@ allprojects {
     targetCompatibility = 1.8
 
     repositories {
+        mavenLocal()
         mavenCentral()
         maven {
             url "https://repo.eclipse.org/content/repositories/paho-releases/"
