@@ -70,6 +70,23 @@ public class TestJmsBridge implements ExceptionListener {
       System.out.printf("%s\n", heartbeatCounts);
    }
 
+   @Test
+   public void testBrowseStatusQueue() throws Exception {
+      Queue queue  = session.createQueue("scannerHealth");
+      QueueBrowser browser = session.createBrowser(queue);
+      Enumeration msgs = browser.getEnumeration();
+      while(msgs.hasMoreElements()) {
+         Message msg = (Message) msgs.nextElement();
+         Enumeration names = msg.getPropertyNames();
+         System.out.printf("Status: %s\n", msg.getJMSMessageID());
+         while(names.hasMoreElements()) {
+            String name = (String) names.nextElement();
+            String value = msg.getStringProperty(name);
+            System.out.printf("\t%s: %s\n", name, value);
+         }
+      }
+   }
+
    public void onException(JMSException ex) {
       ex.printStackTrace();
    }
