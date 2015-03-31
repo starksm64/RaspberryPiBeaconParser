@@ -198,6 +198,319 @@ A test run of beacon with minor id 5 that walks between the room 1-4 scanners. I
 ### FourScannersBeacon5Run1-2015-03-13.json.gz
 A test run of beacon with minor id 5 that walks between the room 1-4 scanners.
 
+### SixScannersRun-2015-03-31.json.gz
+A test run of ~150 beacons moving between 6 difference scanners. The becons were broken up into groups of 10 with
+another 7 beacons used individually. A summary of the data is:
+
+	[data 863]$ gzcat SixScannersRun-2015-03-31.json.gz | grep uuid | sort | uniq -c | sort -n
+	   3   "uuid": "DAF246CEF20111E4B116123B93F75CBA",
+	82821   "uuid": "DAF246CE836311E4B116123B93F75CBA",
+	[data 864]$ gzcat SixScannersRun-2015-03-31.json.gz | grep major | sort | uniq -c | sort -n
+	   3   "major": 201,
+	 909   "major": 1,
+	81912   "major": 0,
+	[data 865]$ gzcat SixScannersRun-2015-03-31.json.gz | grep minor | sort | uniq -c | sort -n
+	   2   "minor": 113,
+	   2   "minor": 146,
+	   2   "minor": 78,
+	   2   "minor": 94,
+	   3   "minor": 108,
+	   3   "minor": 150,
+	   3   "minor": 201,
+	   4   "minor": 22,
+	   4   "minor": 45,
+	   5   "minor": 13,
+	  22   "minor": 107,
+	  22   "minor": 144,
+	  23   "minor": 106,
+	  23   "minor": 34,
+	  23   "minor": 42,
+	  23   "minor": 48,
+	  23   "minor": 56,
+	  24   "minor": 14,
+	  28   "minor": 25,
+	  29   "minor": 7,
+	  82   "minor": 103,
+	  94   "minor": 122,
+	 121   "minor": 92,
+	 125   "minor": 12,
+	 166   "minor": 36,
+	 166   "minor": 37,
+	 167   "minor": 53,
+	 168   "minor": 40,
+	 171   "minor": 2,
+	 195   "minor": 125,
+	 198   "minor": 21,
+	 200   "minor": 29,
+	 233   "minor": 17,
+	 257   "minor": 23,
+	 257   "minor": 28,
+	 258   "minor": 27,
+	 258   "minor": 30,
+	 281   "minor": 20,
+	 281   "minor": 49,
+	 281   "minor": 58,
+	 281   "minor": 6,
+	 282   "minor": 46,
+	 282   "minor": 5,
+	 289   "minor": 43,
+	 345   "minor": 138,
+	 345   "minor": 149,
+	 345   "minor": 91,
+	 346   "minor": 88,
+	 352   "minor": 71,
+	 361   "minor": 38,
+	 387   "minor": 97,
+	 388   "minor": 127,
+	 388   "minor": 128,
+	 388   "minor": 70,
+	 388   "minor": 75,
+	 389   "minor": 105,
+	 389   "minor": 82,
+	 390   "minor": 117,
+	 393   "minor": 123,
+	 401   "minor": 142,
+	 403   "minor": 147,
+	 406   "minor": 39,
+	 472   "minor": 77,
+	 474   "minor": 109,
+	 474   "minor": 152,
+	 475   "minor": 114,
+	 475   "minor": 139,
+	 475   "minor": 96,
+	 491   "minor": 120,
+	 496   "minor": 24,
+	 497   "minor": 32,
+	 498   "minor": 9,
+	 500   "minor": 19,
+	 502   "minor": 134,
+	 502   "minor": 59,
+	 503   "minor": 33,
+	 504   "minor": 55,
+	 505   "minor": 18,
+	 505   "minor": 52,
+	 528   "minor": 156,
+	 531   "minor": 26,
+	 533   "minor": 47,
+	 533   "minor": 8,
+	 534   "minor": 35,
+	 534   "minor": 54,
+	 535   "minor": 50,
+	 538   "minor": 1,
+	 547   "minor": 64,
+	 550   "minor": 112,
+	 585   "minor": 154,
+	 591   "minor": 65,
+	 623   "minor": 69,
+	 641   "minor": 140,
+	 651   "minor": 145,
+	 651   "minor": 157,
+	 652   "minor": 111,
+	 653   "minor": 102,
+	 659   "minor": 132,
+	 659   "minor": 76,
+	 667   "minor": 115,
+	 668   "minor": 86,
+	 669   "minor": 110,
+	 669   "minor": 135,
+	 669   "minor": 79,
+	 671   "minor": 148,
+	 680   "minor": 133,
+	 681   "minor": 84,
+	 685   "minor": 74,
+	 692   "minor": 124,
+	 705   "minor": 80,
+	 706   "minor": 83,
+	 711   "minor": 99,
+	 729   "minor": 57,
+	 730   "minor": 44,
+	 731   "minor": 15,
+	 733   "minor": 51,
+	 745   "minor": 100,
+	 750   "minor": 137,
+	 753   "minor": 98,
+	 786   "minor": 130,
+	 797   "minor": 87,
+	 821   "minor": 72,
+	 822   "minor": 126,
+	 832   "minor": 121,
+	 838   "minor": 90,
+	 845   "minor": 95,
+	 846   "minor": 129,
+	 854   "minor": 73,
+	 897   "minor": 101,
+	 900   "minor": 131,
+	 910   "minor": 118,
+	 923   "minor": 89,
+	 945   "minor": 104,
+	 948   "minor": 153,
+	 948   "minor": 85,
+	 949   "minor": 143,
+	 978   "minor": 151,
+	 984   "minor": 63,
+	1028   "minor": 81,
+	1073   "minor": 68,
+	1078   "minor": 116,
+	1114   "minor": 61,
+	1200   "minor": 62,
+	1204   "minor": 60,
+	1250   "minor": 119,
+	1253   "minor": 66,
+	1271   "minor": 93,
+	1290   "minor": 155,
+	1476   "minor": 136,
+	1494   "minor": 67,
+	1523   "minor": 159,
+	1728   "minor": 158,
+	1732   "minor": 141,
+	[data 866]$ gzcat SixScannersRun-2015-03-31.json.gz | grep code | sort | uniq -c | sort -n
+	82824   "code": 533,
+	[data 867]$ gzcat SixScannersRun-2015-03-31.json.gz | grep manufacturer | sort | uniq -c | sort -n
+	82824   "manufacturer": 19456,
+	[data 868]$ gzcat SixScannersRun-2015-03-31.json.gz | grep messageType | sort | uniq -c | sort -n
+	   3   "messageType": 1,
+	82821   "messageType": 0,
+	[data 869]$ gzcat SixScannersRun-2015-03-31.json.gz | grep minor | sort | uniq -c | sort -n | wc
+		 153     459    3114
+	
+The event sequence of movements is given below. A G13 reference means group number 13 of 10 beacons. A reference to a number 13 without a G prefix means the beacon with the minor value equal to 13.
+
+* Starting locations, Tue Mar 31 15:01:12 PDT 2015:
+	* 201; G2, G9, G11, G13, 69, 98
+	* 202; G5, 159
+	* 203; G8, G15
+	* 204; G1, G10, G12, 81 
+	* 205; G3, G6, G7, 66
+	* 206; G4, G14, 61, 130
+
+* Tue Mar 31 15:02:07 PDT 2015
+	* G1 from 204 to 205
+	* 81 from 204 to 205
+	* 98 from 201 to 204
+	* 66 from 205 to 201
+ 
+* Tue Mar 31 15:08:04 PDT 2015
+	* G2 from 201 to 203
+	* 69 from 201 to 203
+	* G8 from 203 to 201
+ 
+* Tue Mar 31 15:08:04 PDT 2015
+	* 154 from 201 to 205 and put on dog
+ 
+* Tue Mar 31 15:11:12 PDT 2015
+	* G3 from 205 to 206
+	* G4 from 206 to 201
+	* 130 from 206 to 201
+ 
+* Tue Mar 31 15:14:19 PDT 2015
+	* G5 from 202 to 204
+	* 66 from 201 to 202
+	* 98 from 204 to 201
+ 
+* Tue Mar 31 15:16:12 PDT 2015
+	* G6 from 205 to 202
+	* 130 from 201 to 205
+	* 81 from 205 to 202
+	* 66 from 202 to 201
+ 
+* Tue Mar 31 15:19:13 PDT 2015
+	* G7 from 205 to 204
+	* 66 from 201 to 205
+	* 159 from 204 to 201
+ 
+* Tue Mar 31 15:22:04 PDT 2015
+	* G8 from 201 to 202
+	* 98 from 201 to 202
+	* 81 from 202 to 201
+ 
+* Tue Mar 31 15:30:34 PDT 2015
+	* G9 from 201 to 206
+	* 159 from 201 to 206
+	* 61 from 206 to 201
+ 
+* G10 from 204 to 203
+	* 81 from 201 to 204
+ 
+* Tue Mar 31 15:33:46 PDT 2015
+	* G11 from 201 to 204
+	* 61 from 201 to 204
+	* G10 from 204 to 201
+ 
+* Tue Mar 31 15:35:59 PDT 2015
+	* G12 from 204 to 203
+	* 81 from 201 to 203 via 204
+	* 69 from 203 to 201
+ 
+* Tue Mar 31 15:40:55 PDT 2015
+	* G13 from 201 to 205
+	* 66 from 205 to 201
+ 
+* Tue Mar 31 15:42:14 PDT 2015
+	* G14 from 206 to 201
+	* 159 from 206 to 201
+	* 69 from 201 to 206
+ 
+* Tue Mar 31 15:44:30 PDT 2015
+	* G15 from 203 to 202
+	* 66 from 201 to 203
+	* 81 from 203 to 201
+ 
+* Tue Mar 31 15:47:41 PDT 2015
+	* G1 from 205 to 201
+	* 159 from 201 to 205
+ 
+* Tue Mar 31 15:48:09 PDT 2015
+	* G2 from 203 to 201
+	* 81 from 201 to 203 and back to 201
+ 
+* Tue Mar 31 15:49:56 PDT 2015
+	* G3 from 206 to 201
+	* 81 from 201 to 206 and back to 201
+ 
+* Tue Mar 31 15:53:23 PDT 2015
+	* G5 from 204 to 201
+	* 130 from 204 to 201 
+	* 81 from 201 to 204 and back to 201
+ 
+* Tue Mar 31 15:55:59 PDT 2015
+	* G6 from 202 to 201
+	* 81 from 201 to 202 and back to 201
+ 
+* Tue Mar 31 15:56:26 PDT 2015
+	* G7 from 204 to 201
+	* 81 from 201 to 204 and back to 201
+ 
+* Tue Mar 31 15:58:03 PDT 2015
+	* G8 from 202 to 201
+	* 98 from 202 to 201
+	* 81 from 201 to 202 and back to 201
+ 
+* Tue Mar 31 15:59:33 PDT 2015
+	* G9 from 206 to 201
+	* 81 from 201 to 206 and back to 201
+	* 69 from 206 to 201
+
+* Tue Mar 31 16:01:37 PDT 2015
+	* G11 from 204 to 201
+	* 81 from 201 to 204 and back to 201
+	* 61 from 204 to 201
+ 
+* Tue Mar 31 16:04:02 PDT 2015
+	* G12 from 203 to 201
+	* 81 from 201 to 203 and back to 201
+	* 66 from 203 to 201
+ 
+* Tue Mar 31 16:05:51 PDT 2015
+	* G13 from 205 to 201
+	* 81 from 201 to 205 and back to 201
+	* 159 from 205 to 201
+ 
+* Tue Mar 31 16:07:27 PDT 2015
+	* 81 searched for any outstanding beacons:
+	* 201 to 202 to 204 to 203 to 206 back to 201
+ 
+* End Tue Mar 31 16:11:07 PDT 2015
+
 ## Estimating beacon distance
 http://stackoverflow.com/questions/20416218/understanding-ibeacon-distancing
 
