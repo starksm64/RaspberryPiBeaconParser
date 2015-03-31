@@ -1,12 +1,28 @@
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
+import org.jboss.summit2015.config.BaseConfig;
+import org.jboss.summit2015.config.Utils;
 import org.junit.Test;
 
+import javax.jms.Connection;
+import javax.jms.ConnectionFactory;
+import javax.jms.ExceptionListener;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Queue;
+import javax.jms.QueueBrowser;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+import javax.naming.Context;
+import javax.naming.InitialContext;
 import java.io.File;
 import java.io.FileReader;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Enumeration;
 import java.util.Properties;
 
 /**
@@ -25,22 +41,6 @@ public class TestJsonConfig {
       @Override
       public String toString() {
          return String.format("(name=%s, source=%s)", name, source);
-      }
-   }
-   static class BaseConfig {
-      String brokerURL;
-      String user;
-      String password;
-      ArrayList<Properties> roomProperties;
-
-      @Override
-      public String toString() {
-         return "BaseConfig{" +
-            "brokerURL='" + brokerURL + '\'' +
-            ", user='" + user + '\'' +
-            ", password='" + password + '\'' +
-            ", roomProperties=" + roomProperties +
-            '}';
       }
    }
 
@@ -84,10 +84,10 @@ public class TestJsonConfig {
    @Test
    public void testBaseConfig() {
       BaseConfig config = new BaseConfig();
-      config.brokerURL = "host1:port";
-      config.user = "user1";
-      config.password = "password1";
-      config.roomProperties = new ArrayList<>();
+      config.setBrokerURL("host1:port");
+      config.setUser("user1");
+      config.setPassword("password1");
+      ArrayList<Properties> roomProperties = new ArrayList<>();
 
       Properties props = new Properties();
       props.setProperty("brokerURL", "host1:port");
@@ -97,8 +97,9 @@ public class TestJsonConfig {
       props2.setProperty("brokerURL", "host2:port");
       props2.setProperty("user", "theUser2");
       props2.setProperty("password", "thePassword2");
-      config.roomProperties.add(props);
-      config.roomProperties.add(props2);
+      roomProperties.add(props);
+      roomProperties.add(props2);
+      config.setScannerProperties(roomProperties);
 
       Gson gson = new Gson();
       System.out.println("Using Gson.toJson() on a raw collection: " + gson.toJson(config));
@@ -106,10 +107,72 @@ public class TestJsonConfig {
 
    @Test
    public void testReadConfig() throws Exception {
+
       System.out.printf("pwd=%s\n", new File(".").getAbsolutePath());
       FileReader fr = new FileReader("src/test/resources/config.json");
       Gson gson = new Gson();
       BaseConfig baseConfig = gson.fromJson(fr, BaseConfig.class);
       System.out.printf("baseConfig: %s\n", baseConfig);
+
+      DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E MMM d HH:mm:ss z yyyy");
+      System.out.printf("now=%s\n", formatter.format(ZonedDateTime.now()));
+      ZonedDateTime theTS = ZonedDateTime.parse("Tue Mar 24 05:19:58 UTC 2015", formatter);
+
+      ZonedDateTime timestamp = baseConfig.getTimestampDate();
+      System.out.printf("baseConfig.timestamp %s\n", timestamp.format(formatter));
+      assert theTS.equals(timestamp);
+
+      Properties testProps = Utils.findPropertiesByHardwareAddress(baseConfig);
+      System.out.printf("findPropertiesByHardwareAddress: %s\n", testProps);
+   }
+
+   @Test
+   public void testDownloadConfig() throws Exception {
+      Properties props = new Properties();
+      props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
+      props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
+
+      Context context = new InitialContext(props);
+
+      // Create a Connection
+      ConnectionFactory factory = (ConnectionFactory) context.lookup("myFactoryLookup");
+      Connection connection = factory.createConnection("guest", "guest");
+      System.out.printf("ActiveMQConnectionFactory created connection: %s\n", connection);
+
+      connection.setExceptionListener(new ExceptionListener() {
+         @Override
+         public void onException(JMSException ex) {
+            ex.printStackTrace();
+         }
+      });
+      connection.start();
+
+      Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+      System.out.printf("Created session: %s\n", session);
+
+      int exitCode = 0;
+      Queue destination = session.createQueue("beaconScannerConfig");
+      QueueBrowser browser = session.createBrowser(destination);
+      Enumeration configs = browser.getEnumeration();
+      Properties scannerProperties = null;
+      while(configs.hasMoreElements()) {
+         Message msg = (Message) configs.nextElement();
+         if(msg instanceof TextMessage) {
+            TextMessage tmsg = TextMessage.class.cast(msg);
+            String json = tmsg.getText();
+            Gson gson = new Gson();
+            BaseConfig baseConfig = gson.fromJson(json, BaseConfig.class);
+            System.out.printf("baseConfig: %s\n", baseConfig);
+            // Find matching scanner properties
+            scannerProperties = Utils.findPropertiesByHardwareAddress(baseConfig);
+            if(scannerProperties != null)
+               break;
+         } else {
+            System.err.printf("Skipping non-TextMessage: %s\n", msg);
+         }
+      }
+      browser.close();
+      session.close();
+      connection.close();
    }
 }

@@ -1,21 +1,91 @@
 {
+  "comment": "Beacon scanner configuration for Summit 2015",
+  "version": "1.1",
+  "timestamp": "Tue Mar 24 05:19:58 UTC 2015",
   "brokerURL": "52.10.252.216:5672",
   "user": "admin",
   "password": "admin",
-  "roomProperties": [
+  "useQueues": "false",
+  "destinationName": "beaconEvents",
+  "batchCount": "0",
+  "scannerProperties": [
     {
       "scannerID": "Room201",
+      "macaddr": "b8:27:eb:21:48:75",
+      "hostname": "RaspberryPi2-Room201",
       "heartbeatUUID": "DAF246CEF20111E4B116123B93F75CBA",
       "destinationName": "beaconEvents",
       "useQueues": "true",
-      "batchCount": "100"
+      "batchCount": "100",
+      "beaconID": "R4MQ-7RM41",
+      "beaconNo": "3"
     },
     {
       "scannerID": "Room202",
+      "macaddr": "74:da:38:26:2a:ca",
+      "hostname": "RaspberryPi-Room202",
       "heartbeatUUID": "DAF246CEF20211E4B116123B93F75CBA",
       "destinationName": "beaconEvents",
       "useQueues": "true",
-      "batchCount": "100"
+      "batchCount": "100",
+      "gimbalID": "A9EAF8E2044541F5BF557E0BF193AB28",
+      "beaconID": "32J8-E29SP",
+      "beaconNo": "4"
+    },
+    {
+      "scannerID": "Room203",
+      "macaddr": "74:da:38:26:2a:a0",
+      "hostname": "RaspberryPi2-Room203",
+      "heartbeatUUID": "DAF246CEF20311E4B116123B93F75CBA",
+      "destinationName": "beaconEvents",
+      "useQueues": "true",
+      "gimbalID": "E2B85FC2F51F4DEA89FA4A40E48CF379",
+      "beaconID": "32CR-6BZBH",
+      "beaconNo": "10"
+    },
+    {
+      "scannerID": "Room204",
+      "macaddr": "74:da:38:26:2a:c1",
+      "hostname": "NUC-Room204",
+      "heartbeatUUID": "DAF246CEF20411E4B116123B93F75CBA",
+      "destinationName": "beaconEvents",
+      "useQueues": "true",
+      "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
+      "beaconID": "J9FB-1QRG6",
+      "beaconNo": "11"
+    },
+    {
+      "scannerID": "Room205",
+      "macaddr": "b8:27:eb:cf:e8:e9",
+      "hostname": "pi2-room205",
+      "heartbeatUUID": "DAF246CEF20511E4B116123B93F75CBA",
+      "destinationName": "beaconEvents",
+      "useQueues": "true",
+      "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
+      "beaconID": "J9FB-1QRG6",
+      "beaconNo": "11"
+    },
+    {
+      "scannerID": "Room206",
+      "macaddr": "b8:27:eb:f9:c1:51",
+      "hostname": "pi2-room206",
+      "heartbeatUUID": "DAF246CEF20611E4B116123B93F75CBA",
+      "destinationName": "beaconEvents",
+      "useQueues": "true",
+      "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
+      "beaconID": "J9FB-1QRG6",
+      "beaconNo": "11"
+    },
+    {
+      "scannerID": "Room200",
+      "macaddr": "68:5b:35:94:35:80",
+      "hostname": "iMac-Room200",
+      "heartbeatUUID": "DAF246CEF20411E4B116123B93F75CBA",
+      "destinationName": "beaconEvents",
+      "useQueues": "true",
+      "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
+      "beaconID": "J9FB-1QRG6",
+      "beaconNo": "00"
     }
   ]
 }
