@@ -1,0 +1,12 @@
+# See systemd.service(5) for details
+[Unit]
+Description=Configuration daemon to pull down the scanner configuration on startup
+After=network-online.target
+
+[Service]
+Environment="JAVA_HOME=/root/jdk1.8.0_33"
+ExecStart=@/usr/local/bin/scanner-configd -configDir=/tmp
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

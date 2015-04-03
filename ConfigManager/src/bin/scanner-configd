@@ -1,0 +1,14 @@
+#!/bin/bash
+
+log(){
+    logger -s -t scanner-configd -p daemon.info $*
+}
+#
+JAVA=${JAVA_HOME:-/usr}/bin/java
+log Using JAVA=${JAVA}
+JAVA_VERSION=$((${JAVA} -version) 2>&1)
+log JAVA_VERSION="${JAVA_VERSION}"
+
+${JAVA} $*
+
+exit 0

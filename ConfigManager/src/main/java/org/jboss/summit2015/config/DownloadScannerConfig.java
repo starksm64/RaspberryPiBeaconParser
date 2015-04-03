@@ -32,19 +32,28 @@ import java.util.Properties;
  */
 public class DownloadScannerConfig {
    private static final Logger log = Logger.getLogger(DownloadScannerConfig.class);
+   private String configDir;
 
    public static void main(String[] args) throws Exception {
+   }
+   public void run(String[] args) throws Exception {
       log.infof("Parsing args: %s\n", Arrays.asList(args));
 
       String destinationName = UploadScannerConfig.DEFAULT_CONFIG_QUEUE;
+
       for (int n = 0; n < args.length; n += 2) {
          switch (args[n]) {
             case "-destination":
                destinationName = args[n + 1];
                break;
+            case "-configDir":
+               configDir = args[n + 1];
+               break;
          }
       }
-
+      if(configDir == null) {
+         configDir = System.getenv("HOME");
+      }
       Properties props = new Properties();
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
       props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
@@ -103,9 +112,8 @@ public class DownloadScannerConfig {
       System.exit(exitCode);
    }
 
-   static void writeScannerConfig(BaseConfig baseConfig, Properties scannerProperties) throws IOException {
-      String home = System.getenv("HOME");
-      File configFile = new File(home + File.separatorChar + "scanner.config");
+   void writeScannerConfig(BaseConfig baseConfig, Properties scannerProperties) throws IOException {
+      File configFile = new File(configDir, "scanner.config");
       FileWriter scannerConfig = new FileWriter(configFile);
       // Write all properties
       for(String name : scannerProperties.stringPropertyNames()) {

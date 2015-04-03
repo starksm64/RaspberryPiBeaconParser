@@ -32,9 +32,15 @@ jar {
     archiveName = "${project.archivesBaseName}-service.jar"
 }
 
-
-
-
+//
+task installDaemon(type: Copy) {
+    from "$buildDir/bin" {
+        into /usr/local/bin
+    }
+    from "$buildDir/resources/systemd" {
+        into /etc/systemd/system
+    }
+}
 
 
 
