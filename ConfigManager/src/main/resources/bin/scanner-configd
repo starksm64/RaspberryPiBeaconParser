@@ -9,6 +9,6 @@ log Using JAVA=${JAVA}
 JAVA_VERSION=$((${JAVA} -version) 2>&1)
 log JAVA_VERSION="${JAVA_VERSION}"
 
-${JAVA} $*
+${JAVA} -jar /usr/local/bin/ConfigManager-service.jar $*
 
 exit 0

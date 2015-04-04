@@ -5,8 +5,9 @@ After=network-online.target
 
 [Service]
 Environment="JAVA_HOME=/root/jdk1.8.0_33"
-ExecStart=@/usr/local/bin/scanner-configd -configDir=/tmp
+ExecStart=@/usr/local/bin/scanner-configd scanner-configd -configDir=/tmp
+TimeoutStartSec=30
 Type=oneshot
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=scanner-config.service
