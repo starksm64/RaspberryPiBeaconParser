@@ -4,8 +4,8 @@ version = '1.0'
 
 dependencies {
     compile project(':core')
-    compile 'org.apache.activemq:activemq-all:5.10.1'
-    compile 'org.apache.qpid:qpid-jms-client:0.1.0-SNAPSHOT'
+    compile 'org.apache.activemq:activemq-all:5.11.1'
+    compile 'org.apache.qpid:qpid-jms-client:0.2.0-SNAPSHOT'
     runtime 'log4j:log4j:1.2.17'
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
@@ -33,77 +33,15 @@ jar {
 }
 
 //
-task installDaemon(type: Copy) {
-    from "$buildDir/bin" {
-        into /usr/local/bin
-    }
-    from "$buildDir/resources/systemd" {
-        into /etc/systemd/system
-    }
+task installSystemdConf(dependsOn: [processResources], type: Copy) {
+    from "$buildDir/resources/main/systemd"
+    into '/etc/systemd/system'
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+task installDaemon(dependsOn: [installSystemdConf, assemble], type: Copy) {
+    from "$buildDir/resources/main/bin"
+    from "$buildDir/libs"
+    into '/usr/local/bin'
+}
+installDaemon << {
+    println("did copy, $buildDir/resources/main/bin?")
+}

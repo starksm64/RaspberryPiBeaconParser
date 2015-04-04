@@ -50,7 +50,7 @@ public class UploadScannerConfig {
 
       Properties props = new Properties();
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
-      props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
+      props.setProperty("connectionfactory.myFactoryLookup", "amqp://localhost:5672"/*"amqp://52.10.252.216:5672"*/);
 
       Context context = new InitialContext(props);
 

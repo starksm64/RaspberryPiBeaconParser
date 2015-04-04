@@ -35,12 +35,14 @@ public class DownloadScannerConfig {
    private String configDir;
 
    public static void main(String[] args) throws Exception {
+      DownloadScannerConfig configDownload = new DownloadScannerConfig();
+      configDownload.run(args);
    }
    public void run(String[] args) throws Exception {
       log.infof("Parsing args: %s\n", Arrays.asList(args));
 
       String destinationName = UploadScannerConfig.DEFAULT_CONFIG_QUEUE;
-
+      String brokerURL = "amqp://52.10.252.216:5672";
       for (int n = 0; n < args.length; n += 2) {
          switch (args[n]) {
             case "-destination":
@@ -49,6 +51,9 @@ public class DownloadScannerConfig {
             case "-configDir":
                configDir = args[n + 1];
                break;
+            case "-brokerURL":
+               brokerURL = args[n + 1];
+               break;
          }
       }
       if(configDir == null) {
@@ -56,7 +61,7 @@ public class DownloadScannerConfig {
       }
       Properties props = new Properties();
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
-      props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
+      props.setProperty("connectionfactory.myFactoryLookup", brokerURL);
 
       Context context = new InitialContext(props);
 
