@@ -32,10 +32,13 @@ jar {
     archiveName = "${project.archivesBaseName}-service.jar"
 }
 
-//
+// Tasks to install the scanner-configd and scannerd services
 task installSystemdConf(dependsOn: [processResources], type: Copy) {
     from "$buildDir/resources/main/systemd"
-    into '/etc/systemd/system'
+    into '/usr/lib/systemd/system'
+}
+installSystemdConf << {
+    println("Installed resources/main/systemd to /usr/lib/systemd/system")
 }
 task installDaemon(dependsOn: [installSystemdConf, assemble], type: Copy) {
     from "$buildDir/resources/main/bin"
@@ -43,5 +46,5 @@ task installDaemon(dependsOn: [installSystemdConf, assemble], type: Copy) {
     into '/usr/local/bin'
 }
 installDaemon << {
-    println("did copy, $buildDir/resources/main/bin?")
+    println("Installed resources/main/bin,libs/*.jar to /usr/local/bin")
 }
