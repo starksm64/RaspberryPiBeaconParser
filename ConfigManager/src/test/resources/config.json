@@ -7,7 +7,7 @@
   "password": "admin",
   "useQueues": "false",
   "destinationName": "beaconEvents",
-  "batchCount": "0",
+  "batchCount": "1",
   "scannerProperties": [
     {
       "scannerID": "Room201",
@@ -55,28 +55,6 @@
       "beaconNo": "11"
     },
     {
-      "scannerID": "Room205",
-      "macaddr": "b8:27:eb:cf:e8:e9",
-      "hostname": "pi2-room205",
-      "heartbeatUUID": "DAF246CEF20511E4B116123B93F75CBA",
-      "destinationName": "beaconEvents",
-      "useQueues": "true",
-      "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
-      "beaconID": "J9FB-1QRG6",
-      "beaconNo": "11"
-    },
-    {
-      "scannerID": "Room206",
-      "macaddr": "b8:27:eb:f9:c1:51",
-      "hostname": "pi2-room206",
-      "heartbeatUUID": "DAF246CEF20611E4B116123B93F75CBA",
-      "destinationName": "beaconEvents",
-      "useQueues": "true",
-      "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
-      "beaconID": "J9FB-1QRG6",
-      "beaconNo": "11"
-    },
-    {
       "scannerID": "Room200",
       "macaddr": "68:5b:35:94:35:80",
       "hostname": "iMac-Room200",
@@ -86,18 +64,6 @@
       "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
       "beaconID": "J9FB-1QRG6",
       "beaconNo": "00"
-    },
-    {
-      "scannerID": "LcdScanner",
-      "macaddr": "b8:27:eb:65:fe:67",
-      "hostname": "LcdScanner",
-      "heartbeatUUID": "DAF246CEF20411E4B116123B93F75CBA",
-      "destinationName": "beaconEvents",
-      "useQueues": "true",
-      "gimbalID": "3C72BB1B088D4FAFB84796417AE10349",
-      "beaconID": "J9FB-1QRG6",
-      "beaconNo": "41"
-    },
-
+    }
   ]
 }

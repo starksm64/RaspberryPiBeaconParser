@@ -67,16 +67,11 @@
     <orderEntry type="library" exported="" name="Gradle: org.codehaus.woodstox:stax2-api:3.1.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.rhq.helpers:rhq-pluginAnnotations:3.0.4" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-asm:3.0.6.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-beans:3.0.6.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-context:3.0.6.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-context-support:3.0.6.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-core:3.0.6.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-expression:3.0.6.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-web:3.0.6.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: net.oauth.core:oauth:20100527" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javax.xml.bind:jaxb-api:2.2.7" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.sun.istack:istack-commons-runtime:2.16" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-aop:3.0.6.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.sun.xml.fastinfoset:FastInfoset:1.2.12" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javax.xml.bind:jsr173_api:1.0" level="project" />
@@ -87,5 +82,39 @@
     <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.apache.activemq:activemq-all:5.11.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.apache.qpid:qpid-jms-client:0.2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-beans:3.0.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-context:3.0.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-core:3.0.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-expression:3.0.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-aop:3.0.6.RELEASE" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library name="Gradle: je-6.2.31">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/je-6.2.31.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../je-6.2.31/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="Gradle: JEJConsole">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/JEJConsole.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="Gradle: RepJEJConsole">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/RepJEJConsole.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
