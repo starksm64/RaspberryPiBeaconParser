@@ -1,7 +1,7 @@
 # See systemd.service(5) for details
 [Unit]
 Description=Serivce config file for the beacon scanner
-Requires=scanner-configd.service
+Wants=scanner-configd.service
 After=scanner-configd.service
 
 [Service]
