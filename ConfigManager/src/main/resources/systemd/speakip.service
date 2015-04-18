@@ -1,0 +1,13 @@
+# Speak the wlan0 and eth0 ip addresses at startup
+# Place into /usr/lib/systemd/system and run:
+# systemctl enable speakip.service
+[Unit]
+Description=Speak the wlan0 and eth0 ip addresses at startup
+After=network-online.target
+
+[Service]
+ExecStart=/root/NativeRaspberryPiBeaconParser/bin/speakIP.pl
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
