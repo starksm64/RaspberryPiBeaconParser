@@ -6,7 +6,9 @@ Description=Speak the wlan0 and eth0 ip addresses at startup
 After=network-online.target
 
 [Service]
-ExecStart=/root/NativeRaspberryPiBeaconParser/bin/speakIP.pl
+ExecStart=/root/NativeRaspberryPiBeaconParser/bin/run-speakip.sh start
+ExecStop=/root/NativeRaspberryPiBeaconParser/bin/run-speakip.sh stop
+RemainAfterExit=yes
 Type=forking
 
 [Install]
