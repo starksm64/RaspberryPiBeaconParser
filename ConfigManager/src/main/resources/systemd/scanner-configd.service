@@ -4,6 +4,7 @@ Description=Configuration daemon to pull down the scanner configuration on start
 After=network-online.target
 
 [Service]
+WorkingDirectory=/root/NativeRaspberryPiBeaconParser
 Environment="JAVA_HOME=/root/jdk1.8.0_33"
 ExecStart=@/usr/local/bin/scanner-configd scanner-configd
 TimeoutStartSec=30
