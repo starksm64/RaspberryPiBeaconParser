@@ -26,7 +26,8 @@ public class TestJmsBridge implements ExceptionListener {
    @BeforeClass
    public static void init() throws Exception {
       // Create a Connection
-      ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
+      //ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
+      ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://52.10.252.216:5672");
       connection = connectionFactory.createConnection();
       connection.start();
 

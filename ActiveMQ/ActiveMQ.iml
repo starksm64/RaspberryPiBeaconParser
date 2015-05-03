@@ -14,14 +14,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: org.apache.activemq:activemq-all:5.10.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="module" module-name="core" exported="" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.qpid:qpid-jms-client:0.1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.apache.qpid:proton-j:0.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty-all:4.0.17.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.qpid:qpid-jms-client:0.2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.activemq:activemq-all:5.11.1" level="project" />
   </component>
 </module>

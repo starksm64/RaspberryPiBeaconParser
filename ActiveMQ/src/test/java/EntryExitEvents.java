@@ -34,36 +34,6 @@ public class EntryExitEvents {
    static DateFormat df = new SimpleDateFormat("H:m:s");
    static long DURATION = 15000;
 
-   static class AvgBeacon {
-      Beacon beacon;
-      int count;
-      int rssi;
-      long time;
-
-      AvgBeacon(Beacon beacon) {
-         this.beacon = beacon;
-         this.rssi = beacon.getRssi();
-         this.time = beacon.getTime();
-         this.count = 1;
-      }
-      void update(Beacon beacon) {
-         this.rssi += beacon.getRssi();
-         this.time += beacon.getTime();
-         count ++;
-      }
-      Beacon getAvgBeacon() {
-         beacon.setRssi(getAvgRssi());
-         beacon.setTime(getAvgTime());
-         return beacon;
-      }
-      int getAvgRssi() {
-         return rssi / count;
-      }
-      long getAvgTime() {
-         return time / count;
-      }
-   }
-
    static class FileSupplier implements Supplier<Beacon> {
       long firstBucketStart;
       int bucketCount;
