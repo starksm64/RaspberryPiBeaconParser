@@ -1,0 +1,31 @@
+# Raspberry Pi configuration file
+#
+# Composite video mode:     Disabled (HDMI output)
+# Composite aspect ratio:   Disabled
+# Overscan:                 Disabled (image is full scan area)
+# HDMI resolution:          From EDID
+# HDMI sound:               Enabled
+#
+# Text fields for firstboot module follow:
+#
+
+# Default to always on composite video
+sdtv_mode=0
+sdtv_aspect=1
+overscan_left=15
+overscan_right=15
+overscan_top=15
+overscan_bottom=15
+hdmi_drive=1
+hdmi_ignore_hotplug=1
+
+#Title: HDMI only, no overscan
+#Desc: HDMI output only. Picture may go off the edge of some screens.
+#
+#hdmi_force_hotplug=1
+#disable_overscan=1
+#hdmi_drive=2
+
+start_file=start_x.elf
+fixup_file=fixup_x.elf
+#gpu_mem=128

@@ -11,6 +11,7 @@ import javax.jms.Topic;
 import javax.jms.TopicSubscriber;
 import javax.naming.Context;
 import javax.naming.InitialContext;
+import java.util.HashMap;
 import java.util.Properties;
 
 /**
@@ -21,8 +22,8 @@ public class TestScannerStatus {
    public void testReadScannerHealth() throws Exception {
       Properties props = new Properties();
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
-      //props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
-      props.setProperty("connectionfactory.myFactoryLookup", "amqp://192.168.1.107:5672");
+      props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
+      //props.setProperty("connectionfactory.myFactoryLookup", "amqp://192.168.1.107:5672");
 
       Context context = new InitialContext(props);
 
@@ -43,15 +44,27 @@ public class TestScannerStatus {
       Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
       System.out.printf("Created session: %s\n", session);
 
-      int exitCode = 0;
+      int count = 0;
       Topic destination = session.createTopic("scannerHealth");
       TopicSubscriber monitor = session.createDurableSubscriber(destination, "scannerHealthMonitor");
       Message msg = monitor.receive();
+      HashMap<String,String> beaconCounts = new HashMap<>();
       while(msg != null) {
+         /*
          System.out.printf("Msg(%d)\n", msg.getJMSTimestamp());
          for (StatusProperties sp : StatusProperties.values()) {
             String value = msg.getStringProperty(sp.name());
             System.out.printf("\t%s=%s\n", sp, value);
+         }
+         */
+         String eventsWindow = msg.getStringProperty(StatusProperties.EventsWindow.name());
+         String[] beacons = eventsWindow.split("; ");
+         for(String beacon : beacons) {
+            String[] pair = beacon.split("=");
+            beaconCounts.put(pair[0], pair[1]);
+         }
+         if(count % 10 == 0) {
+            System.out.printf("Unique beacons(%d): %s\n", beaconCounts.size(), beaconCounts.keySet());
          }
          msg = monitor.receive();
       }

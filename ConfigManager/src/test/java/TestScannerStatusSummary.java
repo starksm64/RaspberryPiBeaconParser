@@ -21,6 +21,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
 public class TestScannerStatusSummary implements Runnable {
+   //static final String BROKER_URL = "amqp://192.168.1.107:5672";
+   static final String BROKER_URL = "amqp://52.10.252.216:5672";
    static volatile ConcurrentHashMap<String, ScannerInfo> scannerHeartbeats = new ConcurrentHashMap<>();
    boolean running;
 
@@ -92,8 +94,7 @@ public class TestScannerStatusSummary implements Runnable {
    public void monitor() throws Exception {
       Properties props = new Properties();
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
-      //props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
-      props.setProperty("connectionfactory.myFactoryLookup", "amqp://192.168.1.107:5672");
+      props.setProperty("connectionfactory.myFactoryLookup", BROKER_URL);
 
       Context context = new InitialContext(props);
 

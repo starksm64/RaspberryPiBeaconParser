@@ -1,4 +1,7 @@
 # See systemd.service(5) for details
+# Place into /usr/lib/systemd/system and run:
+# systemctl enable scannerd.service
+
 [Unit]
 Description=Serivce config file for the beacon scanner
 Wants=scanner-configd.service
