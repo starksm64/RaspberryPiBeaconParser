@@ -88,6 +88,19 @@ public class Beacon implements Serializable {
       this.rssi = rssi;
       this.time = time;
    }
+   public Beacon(Beacon orig) {
+      this.scannerID = orig.scannerID;
+      this.uuid = orig.uuid;
+      this.code = orig.code;
+      this.manufacturer = orig.manufacturer;
+      this.major = orig.major;
+      this.minor = orig.minor;
+      this.power = orig.power;
+      this.calibratedPower = orig.calibratedPower;
+      this.rssi = orig.rssi;
+      this.time = orig.time;
+      this.messageType = orig.messageType;
+   }
 
    public String getScannerID() {
       return scannerID;
@@ -176,6 +189,10 @@ public class Beacon implements Serializable {
       this.messageType = messageType;
    }
 
+   public boolean isHeartbeat() {
+      return messageType == MsgType.SCANNER_HEARTBEAT.ordinal();
+   }
+
    public static Beacon fromByteMsg(byte[] msg) throws IOException {
       ByteArrayInputStream bais = new ByteArrayInputStream(msg);
       DataInputStream dis = new DataInputStream(bais);
@@ -243,6 +260,11 @@ public class Beacon implements Serializable {
       String jsonOutput = gson.toJson(this);
       return jsonOutput;
    }
+   public String toJSONSimple() {
+      Gson gson = new GsonBuilder().create();
+      String jsonOutput = gson.toJson(this);
+      return jsonOutput;
+   }
 
    public Map<String, Object> toProperties() {
       HashMap<String, Object> beaconProps = new HashMap<>();
@@ -262,7 +284,7 @@ public class Beacon implements Serializable {
 
    public String toString() {
       Date date = new Date(time);
-      return String.format("{[%s,%d,%d]code=%d,manufacturer=%d,power=%d,rssi=%d,time=%s @ %s}", uuid, major, minor, code, manufacturer, power, rssi, TIME_FORMAT.format(date), scannerID);
+      return String.format("{[%s,%d,%d]code=%d,manufacturer=%d,cpower=%d,rssi=%d,time=%s @ %s}", uuid, major, minor, code, manufacturer, calibratedPower, rssi, TIME_FORMAT.format(date), scannerID);
    }
 
    private static Beacon readVersion4(DataInputStream dis) throws IOException {
