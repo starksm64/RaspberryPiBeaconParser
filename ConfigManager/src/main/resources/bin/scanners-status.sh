@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
+. hosts.conf
+
 # The scanner ssh hosts to sync to, override with SCANNERS env variable
-DEFAULT_SCANNERS="room201 room202 room202x room203 room204 general generalx"
 SCANNERS=${SCANNERS:-${DEFAULT_SCANNERS}}
 echo "SCANNERS=${SCANNERS}"
 
-# First setup the authorized_keys on hosts if -K given
 for host in $SCANNERS;
 do
     echo "+++ Checking host: $host"
