@@ -36,6 +36,9 @@ public class BrowseEvents {
       }
    }
    static void browseEvents(Session session, Queue queue) throws JMSException {
+      browseEvents(session, queue, Long.MAX_VALUE);
+   }
+   static void browseEvents(Session session, Queue queue, long limit) throws JMSException {
       QueueBrowser browser = session.createBrowser(queue);
       Enumeration msgs = browser.getEnumeration();
       int count = 0;
@@ -45,6 +48,8 @@ public class BrowseEvents {
          lastMsg = msg;
          displayProperties(msg);
          count ++;
+         if(count > limit)
+            break;
       }
       System.out.printf("Scanned count: %d, lastMsg=%s\n", count, lastMsg);
       browser.close();
@@ -75,7 +80,6 @@ public class BrowseEvents {
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
       //props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
       props.setProperty("connectionfactory.myFactoryLookup", "amqp://192.168.1.107:5672");
-      props.setProperty("queue.ingressQueue", "beaconEvents");
 
       Context context = new InitialContext(props);
 
@@ -91,16 +95,16 @@ public class BrowseEvents {
       });
       connection.start();
 
-      //Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-      Session session = connection.createSession(true, Session.CLIENT_ACKNOWLEDGE);
+      Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+      //Session session = connection.createSession(true, Session.CLIENT_ACKNOWLEDGE);
       System.out.printf("Created session: %s\n", session);
-      System.out.printf("drainEvents\n");
 
       //Destination queue  = session.createQueue("ingress");
       //Queue queue  = session.createQueue("scannerHealth");
-      Queue queue  = session.createQueue("beaconEvents");
+      //Queue queue  = session.createQueue("beaconEvents");
+      Queue queue  = session.createQueue("rawHeartbeatEvents");
       //drainEvents(session, queue);
-      browseEvents(session, queue);
+      browseEvents(session, queue, 10);
       session.close();
       connection.close();
    }

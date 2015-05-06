@@ -12,6 +12,16 @@ public class Utils {
       Number number = (Number) msg.getObjectProperty(name);
       return number.intValue();
    }
+
+   /**
+    * Conver the msg into a Beacon based on the expected msg properties and types. This
+    * version uses the getIntProperty(Message,String) method to deal with int/long property
+    * conversion.
+    *
+    * @param msg
+    * @return
+    * @throws Exception
+    */
    public static Beacon extractBeaconLax(Message msg) throws Exception {
       Beacon beacon = new Beacon();
       beacon.setScannerID(msg.getStringProperty("scannerID"));
@@ -27,6 +37,13 @@ public class Utils {
       beacon.setMessageType(getIntProperty(msg, "messageType"));
       return beacon;
    }
+
+   /**
+    * Conver the msg into a Beacon based on the expected msg properties and types
+    * @param msg
+    * @return
+    * @throws Exception
+    */
    public static Beacon extractBeacon(Message msg) throws Exception {
       Beacon beacon = new Beacon();
       beacon.setScannerID(msg.getStringProperty("scannerID"));
@@ -42,6 +59,14 @@ public class Utils {
       beacon.setMessageType(msg.getIntProperty("messageType"));
       return beacon;
    }
+
+   /**
+    * Create a message from a beacon by populating the message properties
+    *
+    * @param message
+    * @param beacon
+    * @throws JMSException
+    */
    public static void populateMessage(Message message, Beacon beacon) throws JMSException {
       message.setStringProperty("uuid", beacon.getUUID());
       message.setStringProperty("scannerID", beacon.getScannerID());
@@ -55,6 +80,13 @@ public class Utils {
       message.setLongProperty("time", beacon.getTime());
       message.setIntProperty("messageType", beacon.getMessageType());
    }
+
+   /**
+    * Generate a distance estimate from a beacon's calibrated power and rssi reading
+    * @param calibratedPower
+    * @param rssi
+    * @return
+    */
    public static double estimateDistance(int calibratedPower, double rssi) {
      if (rssi == 0) {
        return -1.0; // if we cannot determine accuracy, return -1.

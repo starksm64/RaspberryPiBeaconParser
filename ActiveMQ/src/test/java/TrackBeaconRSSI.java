@@ -16,19 +16,18 @@ public class TrackBeaconRSSI {
    private static final String PASSWORD = "guest";
 
    static void trackBeaconOnDestination(Session session, Destination destination) throws Exception  {
-      MessageConsumer consumer = session.createConsumer(destination, "minor = 81");
+      MessageConsumer consumer = session.createConsumer(destination);
       Message msg = consumer.receive();
       while(msg != null) {
          int minorID = msg.getIntProperty("minor");
-         if(minorID == 81) {
-            int rssi = msg.getIntProperty("rssi");
-            System.out.printf("%s\n", rssi);
-         }
+         int rssi = msg.getIntProperty("rssi");
+         String uuid = msg.getStringProperty("uuid");
+         System.out.printf("%d, %d, %s\n", minorID, rssi, uuid);
          msg = consumer.receive();
       }
    }
    public static void main(String[] args) throws Exception {
-      String destinationName = "beaconEvents";
+      String destinationName = "rawHeartbeatEvents";
       // Local connection
       Properties props = new Properties();
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
@@ -40,7 +39,7 @@ public class TrackBeaconRSSI {
       connection.start();
       Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
       System.out.printf("Connected to broker\n");
-      Destination destination = session.createTopic(destinationName);
+      Destination destination = session.createQueue(destinationName);
       trackBeaconOnDestination(session, destination);
    }
 }
