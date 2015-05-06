@@ -3,14 +3,19 @@
 # To just sync git repos:
 #  ./scanners-git.sh
 # To sync and build the native scanner
-#  ./scanners-git.sh -B NativeScannerBlueZ
+#  ./scanners-git.sh -D
+# To sync and build some-target
+#  ./scanners-git.sh -B some-target
 
-# Check for the build(-B) option
+# Check for the build(-B) or default target(D) option
 BUILD_TARGET=""
-while getopts "B:" opt; do
+while getopts "B:D" opt; do
   case $opt in
-    K)
+    B)
       BUILD_TARGET=$OPTARG
+      ;;
+    D)
+      BUILD_TARGET="NativeScannerBlueZ"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
