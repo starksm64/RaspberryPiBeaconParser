@@ -13,17 +13,28 @@ while getopts "K:" opt; do
   esac
 done
 
+# include the DEFAULT_SCANNERS
+. bin/hosts.conf
+
+# The scanner ssh hosts to sync to, override with SCANNERS env variable
+SCANNERS=${SCANNERS:-${DEFAULT_SCANNERS}}
+echo "SCANNERS=${SCANNERS}"
+
 function copy() {
     for host in $SCANNERS;
     do
         rsync -rz -e ssh $1 root@${host}:$2
     done
 }
-
-# The scanner ssh hosts to sync to, override with SCANNERS env variable
-DEFAULT_SCANNERS="room201 room202 room202x room203 room204 general generalx"
-SCANNERS=${SCANNERS:-${DEFAULT_SCANNERS}}
-echo "SCANNERS=${SCANNERS}"
+function copy_systemd() {
+    for host in $SCANNERS;
+    do
+        rsync -rz -e ssh $1 root@${host}:$2
+        if [ $? -eq 0 ]; then
+            ssh root@${host} systemctl daemon-reload
+        fi
+    done
+}
 
 # First setup the authorized_keys on hosts if -K given
 if [ -n "${SSH_KEY}" ]; then
@@ -34,5 +45,6 @@ if [ -n "${SSH_KEY}" ]; then
 fi
 
 # This needs a shared ssh private key in order to avoid having to enter password for each host
-copy systemd/ /usr/lib/systemd/system
+copy_systemd systemd/ /usr/lib/systemd/system
 copy boot/ /boot
+
