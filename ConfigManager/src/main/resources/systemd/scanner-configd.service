@@ -2,6 +2,7 @@
 [Unit]
 Description=Configuration daemon to pull down the scanner configuration on startup
 After=network-online.target
+After=time-sync.target
 
 [Service]
 WorkingDirectory=/root/NativeRaspberryPiBeaconParser

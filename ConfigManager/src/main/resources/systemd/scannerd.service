@@ -6,6 +6,8 @@
 Description=Serivce config file for the beacon scanner
 Wants=scanner-configd.service
 After=scanner-configd.service
+Wants=chrony-wait.service
+After=chrony-wait.service
 
 [Service]
 WorkingDirectory=/root/NativeRaspberryPiBeaconParser
