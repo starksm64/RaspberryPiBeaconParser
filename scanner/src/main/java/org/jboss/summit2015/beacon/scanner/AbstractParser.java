@@ -1,4 +1,4 @@
-package org.jboss.summit2015.beacon;
+package org.jboss.summit2015.beacon.scanner;
 
 /*
  * Licensed under the Apache License, Version 2.0 (the "License");

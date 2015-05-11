@@ -16,7 +16,7 @@ package org.jboss.summit2015.beacon.ssh;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 import com.beust.jcommander.ParametersDelegate;
-import org.jboss.summit2015.beacon.ParseCommand;
+import org.jboss.summit2015.beacon.scanner.ParseCommand;
 
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.

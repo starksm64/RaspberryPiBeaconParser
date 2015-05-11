@@ -1,4 +1,4 @@
-import org.jboss.summit2015.beacon.HCIDumpParser;
+import org.jboss.summit2015.beacon.scanner.HCIDumpParser;
 import org.junit.Test;
 
 /**

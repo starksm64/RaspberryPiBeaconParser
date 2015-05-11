@@ -1,4 +1,4 @@
-package org.jboss.summit2015.beacon;
+package org.jboss.summit2015.beacon.scanner;
 /*
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@ package org.jboss.summit2015.beacon;
  */
 
 import org.jboss.logging.Logger;
+import org.jboss.summit2015.beacon.Beacon;
 
 import java.io.BufferedReader;
 import java.io.IOException;

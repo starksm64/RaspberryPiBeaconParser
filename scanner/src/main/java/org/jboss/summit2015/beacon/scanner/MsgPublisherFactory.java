@@ -1,4 +1,4 @@
-package org.jboss.summit2015.beacon;/*
+package org.jboss.summit2015.beacon.scanner;/*
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -12,7 +12,7 @@ package org.jboss.summit2015.beacon;/*
  * limitations under the License.
  */
 
-import org.jboss.summit2015.beacon.MsgPublisher.MsgPublisherType;
+import org.jboss.summit2015.beacon.scanner.MsgPublisher.MsgPublisherType;
 
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.

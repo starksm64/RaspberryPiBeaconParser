@@ -19,9 +19,9 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.UserInfo;
 import org.jboss.logging.Logger;
-import org.jboss.summit2015.beacon.AbstractParser;
+import org.jboss.summit2015.beacon.scanner.AbstractParser;
 import org.jboss.summit2015.beacon.Beacon;
-import org.jboss.summit2015.beacon.ParserLogic;
+import org.jboss.summit2015.beacon.scanner.ParserLogic;
 
 import java.io.IOException;
 import java.io.InputStream;

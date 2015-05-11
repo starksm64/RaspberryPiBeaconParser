@@ -1,5 +1,6 @@
 import org.jboss.summit2015.beacon.Beacon;
-import org.jboss.summit2015.beacon.HCIDumpParser;
+import org.jboss.summit2015.beacon.scanner.HCIDumpParser;
+import org.jboss.summit2015.beacon.scanner.CommandArgs;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -110,7 +111,7 @@ public class TstHCIDumpParser {
    /**
     * Test client to read the hcidump stream from the HCIDumpParser running in stream mode. Since this loops
     * until no data is returned, the server should be running with a rawDumpFile specified.
-    * @see org.jboss.summit2015.beacon.CommandArgs#rawDumpFile
+    * @see CommandArgs#rawDumpFile
     * @throws Exception
     */
    @Test
