@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+<module external.linked.project.id=":ReplayService" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="RaspberryPiBeaconParser" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="module" module-name="core" exported="" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.activemq:activemq-all:5.10.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.qpid:qpid-jms-client:0.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.qpid:proton-j:0.8" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: javax:javaee-api:7.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.slf4j:slf4j-api:1.7.10" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: io.netty:netty-all:4.0.17.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.sun.mail:javax.mail:1.5.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>

@@ -13,11 +13,9 @@ package org.jboss.summit2015.replay;
  * limitations under the License.
  */
 
-import com.google.gson.JsonObject;
-
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
 public interface ReplayCompleteCallback {
-   public void handle(JsonObject event);
+   public void complete(ReplayManager manager);
 }
