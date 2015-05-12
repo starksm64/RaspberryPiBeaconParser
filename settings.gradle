@@ -11,4 +11,5 @@ include 'core'
 include 'ConfigManager'
 
 include 'ReplayService'
+include 'scanner'
 
