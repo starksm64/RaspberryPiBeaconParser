@@ -39,7 +39,7 @@ public class MainApp implements ReplayCompleteCallback {
 
    void run() {
       String dataSetName = "SevenScannersRun-2015-05-11.json.gz";
-      float speedup = 3;
+      float speedup = 0.2f;
       int limitCount = -1;
 
       ReplayManager replayManager = new ReplayManager();
