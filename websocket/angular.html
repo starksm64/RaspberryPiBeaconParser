@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html ng-app="statusHealth">
+<head>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+        .hide-bullets {
+            list-style:none;
+            margin-left: -40px;
+            margin-top:20px;
+        }
+
+        .thumbnail {
+            padding: 0;
+        }
+
+        /*
+        .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+            width: 100%;
+        }
+        */
+        #status-bounding-box {
+            border-style: inset;
+            border-color: lightgrey;
+        }
+        #carousel-bounding-box {
+            border-style: outset;
+            border-color: lightgrey;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+              //Handles the carousel thumbnails
+              $('[id^=carousel-selector-]').click(function () {
+              var id_selector = $(this).attr("id");
+              try {
+                  var id = /-(\d+)$/.exec(id_selector)[1];
+                  console.log(id_selector, id);
+                  jQuery('#myCarousel').carousel(parseInt(id));
+              } catch (e) {
+                  console.log('Regex failed!', e);
+              }
+          });
+      });
+    </script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="stomp.js"></script>
+    <script type="text/javascript" src="angular-stomp.js"></script>
+    <script type="text/javascript" src="scannerHealth.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-controller="StatusController as status">
+<div class="container">
+    <div id="main_area">
+        <!-- Slider -->
+        <div class="row" id="status-bounding-box">
+            <div class="col-sm-6" id="slider-thumbs">
+                <!-- Bottom switcher of slider -->
+                <ul class="hide-bullets">
+                    <li class="col-sm-3" ng-repeat="heartbeat in status.scannerStatus">
+                        <div ng-class="heartbeat.getAlert() ? 'alert-danger' : 'default'">
+                        <span ng-class="heartbeat.getAlert() ? 'glyphicon glyphicon-alert' : 'glyphicon glyphicon-ok'"></span>
+                        {{heartbeat.scannerID}}
+                        <a class="thumbnail" ng-click="status.setScanner($index)" id="carousel-selector-{{$index}}" >
+                           <img src="images/{{::heartbeat.getProperty('SystemType')}}.png" height="90%" width="90%">
+                        </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-xs-12" id="slider">
+                    <!-- Top part of the slider -->
+                    <div class="row">
+                        <div class="col-sm-12" id="carousel-bounding-box">
+                            <div class="carousel slide" id="myCarousel" data-interval="5000" data-ride="carousel">
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div ng-class="status.getScanner() == $index ? 'active item' : 'item'" data-slide-number="{{$index}}" ng-repeat="heartbeat in status.scannerStatus">
+                                        <h3>Status for: {{heartbeat.scannerID}}</h3>
+                                        <dl>
+                                            <dt>SystemTime</dt><dd>{{heartbeat.getProperty('SystemTime')}}</dd>
+                                            <dt>SinceLastStatus</dt><dd><pre>{{heartbeat.getSinceLastStatus()}}</pre></dd>
+                                            <dt>Uptime</dt><dd><pre>{{heartbeat.getProperty('Uptime')}}</pre></dd>
+                                            <dt>LoadAverage</dt><dd><pre>{{heartbeat.getProperty('LoadAverage')}}</pre></dd>
+                                            <dt>Memory</dt><dd><pre>Total:{{heartbeat.getProperty('MemTotal')}} Free:{{heartbeat.getProperty('MemFree')}}</pre></dd>
+                                            <dt>HostIPAddress</dt><dd><pre>{{heartbeat.getProperty('HostIPAddress')}}</pre></dd>
+                                            <dt>HeartbeatCount</dt><dd><pre>{{heartbeat.getProperty('HeartbeatCount')}}</pre></dd>
+                                            <dt>HeartbeatRSSI</dt><dd><pre>{{heartbeat.getProperty('HeartbeatRSSI')}}</pre></dd>
+                                            <dt>RawEventCount</dt><dd><pre>{{heartbeat.getProperty('RawEventCount')}}</pre></dd>
+                                            <dt>PublishEventCount</dt><dd><pre>{{heartbeat.getProperty('PublishEventCount')}}</pre></dd>
+                                        </dl>
+                                    </div>
+
+                                </div>
+                                <!-- Carousel nav -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Slider-->
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

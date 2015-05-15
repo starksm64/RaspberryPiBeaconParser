@@ -1,8 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'application'
 
 group = 'GimbalManager'
 description = 'Integration with the GimbalManager to simplify setup of beacons'
+version = '1.0'
+mainClassName = "RegisterBeaconsFX"
 
 ext {
     arquillianVersion = "1.1.5.Final"
@@ -20,3 +23,27 @@ dependencies {
     compile 'org.jboss.logmanager:jboss-logmanager:1.5.4.Final'
     testCompile 'junit:junit:4.11'
 }
+
+/*
+jar {
+    dependsOn configurations.runtime
+
+    manifest {
+           attributes 'Implementation-Title': 'JavaFX RegisterBeacons',
+                   	'Implementation-Version': version,
+                   'Main-Class': 'RegisterBeaconsFX'
+   	}
+
+    from {
+        (configurations.runtime).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+
+    archiveName = "${project.archivesBaseName}-service.jar"
+}
+*/

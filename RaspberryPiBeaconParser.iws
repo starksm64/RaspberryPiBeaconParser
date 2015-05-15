@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GimbalManager:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cf6509-7d92-4853-bef3-907c4a2b5fb9" name="Default" comment="">
+    <list default="true" id="05cf6509-7d92-4853-bef3-907c4a2b5fb9" name="Default" comment="Set the WorkingDirectory">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/IntelNUC.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/IntelNUC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/Pi2B.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/Pi2B.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/PiB+.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/PiB+.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/PiB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/PiB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/alert.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/alertclear.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/images/default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/Buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GimbalManager/src/main/resources/META-INF/MANIFEST.mf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/activemq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/angular-stomp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/angular.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/angularCarousel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/audio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/bootstraptest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/carouseltest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/chat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/gridtest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/net.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/scannerHealth.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/stomp-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/stomp-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/stomp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/stompbundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/stompmod.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/stream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/tcp-socket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/testSocketIO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/websocket.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/ws.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.iml" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.ipr" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaspberryPiBeaconParser.iws" afterPath="$PROJECT_DIR$/RaspberryPiBeaconParser.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GimbalManager/build.gradle" afterPath="$PROJECT_DIR$/GimbalManager/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/carousel.js" afterPath="$PROJECT_DIR$/websocket/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/tests/testScannerHealth.ts" afterPath="$PROJECT_DIR$/websocket/tests/testScannerHealth.ts" />
     </list>
     <ignored path="RaspberryPiBeaconParser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +73,12 @@
     <ignored path="$PROJECT_DIR$/core/build/" />
     <ignored path="$PROJECT_DIR$/ConfigManager/.gradle/" />
     <ignored path="$PROJECT_DIR$/ConfigManager/build/" />
+    <ignored path="$PROJECT_DIR$/ReplayService/.gradle/" />
+    <ignored path="$PROJECT_DIR$/ReplayService/build/" />
+    <ignored path="$PROJECT_DIR$/gozirra-0.4.1/.gradle/" />
+    <ignored path="$PROJECT_DIR$/gozirra-0.4.1/build/" />
+    <ignored path="$PROJECT_DIR$/scanner/.gradle/" />
+    <ignored path="$PROJECT_DIR$/scanner/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +94,77 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/ConfigManager">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/core">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/scanner">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="RaspberryPiBeaconParser" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":scanner" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="RaspberryPiBeaconParser" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":scanner" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="RaspberryPiBeaconParser" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":scanner" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="build" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
             <PATH>
               <PATH_ELEMENT>
                 <option name="myItemId" value="" />
@@ -61,6 +183,50 @@
               <PATH_ELEMENT>
                 <option name="myItemId" value="RaspberryPiBeaconParser" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":core" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="RaspberryPiBeaconParser" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":core" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="RaspberryPiBeaconParser" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":core" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="build" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
               </PATH_ELEMENT>
             </PATH>
           </tree_state>
@@ -73,64 +239,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scannersConfig.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConfigManager/src/main/resources/scannersConfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConvertDate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/ConvertDate.java">
+      <file leaf-file-name="RegisterBeaconsFX.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/RegisterBeaconsFX.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#7038#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GimbalManager/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8985314">
+              <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCloud.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestCloud.java">
+      <file leaf-file-name="MANIFEST.mf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/resources/META-INF/MANIFEST.mf">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+              <caret line="23" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestJmsBridge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ConfigManager/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="48" selection-start-line="84" selection-start-column="48" selection-end-line="84" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7447217">
-              <caret line="381" column="16" selection-start-line="381" selection-start-column="16" selection-end-line="381" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConfigManager/src/test/resources/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -141,6 +287,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Html5" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -241,6 +393,10 @@
                 <option name="path" value="$PROJECT_DIR$/GimbalManager" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
+                <option name="name" value=":scanner" />
+                <option name="path" value="$PROJECT_DIR$/scanner" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
                 <option name="name" value=":gui" />
                 <option name="path" value="$PROJECT_DIR$/gui" />
               </ExternalProjectPojo>
@@ -257,6 +413,10 @@
                 <option name="path" value="$PROJECT_DIR$/ConfigManager" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
+                <option name="name" value=":ReplayService" />
+                <option name="path" value="$PROJECT_DIR$/ReplayService" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
                 <option name="name" value=":proton" />
                 <option name="path" value="$PROJECT_DIR$/proton" />
               </ExternalProjectPojo>
@@ -271,52 +431,9 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
+                <option name="description" value="Assembles the outputs of this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="install" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="pushDataToBroker" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="runStreamServer" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jar" />
+                <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
@@ -324,18 +441,9 @@
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="full_jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
@@ -343,18 +451,19 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="copy_jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles Java source 'main:java'." />
@@ -362,9 +471,68 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
+                <option name="description" value="Compiles Java source 'test:java'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copy_jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="full_jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="runStreamServer" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="pushDataToBroker" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDaemon" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installSystemdConf" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -513,6 +681,14 @@
                 <option name="name" value="install" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ConfigManager" />
+                <option name="name" value="installDaemon" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ConfigManager" />
+                <option name="name" value="installSystemdConf" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ConfigManager" />
                 <option name="name" value="jar" />
@@ -626,6 +802,92 @@
               <ExternalTaskPojo>
                 <option name="description" value="Assembles classes 'test'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/GimbalManager" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ReplayService">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ReplayService" />
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
             </list>
@@ -889,11 +1151,97 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/scanner">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/scanner" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="11401710319000" />
+        <entry key="$PROJECT_DIR$" value="14281754001000" />
         <entry key="$PROJECT_DIR$/../../../Trading/SITrading" value="5670673329000" />
       </map>
     </option>
@@ -916,7 +1264,7 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/2ef3283ea459dfac2707ed3ca50c03792823c7d1/activemq-all-5.10.1.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.11.1/activemq-all-5.11.1.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/ActiveMQ" />
@@ -928,8 +1276,8 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/2ef3283ea459dfac2707ed3ca50c03792823c7d1/activemq-all-5.10.1.jar" />
-                            <option value="$MAVEN_REPOSITORY$/org/apache/qpid/qpid-jms-client/0.1.0-SNAPSHOT/qpid-jms-client-0.1.0-SNAPSHOT.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.11.1/activemq-all-5.11.1.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/qpid/qpid-jms-client/0.2.0-SNAPSHOT/qpid-jms-client-0.2.0-SNAPSHOT.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/jaxrs-api/3.0.10.Final/a4b66b0d60a81d3e69a933ce652a2cb49532967c/jaxrs-api-3.0.10.Final.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.10.Final/7b8a7b195dbb0a8be85b6b19443a4d3da80775c8/resteasy-jaxrs-3.0.10.Final.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxb-provider/3.0.10.Final/4e3f931424fa3214d1d5e68ca26a184aa6342b61/resteasy-jaxb-provider-3.0.10.Final.jar" />
@@ -997,6 +1345,9 @@
                             <option value="$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.xml.fastinfoset/FastInfoset/1.2.12/e8c1c096162a146c2d84135c5036edf54c1b1d38/FastInfoset-1.2.12.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jsr173_api/1.0/c79b8431c3104315c0aeaed7bf23d0ab0edbaa09/jsr173_api-1.0.jar" />
+                            <option value="$MODULE_DIR$/libs/je-6.2.31.jar" />
+                            <option value="$MODULE_DIR$/libs/JEJConsole.jar" />
+                            <option value="$MODULE_DIR$/libs/RepJEJConsole.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/ConfigManager" />
@@ -1079,45 +1430,23 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
-                  <entry key="$PROJECT_DIR$/Proton">
+                  <entry key="$PROJECT_DIR$/ReplayService">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/41aac9e3534aa330c6086ce9bf2f51358c237755/mqtt-client-0.4.0-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/a2fa636c76e804854661f1607fdd8492d89b8e7a/jboss-logging-3.1.4.GA-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/5d58661526aeec56496f22174074ba9261d1f3ba/jsch-0.1.51-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.10.1/activemq-all-5.10.1.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/qpid/qpid-jms-client/0.1.0-SNAPSHOT/qpid-jms-client-0.1.0-SNAPSHOT.jar" />
+                            <option value="$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/qpid/proton-j/0.8/proton-j-0.8.jar" />
+                            <option value="$MAVEN_REPOSITORY$/io/netty/netty-all/4.0.17.Final/netty-all-4.0.17.Final.jar" />
+                            <option value="$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.5.0/javax.mail-1.5.0.jar" />
+                            <option value="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" />
                           </list>
                         </option>
-                        <option name="path" value="$PROJECT_DIR$/Proton" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/cms">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="entries">
-                          <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/41aac9e3534aa330c6086ce9bf2f51358c237755/mqtt-client-0.4.0-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/a2fa636c76e804854661f1607fdd8492d89b8e7a/jboss-logging-3.1.4.GA-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/a6532e2134b1ef78df4a77c0fce4d35d350fcca8/jboss-logmanager-1.5.4.Final-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/5d58661526aeec56496f22174074ba9261d1f3ba/jsch-0.1.51-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
-                          </list>
-                        </option>
-                        <option name="path" value="$PROJECT_DIR$/cms" />
+                        <option name="path" value="$PROJECT_DIR$/ReplayService" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -1126,8 +1455,6 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
@@ -1162,9 +1489,26 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+                  <entry key="$PROJECT_DIR$/scanner">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/mqtt-client/0.4.0/70efcaca7d1c70ad5dc716a124f2861f07fe27bf/mqtt-client-0.4.0.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.5.4.Final/8d2fec06f69f2b16342e061936667b5eef3423b8/jboss-logmanager-1.5.4.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.51/6ceee2696b07cc320d0e1aaea82c7b40768aca0f/jsch-0.1.51.jar" />
+                            <option value="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/scanner" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
                 </map>
               </option>
-              <option name="name" value="RaspberryPiBeaconParser" />
+              <option name="name" value="proton" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/announce" />
@@ -1270,32 +1614,32 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ConfigManager/src/test/java/UploadScannerConfig.java" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/main/java/config/BaseConfig.java" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/main/java/org/jboss/summit2015/config/UploadScannerConfig.java" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/main/java/org/jboss/summit2015/config/Utils.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/core/build.gradle" />
-        <option value="$PROJECT_DIR$/ConfigManager/build.gradle" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/test/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/main/java/org/jboss/summit2015/config/DownloadScannerConfig.java" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/test/java/TestJsonConfig.java" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/main/java/org/jboss/summit2015/config/BaseConfig.java" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/test/resources/config.json" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/TestAscii.java" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/HexToAscii.java" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/test/resources/beaconids.txt" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/RegisterBeacons.java" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/RegisterBeacons.java" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/main/resources/beaconids.txt" />
-        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/TestGimalManager.java" />
+        <option value="$PROJECT_DIR$/ReplayService/src/main/java/org/jboss/summit2015/replay/MsgPublisher.java" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/TrackBeacon.java" />
+        <option value="$PROJECT_DIR$/ReplayService/src/main/java/org/jboss/summit2015/replay/ReplayManager.java" />
+        <option value="$PROJECT_DIR$/ReplayService/src/main/java/org/jboss/summit2015/replay/MainApp.java" />
+        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/PlotBatteryRSSI.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/gimbal/RegisterBeaconsFX.java" />
+        <option value="$PROJECT_DIR$/scanner/src/main/java/org/jboss/summit2015/beacon/scanner/RegisterBeaconsFX.java" />
+        <option value="$PROJECT_DIR$/scanner/src/main/java/RegisterBeaconsFX.java" />
         <option value="$PROJECT_DIR$/GimbalManager/src/main/java/gimbal/Beacon.java" />
-        <option value="$PROJECT_DIR$/ConfigManager/src/main/resources/scannersConfig.json" />
-        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/ConvertDate.java" />
-        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java" />
-        <option value="$PROJECT_DIR$/ActiveMQ/src/test/java/TestCloud.java" />
-        <option value="$PROJECT_DIR$/data/README.md" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/test/java/TestGimalManager.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/view/RootController.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/model/BeaconModel.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/resources/view/BeaconsTable.fxml" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/resources/view/manager.css" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/view/IBeaconInfo.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/view/TextUtils.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/view/NewBeacon.fxml" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/IGimbalManager.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/GimbalManagerProxy.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/view/NewBeaconController.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/ResteasyGimbalManager.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/view/BeaconsViewController.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/RegisterBeaconsFX.java" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/GimbalManager/src/main/resources/META-INF/MANIFEST.mf" />
+        <option value="$PROJECT_DIR$/GimbalManager/build.gradle" />
       </list>
     </option>
   </component>
@@ -1321,10 +1665,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="855" />
+    <option name="x" value="867" />
     <option name="y" value="22" />
     <option name="width" value="1679" />
-    <option name="height" value="986" />
+    <option name="height" value="1277" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1351,6 +1695,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1369,9 +1714,122 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GimbalManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GimbalManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GimbalManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GimbalManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaspberryPiBeaconParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GimbalManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -1384,7 +1842,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
@@ -1397,80 +1855,53 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ActiveMQ/src/test/html/simple.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GimbalManager/src/main/resources" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-  </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings />
-    </option>
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="Node.Profiling.Tick.Path" value="" />
+    <property name="Node.Profiling.V8Profiler.Path" value="" />
+    <property name="Node.Profiling.Gnuplot.Path" value="" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="JavaScriptLanguageLevel" value="ES5" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../OpenShift/replayservice/src/main/java/org/jboss/summit2015/replay/ReplayManager.java" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.jboss.summit2015.beacon" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/websocket" />
+      <recent name="$PROJECT_DIR$/websocket/js" />
       <recent name="$PROJECT_DIR$/ConfigManager/src/main/resources" />
       <recent name="$PROJECT_DIR$/GimbalManager/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.jboss.summit2015.beacon" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/GimbalManager/src/main/resources" />
-      <recent name="$PROJECT_DIR$/GimbalManager/src/test/resources" />
-      <recent name="$PROJECT_DIR$/core/src" />
-      <recent name="$PROJECT_DIR$/core" />
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/GimbalManager/src/main/resources/view" />
+      <recent name="$PROJECT_DIR$/scanner/src" />
+      <recent name="$PROJECT_DIR$/scanner/src/main/resources" />
+      <recent name="$PROJECT_DIR$/ScannerStatus/public/javascripts/libs" />
+      <recent name="$PROJECT_DIR$/ScannerStatus" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+      <recent name="org.jboss.summit2015.beacon.scanner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCloud.dumpQueueToJSON">
-    <configuration default="false" name="TestGimalManager.testGetBeacons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestGimalManager.testListDuplicateMinorIDs">
+    <configuration default="false" name="RegisterBeaconsFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="GimbalManager" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
-      <option name="METHOD_NAME" value="testGetBeacons" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestGimalManager.testGetEmptyBeacons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="GimbalManager" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
-      <option name="METHOD_NAME" value="testGetEmptyBeacons" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConvertDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ConvertDate" />
+      <option name="MAIN_CLASS_NAME" value="RegisterBeaconsFX" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1479,18 +1910,18 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ActiveMQ" />
+      <module name="GimbalManager" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TestCloud.dumpQueueToJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestGimalManager.testGetBeaconJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ActiveMQ" />
+      <module name="GimbalManager" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCloud" />
-      <option name="METHOD_NAME" value="dumpQueueToJSON" />
+      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
+      <option name="METHOD_NAME" value="testGetBeaconJSON" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1504,14 +1935,56 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestJmsBridge.testBrowseStatusQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestGimalManager.testGetBeaconConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ActiveMQ" />
+      <module name="GimbalManager" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestJmsBridge" />
-      <option name="METHOD_NAME" value="testBrowseStatusQueue" />
+      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
+      <option name="METHOD_NAME" value="testGetBeaconConfig" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestGimalManager.testGetConfigurationJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GimbalManager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
+      <option name="METHOD_NAME" value="testGetConfigurationJSON" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestGimalManager.testListDuplicateMinorIDs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GimbalManager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGimalManager" />
+      <option name="METHOD_NAME" value="testListDuplicateMinorIDs" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1759,6 +2232,20 @@
       <setting name="debug" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="SERVER" value="" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="" />
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="JBoss" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1786,6 +2273,9 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
@@ -1883,6 +2373,12 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1995,35 +2491,99 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="HCIDumpParser-Nuc" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.jboss.summit2015.beacon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.jboss.summit2015.beacon.HCIDumpParser" />
-      <option name="VM_PARAMETERS" value="-Djava.util.logging.manager=org.jboss.logmanager.LogManager" />
-      <option name="PROGRAM_PARAMETERS" value="-scannerID PiScanner stream-ssh -host 192.168.1.24 -sshUsername root -sshPassword root0FPi" />
+    <configuration default="false" name="LoopbackTest(recv)" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="LoopbackTest" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="recv" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="RaspberryPiBeaconParser" />
+      <module name="ActiveMQ" />
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
       <method />
+    </configuration>
+    <configuration default="false" name="ReplayServiceDeployment" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 8.2.0.Final" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ReplayService/" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="ReplayService:Web">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="JBoss" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63726" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ReplayService:Web" />
+        </option>
+      </method>
     </configuration>
     <configuration default="false" name="simpletest" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/RaspberryPiBeaconParser/ActiveMQ/src/test/html/simple.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="websocket" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/RaspberryPiBeaconParser/websocket/index.html">
       <method />
     </configuration>
     <configuration default="false" name="RaspberryPi" type="Remote" factoryName="Remote">
@@ -2040,28 +2600,35 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Application.HCIDumpParser-Pi" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HCIDumpParser-Nuc" />
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="Application.LoopbackTest(recv)" />
+      <item index="1" class="java.lang.String" itemvalue="JBoss Server.ReplayServiceDeployment" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.simpletest" />
-      <item index="3" class="java.lang.String" itemvalue="Remote.RaspberryPi" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetBeacons" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetEmptyBeacons" />
-      <item index="6" class="java.lang.String" itemvalue="Application.ConvertDate" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.TestCloud.dumpQueueToJSON" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.TestJmsBridge.testBrowseStatusQueue" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.websocket" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.bin/www" />
+      <item index="5" class="java.lang.String" itemvalue="Remote.RaspberryPi" />
+      <item index="6" class="java.lang.String" itemvalue="Application.RegisterBeaconsFX" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetBeaconJSON" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetBeaconConfig" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetConfigurationJSON" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testListDuplicateMinorIDs" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCloud.dumpQueueToJSON" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestJmsBridge.testBrowseStatusQueue" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ConvertDate" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetEmptyBeacons" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetBeacons" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RegisterBeaconsFX" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testListDuplicateMinorIDs" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetConfigurationJSON" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetBeaconConfig" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestGimalManager.testGetBeaconJSON" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",HIDE_INHERITED_FROM_OBJECT,HIDE_INHERITED,SHOW_FIELDS" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -2100,7 +2667,34 @@
       <workItem from="1427399834820" duration="174000" />
       <workItem from="1427424614665" duration="5534000" />
       <workItem from="1427521579320" duration="6640000" />
-      <workItem from="1427689361508" duration="15798000" />
+      <workItem from="1427689361508" duration="54682000" />
+      <workItem from="1428092690193" duration="22346000" />
+      <workItem from="1428192773037" duration="2255000" />
+      <workItem from="1428339863737" duration="31151000" />
+      <workItem from="1428695455934" duration="10454000" />
+      <workItem from="1428993328842" duration="1075000" />
+      <workItem from="1429060744425" duration="7006000" />
+      <workItem from="1429083983858" duration="68276000" />
+      <workItem from="1429314769473" duration="20242000" />
+      <workItem from="1429471773910" duration="17152000" />
+      <workItem from="1429491462937" duration="75842000" />
+      <workItem from="1429764202940" duration="52000" />
+      <workItem from="1429764318884" duration="101000" />
+      <workItem from="1429764435919" duration="24296000" />
+      <workItem from="1429925245852" duration="23442000" />
+      <workItem from="1429974187992" duration="9000" />
+      <workItem from="1430071652795" duration="11365000" />
+      <workItem from="1430157225307" duration="21303000" />
+      <workItem from="1430270814771" duration="371000" />
+      <workItem from="1430271203300" duration="34046000" />
+      <workItem from="1430540719702" duration="19105000" />
+      <workItem from="1430767769425" duration="5029000" />
+      <workItem from="1430811668829" duration="17000" />
+      <workItem from="1430846692557" duration="12115000" />
+      <workItem from="1430933326897" duration="39889000" />
+      <workItem from="1431379231170" duration="18865000" />
+      <workItem from="1431536133991" duration="25739000" />
+      <workItem from="1431667594884" duration="2476000" />
     </task>
     <task id="LOCAL-00001" summary="Add a scannerId to the beacon object and sync up the wire format with that used by the NativeRaspberryPiBeaconParser">
       <created>1421736733052</created>
@@ -2180,47 +2774,247 @@
       <option name="project" value="LOCAL" />
       <updated>1427845711834</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add mavenLocal() and fix resteasy dependency">
+      <created>1427845759059</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1427845759059</updated>
+    </task>
+    <task id="LOCAL-00015" summary="work on systemd setup">
+      <created>1428102775442</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1428102775442</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add brokerURL arg&#10;Configure the systemd scripts under resources">
+      <created>1428109360908</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1428109360908</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update systemd configurations and services">
+      <created>1428127678618</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1428127678618</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Remove the -configDir argument">
+      <created>1428133490678</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1428133490678</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Tasks to install the scanner-configd and scannerd services">
+      <created>1428133751695</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1428133751695</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fix the After specification">
+      <created>1429317421319</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1429317421319</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Only want the scanner-configd.service">
+      <created>1429317447327</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1429317447327</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Use run-speakip.sh script to start/stop">
+      <created>1429318178263</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1429318178263</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Set the WorkingDirectory">
+      <created>1429392258624</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1429392258624</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Checkpoint the status server portion of the config manager work">
+      <created>1429392622653</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1429392622653</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add restart options">
+      <created>1430503128183</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1430503128183</updated>
+    </task>
+    <task id="LOCAL-00026" summary="scannerd services and scripts for synchronization">
+      <created>1430628344215</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1430628344215</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update beacon and add SCANNER_STATUS type">
+      <created>1430628487051</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1430628487051</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Various tests of the beaconEvents and scannerHealth data">
+      <created>1430628578952</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1430628578952</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Checkpoint typescript/angularjs scanner status app">
+      <created>1430628718056</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1430628718056</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added replay service module">
+      <created>1430628919658</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1430628919658</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Document the espeak and /sbin/modprobe snd_bcm2835 requirements">
+      <created>1430768391855</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1430768391855</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add git sync and build script">
+      <created>1430856577301</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1430856577301</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Avg battery events, etc">
+      <created>1430885457237</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1430885457237</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add -D option to build the NativeScannerBlueZ target as a default">
+      <created>1430952552346</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1430952552346</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add dependency on chrony-wait.service to have scannerd service start after time synchronization on boot">
+      <created>1431199335430</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1431199335430</updated>
+    </task>
+    <task id="LOCAL-00036" summary="include a call to systemctl daemon-reload&#10;Use bin/hosts.conf for default scanner hostnames">
+      <created>1431200715884</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1431200715884</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Move java scanner to its own module">
+      <created>1431375551561</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1431375551561</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add standalone main entry point">
+      <created>1431398244275</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1431398244275</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Refactor scanner into separate module">
+      <created>1431398343242</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1431398343242</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Refactor scanner into separate module">
+      <created>1431398368839</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1431398368839</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Refactor scanner into separate module">
+      <created>1431398386635</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1431398386635</updated>
+    </task>
+    <task id="LOCAL-00042" summary="javafx interface to beacon registration">
+      <created>1431665725181</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1431665725181</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Update replay service">
+      <created>1431665762208</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1431665762208</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Update dependencies">
+      <created>1431665796595</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1431665796595</updated>
+    </task>
+    <task id="LOCAL-00045" summary="More utility programs">
+      <created>1431665833776</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1431665833776</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377770000" />
+    <option name="totallyTimeSpent" value="910673000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="855" y="22" width="1679" height="986" extended-state="0" />
-    <editor active="false" />
+    <frame x="867" y="22" width="1679" height="1277" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328341" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32794458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495424" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929993" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39757994" sideWeight="0.5082771" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4252377" sideWeight="0.492336" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.326707" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39757994" sideWeight="0.49172288" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39838338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326707" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24954017" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929993" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -2237,19 +3031,32 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
-    <MESSAGE value="Add a scannerId to the beacon object and sync up the wire format with that used by the NativeRaspberryPiBeaconParser" />
-    <MESSAGE value="Refer to the native scanner repository" />
-    <MESSAGE value="Gimbal manager api testing&#10;Update beacon serialization to version 3" />
-    <MESSAGE value="Ignore log files" />
-    <MESSAGE value="Correct propagation of the scannerID to the parser" />
-    <MESSAGE value="Ignore activemq-data dir" />
-    <MESSAGE value="Refactor top source into a core module&#10;proton-j api tests" />
-    <MESSAGE value="Document the data files" />
-    <MESSAGE value="Test JsonObject accessors" />
-    <MESSAGE value="Checkpoint the config server work" />
-    <MESSAGE value="more activemq tests" />
-    <MESSAGE value="Expand the manager interface and add more beacons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expand the manager interface and add more beacons" />
+    <MESSAGE value="Tasks to install the scanner-configd and scannerd services" />
+    <MESSAGE value="Fix the After specification" />
+    <MESSAGE value="Only want the scanner-configd.service" />
+    <MESSAGE value="Use run-speakip.sh script to start/stop" />
+    <MESSAGE value="Set the WorkingDirectory" />
+    <MESSAGE value="Checkpoint the status server portion of the config manager work" />
+    <MESSAGE value="Add restart options" />
+    <MESSAGE value="scannerd services and scripts for synchronization" />
+    <MESSAGE value="Update beacon and add SCANNER_STATUS type" />
+    <MESSAGE value="Various tests of the beaconEvents and scannerHealth data" />
+    <MESSAGE value="Checkpoint typescript/angularjs scanner status app" />
+    <MESSAGE value="added replay service module" />
+    <MESSAGE value="Document the espeak and /sbin/modprobe snd_bcm2835 requirements" />
+    <MESSAGE value="Add git sync and build script" />
+    <MESSAGE value="Avg battery events, etc" />
+    <MESSAGE value="Add -D option to build the NativeScannerBlueZ target as a default" />
+    <MESSAGE value="Add dependency on chrony-wait.service to have scannerd service start after time synchronization on boot" />
+    <MESSAGE value="include a call to systemctl daemon-reload&#10;Use bin/hosts.conf for default scanner hostnames" />
+    <MESSAGE value="Move java scanner to its own module" />
+    <MESSAGE value="Add standalone main entry point" />
+    <MESSAGE value="Refactor scanner into separate module" />
+    <MESSAGE value="javafx interface to beacon registration" />
+    <MESSAGE value="Update replay service" />
+    <MESSAGE value="Update dependencies" />
+    <MESSAGE value="More utility programs" />
+    <option name="LAST_COMMIT_MESSAGE" value="More utility programs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2261,13 +3068,13 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/StreamServer.java</url>
+          <url>file://$PROJECT_DIR$/scanner/src/main/java/org/jboss/summit2015/beacon/scanner/StreamServer.java</url>
           <line>103</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/main/java/org/jboss/summit2015/beacon/StreamServer.java</url>
+          <url>file://$PROJECT_DIR$/scanner/src/main/java/org/jboss/summit2015/beacon/scanner/StreamServer.java</url>
           <line>105</line>
           <properties />
           <option name="timeStamp" value="12" />
@@ -2280,7 +3087,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java</url>
-          <line>116</line>
+          <line>117</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
@@ -2326,11 +3133,23 @@
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ConfigManager/src/main/java/org/jboss/summit2015/scanner/status/server/ScannerHealthBinding.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gozirra-0.4.1/src/main/java/net/ser1/stomp/Receiver.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="93" />
+      <option name="time" value="162" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2339,191 +3158,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ConfigManager/src/main/java/org/jboss/summit2015/config/DownloadScannerConfig.java">
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/resources/view/BeaconsTable.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="55" selection-start-line="122" selection-start-column="55" selection-end-line="122" selection-end-column="55" />
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/view/IBeaconInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/view/TextUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/view/NewBeacon.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.571428">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/view/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#2211#2212#0" expanded="false" />
-            <element signature="e#2256#2257#0" expanded="false" />
+            <element signature="e#969#970#0" expanded="false" />
+            <element signature="e#999#1000#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1096#1097#0" expanded="false" />
+            <element signature="e#1177#1178#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1267#1268#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigManager/src/main/java/org/jboss/summit2015/config/BaseConfig.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/javafx-src.zip!/javafx/stage/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-            <element signature="e#1293#1294#0" expanded="false" />
-            <element signature="e#1338#1339#0" expanded="false" />
-            <element signature="e#1373#1374#0" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1667#1668#0" expanded="false" />
-            <element signature="e#1716#1717#0" expanded="false" />
-            <element signature="e#1755#1756#0" expanded="false" />
-            <element signature="e#1788#1789#0" expanded="false" />
-            <element signature="e#1815#1816#0" expanded="false" />
-            <element signature="e#1860#1861#0" expanded="false" />
-            <element signature="e#1895#1896#0" expanded="false" />
-            <element signature="e#1930#1931#0" expanded="false" />
-            <element signature="e#1959#1960#0" expanded="false" />
-            <element signature="e#2008#2009#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
-            <element signature="e#2077#2078#0" expanded="false" />
-            <element signature="e#2101#2102#0" expanded="false" />
-            <element signature="e#2140#2141#0" expanded="false" />
-            <element signature="e#2169#2170#0" expanded="false" />
-            <element signature="e#2203#2204#0" expanded="false" />
-            <element signature="e#2231#2232#0" expanded="false" />
-            <element signature="e#2278#2279#0" expanded="false" />
-            <element signature="e#2315#2316#0" expanded="false" />
-            <element signature="e#2350#2351#0" expanded="false" />
-            <element signature="e#2379#2380#0" expanded="false" />
-            <element signature="e#2429#2430#0" expanded="false" />
-            <element signature="e#2468#2469#0" expanded="false" />
-            <element signature="e#2509#2510#0" expanded="false" />
-            <element signature="e#2544#2545#0" expanded="false" />
-            <element signature="e#2605#2606#0" expanded="false" />
-            <element signature="e#2656#2657#0" expanded="false" />
-            <element signature="e#2689#2690#0" expanded="false" />
-            <element signature="e#2719#2720#0" expanded="false" />
-            <element signature="e#2767#2768#0" expanded="false" />
-            <element signature="e#2808#2809#0" expanded="false" />
-            <element signature="e#2866#2867#0" expanded="false" />
-            <element signature="e#2903#2904#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigManager/src/test/resources/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/java/TestJsonApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/AuthHeadersRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6396" column="22" selection-start-line="6396" selection-start-column="22" selection-end-line="6396" selection-end-column="22" />
-          <folding>
-            <element signature="e#228990#228991#0" expanded="false" />
-            <element signature="e#229063#229064#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/java/TestAscii.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9728261">
-          <caret line="531" column="22" selection-start-line="531" selection-start-column="22" selection-end-line="531" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/java/HexToAscii.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA-sources.jar!/org/jboss/logging/LoggerProviders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/GimbalManagerProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1403#1404#0" expanded="false" />
-            <element signature="e#1457#1458#0" expanded="false" />
-            <element signature="e#1526#1527#0" expanded="false" />
-            <element signature="e#1584#1585#0" expanded="false" />
-            <element signature="e#1760#1761#0" expanded="false" />
-            <element signature="e#1825#1826#0" expanded="false" />
-            <element signature="e#7946#7947#0" expanded="false" />
-            <element signature="e#7997#7998#0" expanded="false" />
-            <element signature="e#9129#9130#0" expanded="false" />
-            <element signature="e#9185#9186#0" expanded="false" />
-            <element signature="e#9492#9493#0" expanded="false" />
-            <element signature="e#9533#9534#0" expanded="false" />
-            <element signature="e#10719#10720#0" expanded="false" />
-            <element signature="e#10772#10773#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/ResteasyGimbalManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/IGimbalManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="166" column="10" selection-start-line="166" selection-start-column="10" selection-end-line="166" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/resources/beaconids.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032407407">
-          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigManager/src/test/java/TestJsonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="77" selection-start-line="118" selection-start-column="77" selection-end-line="118" selection-end-column="77" />
+          <caret line="441" column="24" selection-start-line="441" selection-start-column="24" selection-end-line="441" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -2531,172 +3215,159 @@
     <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/RegisterBeacons.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="84" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/lang/String.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/tk/quantum/GlassViewEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1944" column="18" selection-start-line="1944" selection-start-column="18" selection-end-line="1944" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#123952#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#4677#4678#0" expanded="false" />
-            <element signature="e#4717#4718#0" expanded="false" />
-            <element signature="e#5690#5691#0" expanded="false" />
-            <element signature="e#5753#5754#0" expanded="false" />
-            <element signature="e#12762#12763#0" expanded="false" />
-            <element signature="e#12814#12815#0" expanded="false" />
-            <element signature="e#18445#18446#0" expanded="false" />
-            <element signature="e#18498#18499#0" expanded="false" />
-            <element signature="e#20391#20392#0" expanded="false" />
-            <element signature="e#20435#20436#0" expanded="false" />
-            <element signature="e#21625#21626#0" expanded="false" />
-            <element signature="e#21705#21706#0" expanded="false" />
-            <element signature="e#22450#22451#0" expanded="false" />
-            <element signature="e#22485#22486#0" expanded="false" />
-            <element signature="e#22736#22737#0" expanded="false" />
-            <element signature="e#22776#22777#0" expanded="false" />
-            <element signature="e#29126#29127#0" expanded="false" />
-            <element signature="e#29197#29198#0" expanded="false" />
-            <element signature="e#36057#36058#0" expanded="false" />
-            <element signature="e#36123#36124#0" expanded="false" />
-            <element signature="e#38033#38034#0" expanded="false" />
-            <element signature="e#38087#38088#0" expanded="false" />
-            <element signature="e#47179#47180#0" expanded="false" />
-            <element signature="e#47243#47244#0" expanded="false" />
-            <element signature="e#55441#55442#0" expanded="false" />
-            <element signature="e#55485#55486#0" expanded="false" />
-            <element signature="e#56078#56079#0" expanded="false" />
-            <element signature="e#56155#56156#0" expanded="false" />
-            <element signature="e#58122#58123#0" expanded="false" />
-            <element signature="e#58159#58160#0" expanded="false" />
-            <element signature="e#62501#62502#0" expanded="false" />
-            <element signature="e#62557#62558#0" expanded="false" />
-            <element signature="e#66098#66099#0" expanded="false" />
-            <element signature="e#66136#66137#0" expanded="false" />
-            <element signature="e#70390#70391#0" expanded="false" />
-            <element signature="e#70443#70444#0" expanded="false" />
-            <element signature="e#77881#77882#0" expanded="false" />
-            <element signature="e#77940#77941#0" expanded="false" />
-            <element signature="e#82257#82258#0" expanded="false" />
-            <element signature="e#82308#82309#0" expanded="false" />
-            <element signature="e#82612#82613#0" expanded="false" />
-            <element signature="e#82661#82662#0" expanded="false" />
-            <element signature="e#94239#94240#0" expanded="false" />
-            <element signature="e#94277#94278#0" expanded="false" />
-            <element signature="e#104316#104317#0" expanded="false" />
-            <element signature="e#104371#104372#0" expanded="false" />
-            <element signature="e#110837#110838#0" expanded="false" />
-            <element signature="e#110892#110893#0" expanded="false" />
-            <element signature="e#112984#112985#0" expanded="false" />
-            <element signature="e#113011#113012#0" expanded="false" />
-            <element signature="e#117534#117535#0" expanded="false" />
-            <element signature="e#117596#117597#0" expanded="false" />
-            <element signature="e#118046#118047#0" expanded="false" />
-            <element signature="e#118085#118086#0" expanded="false" />
-            <element signature="e#119097#119098#0" expanded="false" />
-            <element signature="e#119151#119152#0" expanded="false" />
-            <element signature="e#119800#119801#0" expanded="false" />
-            <element signature="e#119854#119855#0" expanded="false" />
-            <element signature="e#120123#120124#0" expanded="false" />
-            <element signature="e#120162#120163#0" expanded="false" />
-            <element signature="e#120530#120531#0" expanded="false" />
-            <element signature="e#120573#120574#0" expanded="false" />
-            <element signature="e#121368#121369#0" expanded="false" />
-            <element signature="e#121410#121411#0" expanded="false" />
-            <element signature="e#121825#121826#0" expanded="false" />
-            <element signature="e#121864#121865#0" expanded="false" />
-            <element signature="e#122286#122287#0" expanded="false" />
-            <element signature="e#122326#122327#0" expanded="false" />
-            <element signature="e#122756#122757#0" expanded="false" />
-            <element signature="e#122797#122798#0" expanded="false" />
-          </folding>
+          <caret line="383" column="0" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Control.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328336">
+          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Labeled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328336">
+          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/TitledPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328336">
+          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/view/NewBeaconController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/jaxrs-api/3.0.10.Final/8761e0a1fb2f48b327b9d9b63fb4e14fdf576dd4/jaxrs-api-3.0.10.Final-sources.jar!/javax/ws/rs/WebApplicationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328336">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/jaxrs-api/3.0.10.Final/8761e0a1fb2f48b327b9d9b63fb4e14fdf576dd4/jaxrs-api-3.0.10.Final-sources.jar!/javax/ws/rs/ClientErrorException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328336">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/jaxrs-api/3.0.10.Final/8761e0a1fb2f48b327b9d9b63fb4e14fdf576dd4/jaxrs-api-3.0.10.Final-sources.jar!/javax/ws/rs/NotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328336">
+          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GimbalManager/src/test/java/TestGimalManager.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8950525">
+          <caret line="127" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/GimbalManagerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="81" selection-start-line="62" selection-start-column="81" selection-end-line="62" selection-end-column="81" />
+          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#9584#9585#0" expanded="true" />
+            <element signature="e#9637#9638#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/gimbal/Beacon.java">
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/IGimbalManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigManager/src/main/resources/scannersConfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/ConvertDate.java">
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/ResteasyGimbalManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/time/format/DateTimeFormatter.java">
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/view/BeaconsViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1214" column="42" selection-start-line="1214" selection-start-column="42" selection-end-line="1214" selection-end-column="42" />
-          <folding />
+        <state vertical-scroll-proportion="-17.527273">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1953#1954#0" expanded="false" />
+            <element signature="e#1983#1984#0" expanded="false" />
+            <element signature="e#2039#2040#0" expanded="false" />
+            <element signature="e#2080#2081#0" expanded="false" />
+            <element signature="e#2129#2130#0" expanded="false" />
+            <element signature="e#2161#2162#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/ScannerStatus/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestJmsBridge.java">
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/java/RegisterBeaconsFX.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="48" selection-start-line="84" selection-start-column="48" selection-end-line="84" selection-end-column="48" />
-          <folding />
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#7038#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ActiveMQ/src/test/java/TestCloud.java">
+    <entry file="file://$PROJECT_DIR$/ConfigManager/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/src/main/resources/META-INF/MANIFEST.mf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7447217">
-          <caret line="381" column="16" selection-start-line="381" selection-start-column="16" selection-end-line="381" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GimbalManager/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8985314">
+          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -2706,11 +3377,20 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
+              <type id="library" />
+              <type id="artifact" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>GimbalManager:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -2718,7 +3398,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2759,7 +3439,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

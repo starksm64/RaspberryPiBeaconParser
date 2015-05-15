@@ -1,5 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactManager">
+    <artifact type="war" name="ReplayService:Web">
+      <output-path>$PROJECT_DIR$/out/artifacts/ReplayService_Web</output-path>
+      <root id="archive" name="ReplayService_Web.war">
+        <element id="javaee-facet-resources" facet="ReplayService/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ReplayService" />
+            <element id="module-output" name="core" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Gradle: org.apache.activemq:activemq-all:5.10.1" />
+            <element id="library" level="project" name="Gradle: org.apache.qpid:proton-j:0.8" />
+            <element id="library" level="project" name="Gradle: org.apache.qpid:qpid-jms-client:0.1.0-SNAPSHOT" />
+            <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.3.1" />
+            <element id="library" level="project" name="Gradle: io.netty:netty-all:4.0.17.Final" />
+            <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.1.4.GA" />
+            <element id="library" level="project" name="Gradle: org.jboss.logmanager:jboss-logmanager:1.5.4.Final" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/GimbalManager/src/main/resources/META-INF/MANIFEST.mf" output-file-name="MANIFEST.MF" />
+        </element>
+      </root>
+    </artifact>
+    <artifact name="GimbalManager:jar">
+      <output-path>$PROJECT_DIR$/out/artifacts/GimbalManager_jar</output-path>
+      <root id="root">
+        <element id="archive" name="GimbalManager.jar">
+          <element id="module-output" name="GimbalManager" />
+        </element>
+        <element id="library" level="project" name="Gradle: com.sun.xml.bind:jaxb-core:2.2.7" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-multipart-provider:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: javax.activation:activation:1.1" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-jaxb-provider:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-aop:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: javax.mail:mail:1.5.0-b01" />
+        <element id="library" level="project" name="Gradle: net.jcip:jcip-annotations:1.0" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-core:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-jettison-provider:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.codehaus.woodstox:woodstox-core-asl:4.1.1" />
+        <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.1.4.GA" />
+        <element id="library" level="project" name="Gradle: org.bouncycastle:bcmail-jdk16:1.46" />
+        <element id="library" level="project" name="Gradle: org.jboss.marshalling:jboss-marshalling:1.3.11.GA" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-oauth:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:async-http-servlet-3.0:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.glassfish:javax.el:3.0.0" />
+        <element id="library" level="project" name="Gradle: net.oauth.core:oauth-provider:20100527" />
+        <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.12" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-links:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: net.oauth.core:oauth:20100527" />
+        <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-jaxrs:1.9.12" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-beans:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: javax.xml.bind:jsr173_api:1.0" />
+        <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.1" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-jsapi:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: javax.validation:validation-api:1.1.0.Final" />
+        <element id="library" level="project" name="Gradle: org.glassfish:javax.json:1.0.4" />
+        <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.12" />
+        <element id="library" level="project" name="Gradle: org.bouncycastle:bcprov-jdk16:1.46" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-xc:1.9.12" />
+        <element id="library" level="project" name="Gradle: org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final" />
+        <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.6" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-crypto:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-cdi:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Final" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-client:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-cache-core:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.codehaus.woodstox:stax2-api:3.1.1" />
+        <element id="library" level="project" name="Gradle: com.sun.istack:istack-commons-runtime:2.16" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-context:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:jaxrs-api:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-jackson-provider:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpcore:4.2.5" />
+        <element id="library" level="project" name="Gradle: com.sun.xml.bind:jaxb-impl:2.2.7" />
+        <element id="library" level="project" name="Gradle: org.codehaus.jettison:jettison:1.3.2" />
+        <element id="library" level="project" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-web:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: org.jboss.marshalling:jboss-marshalling-river:1.3.11.GA" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-asm:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: org.jgroups:jgroups:3.0.11.Final" />
+        <element id="library" level="project" name="Gradle: org.springframework:spring-expression:3.0.6.RELEASE" />
+        <element id="library" level="project" name="Gradle: com.sun.xml.fastinfoset:FastInfoset:1.2.12" />
+        <element id="library" level="project" name="Gradle: org.apache.james:apache-mime4j:0.6" />
+        <element id="library" level="project" name="Gradle: org.infinispan:infinispan-core:5.1.6.FINAL" />
+        <element id="library" level="project" name="Gradle: javax.xml.bind:jaxb-api:2.2.7" />
+        <element id="library" level="project" name="Gradle: javax.json:javax.json-api:1.0" />
+        <element id="library" level="project" name="Gradle: org.jboss.resteasy:resteasy-fastinfoset-provider:3.0.10.Final" />
+        <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpclient:4.2.6" />
+        <element id="library" level="project" name="Gradle: org.rhq.helpers:rhq-pluginAnnotations:3.0.4" />
+        <element id="library" level="project" name="Gradle: org.jboss.logmanager:jboss-logmanager:1.5.4.Final" />
+        <element id="library" level="project" name="Gradle: commons-io:commons-io:2.1" />
+      </root>
+    </artifact>
+  </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions />
@@ -35,21 +135,31 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/2.3" />
+        <option name="gradleJvm" value="1.8latest" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ActiveMQ" />
             <option value="$PROJECT_DIR$/ConfigManager" />
             <option value="$PROJECT_DIR$/GimbalManager" />
+            <option value="$PROJECT_DIR$/ReplayService" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/gui" />
             <option value="$PROJECT_DIR$/proton" />
+            <option value="$PROJECT_DIR$/scanner" />
           </set>
         </option>
       </GradleProjectSettings>
     </option>
   </component>
   <component name="IdProvider" IDEtalkID="E576B153E5015CCAD552462C110221EB" />
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/ScannerStatus" libraries="{Node.js v0.12.0 Core Modules, ScannerStatus node_modules}" />
+    <file url="file://$PROJECT_DIR$/websocket" libraries="{Node.js v0.12.0 Core Modules}" />
+    <file url="PROJECT" libraries="{jquery}" />
+    <includedPredefinedLibrary name="Node.js Globals" />
+  </component>
   <component name="Palette2">
     <group name="Swing">
       <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
@@ -187,55 +297,46 @@
       <module fileurl="file://$PROJECT_DIR$/ConfigManager/ConfigManager.iml" filepath="$PROJECT_DIR$/ConfigManager/ConfigManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/GimbalManager/GimbalManager.iml" filepath="$PROJECT_DIR$/GimbalManager/GimbalManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/RaspberryPiBeaconParser.iml" filepath="$PROJECT_DIR$/RaspberryPiBeaconParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReplayService/ReplayService.iml" filepath="$PROJECT_DIR$/ReplayService/ReplayService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScannerStatus/ScannerStatus.iml" filepath="$PROJECT_DIR$/ScannerStatus/ScannerStatus.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms/cms.iml" filepath="$PROJECT_DIR$/cms/cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/gui/gui.iml" filepath="$PROJECT_DIR$/gui/gui.iml" />
       <module fileurl="file://$PROJECT_DIR$/proton/proton.iml" filepath="$PROJECT_DIR$/proton/proton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scanner/scanner.iml" filepath="$PROJECT_DIR$/scanner/scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8latest" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectRunConfigurationManager">
-    <configuration default="false" name="HCIDumpParser-Pi" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.jboss.summit2015.beacon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.jboss.summit2015.beacon.HCIDumpParser" />
-      <option name="VM_PARAMETERS" value="-Djava.util.logging.manager=org.jboss.logmanager.LogManager" />
-      <option name="PROGRAM_PARAMETERS" value="-scannerID PiScanner stream-ssh -host 192.168.1.95 -sshUsername root -sshPassword root0FPi" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="RaspberryPiBeaconParser" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
+    <configuration default="false" name="bin/www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$/ScannerStatus">
+      <envs>
+        <env name="DEBUG" value="ScannerStatus:*" />
+      </envs>
+      <browser url="http://localhost:3000/" />
       <method />
     </configuration>
   </component>
+  <component name="TypeScriptCompiler">
+    <option name="isCompilerEnabled" value="true" />
+    <option name="typeScriptServiceDirectory" value="/usr/local/lib/node_modules/typescript/bin" />
+    <option name="versionType" value="SERVICE_DIRECTORY" />
+  </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Gradle: aopalliance:aopalliance:1.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: com.beust:jcommander:1.35">
@@ -249,12 +350,10 @@
     </library>
     <library name="Gradle: com.google.code.gson:gson:2.3.1">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar!/" />
       </CLASSES>
       <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/563dcb685903c96ce8abbd03adf7fa49e19aa8b4/gson-2.3.1-sources.jar!/" />
-      </SOURCES>
+      <SOURCES />
     </library>
     <library name="Gradle: com.jcraft:jsch:0.1.51">
       <CLASSES>
@@ -267,7 +366,16 @@
     </library>
     <library name="Gradle: com.sun.istack:istack-commons-runtime:2.16">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/2.16/istack-commons-runtime-2.16.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.16/927eb6fbb003f40d536efd96e7cbcb7ea4c1c2d0/istack-commons-runtime-2.16.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.16/553f3b0152c1f5bd757799867e567a28604ab6f2/istack-commons-runtime-2.16-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.sun.mail:javax.mail:1.5.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.5.0/javax.mail-1.5.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
@@ -301,29 +409,29 @@
     </library>
     <library name="Gradle: commons-codec:commons-codec:1.6">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.6/commons-codec-1.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.6/commons-codec-1.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: commons-io:commons-io:2.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.1/commons-io-2.1.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.1/fd51f906669f49a4ffd06650666c3b8147a6106e/commons-io-2.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.1/commons-io-2.1-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.1/46773a62217d7f630dfe6bae0bc645bbd92ffd09/commons-io-2.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: commons-logging:commons-logging:1.1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: io.netty:netty-all:4.0.17.Final">
@@ -335,11 +443,11 @@
     </library>
     <library name="Gradle: javax.activation:activation:1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: javax.jmdns:jmdns:3.4.1">
@@ -360,18 +468,20 @@
     </library>
     <library name="Gradle: javax.mail:mail:1.5.0-b01">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="Gradle: javax.validation:validation-api:1.1.0.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.5.0-b01/c128515e42609622ce3f7dc0b431026d80bdb688/mail-1.5.0-b01.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.5.0-b01/6d8fc554cfd16e0313cced20d2a6f112d0a48c50/mail-1.5.0-b01-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: javax.validation:validation-api:1.1.0.Final">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: javax.xml.bind:jaxb-api:2.2.7">
@@ -390,13 +500,22 @@
       <JAVADOC />
       <SOURCES />
     </library>
-    <library name="Gradle: junit:junit:4.11">
+    <library name="Gradle: javax:javaee-api:7.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: junit:junit:4.11">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: log4j:log4j:1.2.17">
@@ -408,39 +527,44 @@
     </library>
     <library name="Gradle: net.jcip:jcip-annotations:1.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/afba4942caaeaf46aab0b976afd57cc7c181467e/jcip-annotations-1.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/d853625d8001c00d40abed553e670279504699f9/jcip-annotations-1.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: net.oauth.core:oauth-provider:20100527">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/oauth/core/oauth-provider/20100527/oauth-provider-20100527.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth-provider/20100527/165bfc97e63e5af8e052a47f4dee832ce06bf7d7/oauth-provider-20100527.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/oauth/core/oauth-provider/20100527/oauth-provider-20100527-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth-provider/20100527/6bc662aa46348458db50328cd2f99661044f0c5c/oauth-provider-20100527-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: net.oauth.core:oauth:20100527">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/oauth/core/oauth/20100527/oauth-20100527.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth/20100527/a84c5331e225bc25a5a288db328048d6b1bb6fd5/oauth-20100527.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/oauth/core/oauth/20100527/oauth-20100527-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.oauth.core/oauth/20100527/77528b5b523803cd44917fec25e193fff061c780/oauth-20100527-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.apache.activemq:activemq-all:5.10.1">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/2ef3283ea459dfac2707ed3ca50c03792823c7d1/activemq-all-5.10.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.10.1/activemq-all-5.10.1.jar!/" />
       </CLASSES>
       <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-all/5.10.1/448923e906a3ec2db1361f8db42b4829e560bb20/activemq-all-5.10.1-sources.jar!/" />
-      </SOURCES>
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.activemq:activemq-all:5.11.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.11.1/activemq-all-5.11.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
     </library>
     <library name="Gradle: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1">
       <CLASSES>
@@ -469,11 +593,11 @@
     </library>
     <library name="Gradle: org.apache.james:apache-mime4j:0.6">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j/0.6/apache-mime4j-0.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j/0.6/945007627e8d12275d755081a9e609c018e1210d/apache-mime4j-0.6.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j/0.6/apache-mime4j-0.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j/0.6/16691d73bd331c11ac1c7c269b9ff2cb1cda17ac/apache-mime4j-0.6-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.apache.qpid:proton-j:0.7">
@@ -499,58 +623,65 @@
       <JAVADOC />
       <SOURCES />
     </library>
+    <library name="Gradle: org.apache.qpid:qpid-jms-client:0.2.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/qpid/qpid-jms-client/0.2.0-SNAPSHOT/qpid-jms-client-0.2.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="Gradle: org.bouncycastle:bcmail-jdk16:1.46">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk16/1.46/bcmail-jdk16-1.46.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk16/1.46/8a9233bfd6ad38ea32df5e6ff91035b650584b9/bcmail-jdk16-1.46.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk16/1.46/bcmail-jdk16-1.46-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk16/1.46/3ebd62bc56854767512dc5deec0a17795f2e671d/bcmail-jdk16-1.46-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.bouncycastle:bcprov-jdk16:1.46">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk16/1.46/bcprov-jdk16-1.46.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk16/1.46/ce091790943599535cbb4de8ede84535b0c1260c/bcprov-jdk16-1.46.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk16/1.46/bcprov-jdk16-1.46-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk16/1.46/d2b70567594225923450d7e3f80cd022c852725e/bcprov-jdk16-1.46-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.12">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.12/ecfc6f73a841c4c3c653b59651a3f9d5f1286469/jackson-core-asl-1.9.12.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.12/ed7928072c458d8576c969cc491af707151492fb/jackson-core-asl-1.9.12-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.codehaus.jackson:jackson-jaxrs:1.9.12">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/1.9.12/jackson-jaxrs-1.9.12.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-jaxrs/1.9.12/8bc0bc2e095fd1b83af48b03f67f2ad16e829c01/jackson-jaxrs-1.9.12.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/1.9.12/jackson-jaxrs-1.9.12-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-jaxrs/1.9.12/7f398bf900be8ed32efa007d624e24f7df950a46/jackson-jaxrs-1.9.12-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.12">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.12/8b290aae44213e2f6da00c07af59b0d442068f4d/jackson-mapper-asl-1.9.12.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.12/446f3d18401f02ac6741ff980d1a7566786936c/jackson-mapper-asl-1.9.12-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.codehaus.jackson:jackson-xc:1.9.12">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-xc/1.9.12/jackson-xc-1.9.12.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.9.12/2ec470401d7ac760481c84e95be8c66f19f92d2e/jackson-xc-1.9.12.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-xc/1.9.12/jackson-xc-1.9.12-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.9.12/50c529446e1a5a9b97fd56f77575aefeaeb1bc3a/jackson-xc-1.9.12-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.codehaus.jettison:jettison:1.3.2">
@@ -564,20 +695,20 @@
     </library>
     <library name="Gradle: org.codehaus.woodstox:stax2-api:3.1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.1/466eab062e9d1a3ce2c4631b6d09b5e5c0cbd1b/stax2-api-3.1.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.1/cb342dff0332b73ca4db2ebc395e7f8aaf1964ad/stax2-api-3.1.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.codehaus.woodstox:woodstox-core-asl:4.1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/woodstox-core-asl/4.1.1/woodstox-core-asl-4.1.1.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.1.1/1fc79e0ddf0c72408ddbbc7e558f46a15d7ba84f/woodstox-core-asl-4.1.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/woodstox-core-asl/4.1.1/woodstox-core-asl-4.1.1-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.1.1/1efb7e023a2767ce11df124186a5fd0560a1588b/woodstox-core-asl-4.1.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.eclipse.paho:mqtt-client:0.4.0">
@@ -591,10 +722,12 @@
     </library>
     <library name="Gradle: org.glassfish:javax.el:3.0.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/javax.el/3.0.0/javax.el-3.0.0.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.el/3.0.0/dd532526e7c8de48e40419e6af1183658a973379/javax.el-3.0.0.jar!/" />
       </CLASSES>
       <JAVADOC />
-      <SOURCES />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.el/3.0.0/9a2a19399140efdd86a5b350e7bff8cd1eb05579/javax.el-3.0.0-sources.jar!/" />
+      </SOURCES>
     </library>
     <library name="Gradle: org.glassfish:javax.json:1.0.4">
       <CLASSES>
@@ -607,20 +740,20 @@
     </library>
     <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/574f65373b46a038332eb1a14acc3142bd9e9810/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.infinispan:infinispan-core:5.1.6.FINAL">
@@ -634,11 +767,11 @@
     </library>
     <library name="Gradle: org.jboss.logging:jboss-logging:3.1.4.GA">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/90fdefa08d8ad069b86f4ea6033671970459a078/jboss-logging-3.1.4.GA.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.4.GA/a2fa636c76e804854661f1607fdd8492d89b8e7a/jboss-logging-3.1.4.GA-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jboss.logmanager:jboss-logmanager:1.5.4.Final">
@@ -652,20 +785,20 @@
     </library>
     <library name="Gradle: org.jboss.marshalling:jboss-marshalling-river:1.3.11.GA">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/marshalling/jboss-marshalling-river/1.3.11.GA/jboss-marshalling-river-1.3.11.GA.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling-river/1.3.11.GA/a0ab649dacbff16efedb51e9a9dc574c5b27d3a0/jboss-marshalling-river-1.3.11.GA.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/marshalling/jboss-marshalling-river/1.3.11.GA/jboss-marshalling-river-1.3.11.GA-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling-river/1.3.11.GA/1dc5f847b0d6f86c76b994c7a9245ee038546fbb/jboss-marshalling-river-1.3.11.GA-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jboss.marshalling:jboss-marshalling:1.3.11.GA">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/marshalling/jboss-marshalling/1.3.11.GA/jboss-marshalling-1.3.11.GA.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling/1.3.11.GA/47f1c30f5198d5b1babd6622f36d67ea913fb555/jboss-marshalling-1.3.11.GA.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/marshalling/jboss-marshalling/1.3.11.GA/jboss-marshalling-1.3.11.GA-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling/1.3.11.GA/3e5610f8efa490a8c634eaf548b17f05b154bcc/jboss-marshalling-1.3.11.GA-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jboss.resteasy:async-http-servlet-3.0:3.0.10.Final">
@@ -805,29 +938,29 @@
     </library>
     <library name="Gradle: org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/8f9335f966885529d1254793182ff3df1c515eb8/jboss-annotations-api_1.1_spec-1.0.1.Final.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/aed48c8b8ca5820d0c2d0d8a00f4322379b37746/jboss-annotations-api_1.1_spec-1.0.1.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Final">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/el/jboss-el-api_3.0_spec/1.0.0.Final/jboss-el-api_3.0_spec-1.0.0.Final.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.el/jboss-el-api_3.0_spec/1.0.0.Final/14b1d418763424f162571eb4117a0c3648da1963/jboss-el-api_3.0_spec-1.0.0.Final.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/el/jboss-el-api_3.0_spec/1.0.0.Final/jboss-el-api_3.0_spec-1.0.0.Final-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.el/jboss-el-api_3.0_spec/1.0.0.Final/c745107bb8e5c75bc05bf25a2c6a71de7b83aa4d/jboss-el-api_3.0_spec-1.0.0.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/2ab6236535e085d86f37fd97ddfdd35c88c1a419/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/9bbc5381224289a1cf67988c661a1dcdc165b9ff/jboss-transaction-api_1.1_spec-1.0.0.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jgroups:jgroups:3.0.11.Final">
@@ -841,11 +974,11 @@
     </library>
     <library name="Gradle: org.rhq.helpers:rhq-pluginAnnotations:3.0.4">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/rhq/helpers/rhq-pluginAnnotations/3.0.4/rhq-pluginAnnotations-3.0.4.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.rhq.helpers/rhq-pluginAnnotations/3.0.4/7a8f94fa824189f8bcf977c105607727c20b0595/rhq-pluginAnnotations-3.0.4.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/rhq/helpers/rhq-pluginAnnotations/3.0.4/rhq-pluginAnnotations-3.0.4-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.rhq.helpers/rhq-pluginAnnotations/3.0.4/a85045a75aba841c2ae583956d0b0a044db013b0/rhq-pluginAnnotations-3.0.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.slf4j:slf4j-api:1.7.10">
@@ -857,29 +990,29 @@
     </library>
     <library name="Gradle: org.springframework:spring-aop:3.0.6.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.0.6.RELEASE/spring-aop-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.6.RELEASE/663f531c1b82f91c0cd1142b6ebed07b0c58dbf3/spring-aop-3.0.6.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.0.6.RELEASE/spring-aop-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.6.RELEASE/a558c2b713a5d2034eb0c43c8dacf181adf7a663/spring-aop-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-asm:3.0.6.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-asm/3.0.6.RELEASE/spring-asm-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-asm/3.0.6.RELEASE/c94d676f9595ab0d62c16adbd499deb25f16cac1/spring-asm-3.0.6.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-asm/3.0.6.RELEASE/spring-asm-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-asm/3.0.6.RELEASE/3510e81ccc72cec842edb32f2e59f2158a9a36ae/spring-asm-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-beans:3.0.6.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.0.6.RELEASE/spring-beans-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.0.6.RELEASE/58481cd52dedd062356a0a62f6e92eb46607fdaf/spring-beans-3.0.6.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.0.6.RELEASE/spring-beans-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.0.6.RELEASE/9bf74edb26df85f307691883e2b3af7e349e2f97/spring-beans-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-context-support:3.0.6.RELEASE">
@@ -893,38 +1026,38 @@
     </library>
     <library name="Gradle: org.springframework:spring-context:3.0.6.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.0.6.RELEASE/spring-context-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.0.6.RELEASE/aa4d3ecca6cd28262d7f7417eda96e61fc7e7c90/spring-context-3.0.6.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.0.6.RELEASE/spring-context-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.0.6.RELEASE/9006a1e4053468e4e7e3631c702d62dcee728feb/spring-context-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-core:3.0.6.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.0.6.RELEASE/spring-core-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.0.6.RELEASE/c70e04d81ef9810983e98ff5c7c6af0bfd8a8b9/spring-core-3.0.6.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.0.6.RELEASE/spring-core-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.0.6.RELEASE/4dc3ec9e4b6840d487478c041688c600b052b127/spring-core-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-expression:3.0.6.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.0.6.RELEASE/spring-expression-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.0.6.RELEASE/cc9c0739350d107b0d7d738cd43526a6ead26a52/spring-expression-3.0.6.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.0.6.RELEASE/spring-expression-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.0.6.RELEASE/e0514e0fb53fce1dc6e6867981eb2d9baba1b77b/spring-expression-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-web:3.0.6.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.0.6.RELEASE/spring-web-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.0.6.RELEASE/ee17a27f7ca27b6c2324fde15303c656480b442e/spring-web-3.0.6.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.0.6.RELEASE/spring-web-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.0.6.RELEASE/a9976afa556384dd58b7d66c3d3495e84335925/spring-web-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-webmvc:3.0.6.RELEASE">
@@ -935,6 +1068,52 @@
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.0.6.RELEASE/ab7d5bc1f197801bf4cc20d86d98605d05f61c03/spring-webmvc-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
+    </library>
+    <library name="NodeJS node_modules" type="javaScript">
+      <properties>
+        <option name="frameworkName" value="node_modules" />
+      </properties>
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/NodeJS/node_modules" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk:1.8" type="repository">
+      <properties maven-id="org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk:1.8" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/1.8/tyrus-standalone-client-jdk-1.8.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.ideaLibSources/tyrus-standalone-client-jdk-1.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="ScannerHealth node_modules" type="javaScript">
+      <properties>
+        <option name="frameworkName" value="node_modules" />
+        <sourceFilesUrls>
+          <item url="file://$PROJECT_DIR$/ScannerHealth/node_modules" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/ScannerHealth/node_modules" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ScannerStatus node_modules" type="javaScript">
+      <properties>
+        <option name="frameworkName" value="node_modules" />
+        <sourceFilesUrls>
+          <item url="file://$PROJECT_DIR$/ScannerStatus/node_modules" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/ScannerStatus/node_modules" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
     </library>
   </component>
 </project>

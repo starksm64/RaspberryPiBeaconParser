@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Carousel with Gallery Thumbs</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="gridtest.js"></script>
+
+</head>
+<body>
+
+<div class="container" ng-app="gridtest">
+    <div id="main_area" ng-controller="GridController">
+        <div class="row" style="border-color: darkviolet; border-style: dashed; border-spacing: 2pt">
+            <div class="col-sm-6 col-lg-3" style="border-color: red; border-style: dashed; border-spacing: 2pt">
+                This is part of our grid.
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border-color: darkgreen; border-style: dashed; border-spacing: 2pt">
+                This is part of our grid.
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border-color: red; border-style: dashed; border-spacing: 2pt">
+                This is part of our grid.
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border-color: darkgreen; border-style: dashed; border-spacing: 2pt">
+                This is part of our grid.
+            </div>
+            <div class="col-sm-2" ng-repeat="n in [].constructor(6) track by $index"
+                 style="border-color: red; border-style: dashed; border-spacing: 2pt">
+                {{$index}}: This is part of our grid.
+            </div>
+            <div class="row">
+                 <div class="col-xs-1" ng-repeat="n in [].constructor(12) track by $index"
+                      style="border-color: darkgoldenrod; border-style: inset; border-spacing: 1pt">
+                     col-sm-1,col:{{$index}}
+                 </div>
+            </div>
+            <div class="row">
+                 <div class="col-sm-2" ng-repeat="n in [].constructor(6) track by $index"
+                      style="border-color: firebrick; border-style: inset; border-spacing: 1pt">
+                     col-sm-1,col:{{$index}}
+                 </div>
+            </div>
+            <div class="row" style="border-color: deeppink; border-style: solid; border-spacing: 0pt">
+                <div class="col-md-6 col-lg-3">
+                    <div class="visible-lg text-success">Large Devices!</div>
+                    <div class="visible-md text-warning">Medium Devices!</div>
+                    <div class="visible-xs visible-sm text-danger">Extra Small and Small Devices</div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="visible-lg text-success">Large Devices!</div>
+                    <div class="visible-md text-warning">Medium Devices!</div>
+                    <div class="visible-xs visible-sm text-danger">Extra Small and Small Devices</div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="visible-lg text-success">Large Devices!</div>
+                    <div class="visible-md text-warning">Medium Devices!</div>
+                    <div class="visible-xs visible-sm text-danger">Extra Small and Small Devices</div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="visible-lg text-success">Large Devices!</div>
+                    <div class="visible-md text-warning">Medium Devices!</div>
+                    <div class="visible-xs visible-sm text-danger">Extra Small and Small Devices</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
