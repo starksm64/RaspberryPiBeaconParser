@@ -20,7 +20,7 @@ import java.util.Properties;
 public class TrackBeacon {
    private static final String USER = "guest";
    private static final String PASSWORD = "guest";
-   private static int trackID = 136;
+   private static int trackID = 88;
 
    static void trackProcessedOnDestination(Session session, Destination destination) throws Exception  {
       final MessageConsumer consumer = session.createConsumer(destination, "user_id = "+trackID);
@@ -57,7 +57,7 @@ public class TrackBeacon {
          int minorID = msg.getIntProperty("minor");
          if(minorID == trackID) {
             Beacon beacon = Utils.extractBeacon(msg);
-            System.out.printf("%s\n", beacon.toJSONSimple());
+            //System.out.printf("%s\n", beacon.toJSONSimple());
          }
          msg = consumer.receive();
       }
@@ -71,7 +71,7 @@ public class TrackBeacon {
          int minorID = msg.getIntProperty("minor");
          if(minorID == trackID) {
             Beacon beacon = Utils.extractBeacon(msg);
-            System.out.printf("+++ %s\n", beacon.toJSONSimple());
+            //System.out.printf("+++ %s\n", beacon.toJSONSimple());
          }
       }
    }

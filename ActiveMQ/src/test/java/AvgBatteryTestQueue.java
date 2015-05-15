@@ -64,7 +64,7 @@ public class AvgBatteryTestQueue {
             send(avgs, session, producer);
             produced ++;
          }
-         if(consumed % 1000 == 0)
+         if(consumed % 10000 == 0)
             System.out.printf("In: %d, out: %d\n", consumed, produced);
          msg = consumer.receive(10000);
       }
