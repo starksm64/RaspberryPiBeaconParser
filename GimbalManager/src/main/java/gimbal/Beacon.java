@@ -18,6 +18,7 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import javax.xml.bind.annotation.XmlElement;
 
 /**
+ * The object representation of the Gimbal beaon
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
 @JsonIgnoreProperties(ignoreUnknown=true)

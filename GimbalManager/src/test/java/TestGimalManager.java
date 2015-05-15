@@ -12,6 +12,7 @@ import javax.json.JsonWriter;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -37,6 +38,16 @@ public class TestGimalManager {
    public void testGetBeacon() {
       Beacon beacon = manager.getBeacon("VMU8-C5J5W");
       System.out.println(beacon);
+   }
+   @Test
+   public void testGetBeaconJSON() {
+      String beacon = manager.getBeaconJSON("VMU8-C5J5W");
+      System.out.println(beacon);
+   }
+   @Test
+   public void testGetBeaconConfig() {
+      BeaconConfigurationInfo config = manager.getBeaconConfigByFactoryID("VMU8-C5J5W");
+      System.out.println(config);
    }
 
    @Test
@@ -91,6 +102,28 @@ public class TestGimalManager {
       for (BeaconConfiguration config : configurations) {
          System.out.println("### Configuration:");
          System.out.println(config);
+      }
+   }
+
+   @Test
+   public void testListDuplicateMinorIDs() {
+      HashMap<Integer, BeaconConfiguration> configsByMinor = new HashMap<>();
+      List<BeaconConfiguration> configurations = manager.getBeaconConfigurations();
+      System.out.printf("Checking %d configurations...\n", configurations.size());
+      int maxMinorID = -1;
+      for (BeaconConfiguration config : configurations) {
+         int minor = config.getMinor();
+         maxMinorID = Math.max(maxMinorID, minor);
+         if(configsByMinor.containsKey(minor)) {
+            System.out.printf("Duplicate(%d), %s, %s\n", minor, config.getName(), configsByMinor.get(minor).getName());
+         } else {
+            configsByMinor.put(minor, config);
+         }
+      }
+      System.out.printf("Done\n");
+      for(int minor = 0; minor < 200; minor ++) {
+         if(!configsByMinor.containsKey(minor))
+            System.out.printf("%d is available\n", minor);
       }
    }
 

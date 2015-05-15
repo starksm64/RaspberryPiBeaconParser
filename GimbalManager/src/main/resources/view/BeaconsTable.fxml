@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" stylesheets="/view/manager.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BeaconsViewController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="BOTTOM_CENTER" focusTraversable="false" text="Filter:">
+               <font>
+                  <Font name="System Font Regular" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="filterField" promptText="filter string...">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label alignment="BOTTOM_CENTER" text="New:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="20.0" right="5.0" />
+               </padding>
+            </Label>
+            <Button fx:id="newBtn" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleNewBtnClick" text="Register...">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="beaconsTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" minWidth="50.0" prefWidth="120.0" text="Name" />
+          <TableColumn fx:id="factoryIDColumn" prefWidth="200.0" text="FactoryID" />
+            <TableColumn fx:id="minorIDColumn" prefWidth="100.0" text="Minor" />
+            <TableColumn fx:id="configNameColumn" prefWidth="500.0" text="Config" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

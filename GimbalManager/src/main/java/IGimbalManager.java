@@ -167,6 +167,11 @@ public interface IGimbalManager {
    Beacon getBeacon(@PathParam("factory_id") String factoryID);
 
    @GET
+   @Path("/api/beacons/{factory_id}")
+   @Produces("application/json")
+   String getBeaconJSON(@PathParam("factory_id") String factoryID);
+
+   @GET
    @Path("/api/beacons")
    @Produces("application/json")
    List<Beacon> getBeacons();
@@ -195,4 +200,14 @@ public interface IGimbalManager {
    @Path("/fake")
    @Produces("application/json")
    public Integer getConfigIDForName(@PathParam("name") String name);
+
+   /**
+    * Go through the current beacons to determine the unused minor ids in the given range
+    * @param begin
+    * @param end
+    * @return
+    */
+   @GET
+   @Path("/fake")
+   public int findAvailableMinorIDInRange(int begin, int end);
 }

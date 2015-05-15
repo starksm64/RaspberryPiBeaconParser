@@ -88,7 +88,14 @@ public class ResteasyGimbalManager {
       String measuredPower = config.getMeasuredPower();
       BeaconConfiguration newConfig = manager.createIBeaconConfiguration(name, type, power, antenna, proximityUUID, major, minor, measuredPower);
       Integer newID = newConfig.getId();
-      manager.activateBeacon(factoryID, beaconName, newID);
+      try {
+         manager.activateBeacon(factoryID, beaconName, newID);
+      } catch (Exception e) {
+         System.err.printf("Failed to activate beacon: %s, %s\n", factoryID, e.getMessage());
+         manager.deleteConfiguration(newID);
+         System.err.printf("Deleted config(%d)%s\n", newID, name);
+         throw e;
+      }
       return newConfig;
    }
 }

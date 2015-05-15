@@ -33,6 +33,7 @@ import java.util.Properties;
 public class GimbalManagerProxy implements IGimbalManager {
    private IGimbalManager instance;
    private String token;
+   /** A mapping from the configuration name to its internal id */
    private HashMap<String, Integer> nameToIDMap = new HashMap<>();
 
    public GimbalManagerProxy(IGimbalManager proxy, String token) {
@@ -219,6 +220,13 @@ public class GimbalManagerProxy implements IGimbalManager {
    public Beacon getBeacon(String factoryID) {
       return instance.getBeacon(factoryID);
    }
+   @Override
+   @GET
+   @Path("/api/beacons/{factory_id}")
+   @Produces("application/json")
+   public String getBeaconJSON(String factoryID) {
+      return instance.getBeaconJSON(factoryID);
+   }
 
    @Override
    @GET
@@ -321,5 +329,24 @@ public class GimbalManagerProxy implements IGimbalManager {
       }
       Integer id = nameToIDMap.get(name);
       return id;
+   }
+
+   @Override
+   public int findAvailableMinorIDInRange(int begin, int end) {
+      HashMap<Integer, BeaconConfiguration> configsByMinor = new HashMap<>();
+      List<BeaconConfiguration> configurations = getBeaconConfigurations();
+      for (BeaconConfiguration config : configurations) {
+         int minor = config.getMinor();
+         configsByMinor.put(minor, config);
+      }
+      int available = -1;
+      for(int minor = begin; minor < end; minor ++) {
+         if(!configsByMinor.containsKey(minor)) {
+            available = minor;
+            break;
+         }
+
+      }
+      return available;
    }
 }
