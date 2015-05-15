@@ -58,7 +58,7 @@ public class RegisterBeaconsFX extends Application implements IBeaconInfo {
       this.primaryStage = primaryStage;
       token = ResteasyGimbalManager.loadManagerTokenFromLocalProperties();
       manager = ResteasyGimbalManager.getInstance(token);
-      nextMinorID = manager.findAvailableMinorIDInRange(162, 200);
+      nextMinorID = manager.findAvailableMinorIDInRange(200, 350);
       System.out.printf("Selected nextMinorID=%d\n", nextMinorID);
 
       initRootLayout();
@@ -102,6 +102,8 @@ public class RegisterBeaconsFX extends Application implements IBeaconInfo {
          beacons.add(beacon);
          System.out.printf("+++ registerBeacon: %s\n\tconfig:%s\n", beacon, config);
       } catch (Exception e) {
+         // Rollback the minorID increment
+         nextMinorID --;
          String msg = e.getMessage();
          Alert alert = new Alert(AlertType.ERROR, msg, ButtonType.OK);
          alert.showAndWait();
