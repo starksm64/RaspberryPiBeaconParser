@@ -1,5 +1,5 @@
 # see systemd.timer(5) for details
-# cp test-network.timer /usr/lib/systemd/system/
+# cp test-network.timer /lib/systemd/system
 # systemctl enable test-network.timer
 # systemctl start test-network.timer
 

@@ -1,5 +1,5 @@
 # See systemd.service(5) for details
-# Place into /usr/lib/systemd/system and run:
+# Place into /lib/systemd/system and run:
 # systemctl enable test-network.service
 
 [Unit]
