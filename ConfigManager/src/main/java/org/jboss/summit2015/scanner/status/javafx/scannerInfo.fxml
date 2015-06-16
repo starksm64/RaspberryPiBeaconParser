@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane fx:id="titledPane" styleClass="scanner-pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+         <!--fx:controller="org.jboss.summit2015.scanner.status.javafx.ScannerInfoController"-->
+         <center>
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../../../../resources/images/default.png" />
+               </image>
+            </ImageView>
+         </center>
+         <bottom>
+            <Label fx:id="beaconCount" text="BeaconCount" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </content>
+</TitledPane>

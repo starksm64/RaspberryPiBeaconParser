@@ -13,6 +13,7 @@ package org.jboss.summit2015.scanner.status.server;/*
  */
 
 import org.jboss.summit2015.scanner.status.StatusProperties;
+import org.jboss.summit2015.scanner.status.model.ScannerInfo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,21 +27,6 @@ public class StatusMonitorReporter implements Runnable, StatusMonitor {
    static volatile ConcurrentHashMap<String, ScannerInfo> scannerHeartbeats = new ConcurrentHashMap<>();
    boolean running;
 
-   static class ScannerInfo {
-      Map<String,String> lastStatus;
-      long time;
-      int publishCount;
-
-      public ScannerInfo(long time, int publishCount, Map<String,String> lastStatus) {
-         this.time = time;
-         this.publishCount = publishCount;
-         this.lastStatus = lastStatus;
-      }
-      public String toString(long now) {
-         return String.format("%d,%d", (now-time)/1000, publishCount);
-      }
-   }
-
    @Override
    public void run() {
       running = true;
@@ -48,7 +34,7 @@ public class StatusMonitorReporter implements Runnable, StatusMonitor {
          long now = System.currentTimeMillis();
          ArrayList<String> summary = new ArrayList<>();
          scannerHeartbeats.forEach((key, value) -> {
-            long diff = now - value.time;
+            long diff = now - value.getTime();
             if (diff > 60000)
                System.err.printf("No heartbeat from %s for %d seconds\n", key, diff / 1000);
             summary.add(String.format("%s: %s", key, value.toString(now)));

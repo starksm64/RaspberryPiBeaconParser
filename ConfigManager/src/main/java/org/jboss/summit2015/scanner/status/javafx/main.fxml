@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1180.0" prefWidth="1400.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jboss.summit2015.scanner.status.javafx.MainController">
+   <top>
+      <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="988.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="App">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#createSSHConfigAction" text="Generate Config" />
+              <MenuItem mnemonicParsing="false" onAction="#handleCloseAction" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.8" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox layoutX="-0.5" layoutY="-0.5" maxWidth="1.7976931348623157E308" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <GridPane fx:id="gridPane" alignment="CENTER" gridLinesVisible="true" hgap="1.0" prefHeight="800.0" prefWidth="1000.0" vgap="1.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="10.0" percentWidth="25.0" prefWidth="250.0" />
+                            <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="10.0" percentWidth="25.0" prefWidth="250.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="10.0" percentWidth="25.0" prefWidth="250.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="10.0" percentWidth="25.0" prefWidth="250.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="-Infinity" minHeight="10.0" percentHeight="25.0" prefHeight="250.0" vgrow="ALWAYS" />
+                            <RowConstraints maxHeight="-Infinity" minHeight="10.0" percentHeight="25.0" prefHeight="250.0" vgrow="ALWAYS" />
+                            <RowConstraints maxHeight="-Infinity" minHeight="10.0" percentHeight="25.0" prefHeight="250.0" vgrow="ALWAYS" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" percentHeight="25.0" prefHeight="250.0" vgrow="ALWAYS" />
+                          </rowConstraints>
+                        </GridPane>
+                        <AnchorPane maxWidth="1.7976931348623157E308" HBox.hgrow="SOMETIMES">
+                           <children>
+                              <TitledPane fx:id="titledPane" maxWidth="1.7976931348623157E308" prefHeight="1120.0" prefWidth="391.0" text="Status:" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <content>
+                                    <BorderPane layoutY="31.4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1093.0" prefWidth="319.0" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="21.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <ListView fx:id="propertyListView" prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+                                       </center>
+                                       <left>
+                                          <Button mnemonicParsing="false" text="&lt;" BorderPane.alignment="CENTER" />
+                                       </left>
+                                       <right>
+                                          <Button mnemonicParsing="false" text="&gt;" BorderPane.alignment="CENTER" />
+                                       </right>
+                                    </BorderPane>
+                                 </content>
+                              </TitledPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="1097.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <items>
+                            <Button fx:id="pingButton" mnemonicParsing="false" onAction="#handlePingAction" text="Ping..." />
+                              <Button mnemonicParsing="false" text="SSH..." />
+                              <Button mnemonicParsing="false" onAction="#handleGitPullAction" text="Git Pull" />
+                              <Button mnemonicParsing="false" text="Update Services" />
+                              <Button mnemonicParsing="false" onAction="#handleServiceStatusAction" text="Services Status" />
+                          </items>
+                        </ToolBar>
+                     </top>
+                     <center>
+                        <TextArea fx:id="consoleArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <bottom>
+                        <TextField fx:id="lastUpdateField" BorderPane.alignment="CENTER" />
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

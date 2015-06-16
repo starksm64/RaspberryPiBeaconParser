@@ -1,0 +1,18 @@
+.indexed-cell:even {
+    -fx-font-weight: bold;
+}
+.indexed-cell:odd {
+    -fx-font-style: italic;
+    -fx-border-radius: 4pt;
+    -fx-border-color: darkgrey;
+}
+
+.scanner-pane {
+    -fx-font-weight: bold;
+    -fx-border-radius: 8pt;
+    -fx-border-color: blue;
+}
+
+.scanner-pane:error {
+    -fx-border-color: red;
+}

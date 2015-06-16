@@ -11,6 +11,7 @@ import javax.jms.Topic;
 import javax.jms.TopicSubscriber;
 import javax.naming.Context;
 import javax.naming.InitialContext;
+import java.net.InetAddress;
 import java.util.HashMap;
 import java.util.Properties;
 
@@ -73,4 +74,11 @@ public class TestScannerStatus {
       connection.close();
 
    }
+
+    @Test
+    public void testIsReachable() throws Exception {
+        InetAddress addr = InetAddress.getByName("192.168.1.1");
+        boolean reachable = addr.isReachable(5000);
+        System.out.printf("%s is reachable: %s\n", addr, reachable);
+    }
 }

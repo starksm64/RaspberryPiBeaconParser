@@ -2,10 +2,17 @@
 
 # The name of the ~/.ssh/public_key to transfer to hosts to enable password free ssh
 SSH_KEY=""
-while getopts "K:" opt; do
+COPY_BOOT=""
+while getopts "K:BH:" opt; do
   case $opt in
     K)
       SSH_KEY=$OPTARG
+      ;;
+    B)
+      COPY_BOOT="true"
+      ;;
+    H)
+      SCANNERS=$OPTARG
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -45,6 +52,7 @@ if [ -n "${SSH_KEY}" ]; then
 fi
 
 # This needs a shared ssh private key in order to avoid having to enter password for each host
-copy_systemd systemd/ /usr/lib/systemd/system
-copy boot/ /boot
-
+copy_systemd systemd/ /lib/systemd/system
+if [ -n "${COPY_BOOT}" ]; then
+    copy boot/ /boot
+fi
