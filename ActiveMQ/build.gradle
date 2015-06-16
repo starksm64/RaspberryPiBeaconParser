@@ -39,3 +39,9 @@ task pushDataToBroker(type: JavaExec, dependsOn: classes) {
     classpath sourceSets.test.runtimeClasspath
     classpath configurations.runtime
 }
+
+task avgBatteryTestQueue(type: JavaExec, dependsOn: classes) {
+    main = 'AvgBatteryTestQueue'
+    classpath sourceSets.test.runtimeClasspath
+    classpath configurations.runtime
+}
