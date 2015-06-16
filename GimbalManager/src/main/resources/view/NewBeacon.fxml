@@ -9,7 +9,6 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-
 <GridPane hgap="14.0" maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.NewBeaconController">
   <children>
     <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
@@ -24,7 +23,7 @@
             <Font name="System Bold" size="13.0" />
           </font>
         </Label>
-            <TextField fx:id="factoryIDText" promptText="XXXX-YYYYY" />
+            <TextField fx:id="factoryIDText" onAction="#handleEnterKey" promptText="XXXX-YYYYY" />
       </children>
     </VBox>
     <HBox maxHeight="-Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1">

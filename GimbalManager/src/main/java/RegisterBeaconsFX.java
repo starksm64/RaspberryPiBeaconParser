@@ -25,6 +25,7 @@ import javafx.scene.control.Tab;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import view.BeaconConfigsViewController;
 import view.BeaconsViewController;
 import view.IBeaconInfo;
 import view.RootController;
@@ -62,8 +63,11 @@ public class RegisterBeaconsFX extends Application implements IBeaconInfo {
       System.out.printf("Selected nextMinorID=%d\n", nextMinorID);
 
       initRootLayout();
-
-      showBeaconsOverview();
+      System.out.printf("Loaded root view\n");
+      loadBeaconsOverview();
+      System.out.printf("Loaded beacons view\n");
+      loadConfigsOverview();
+      System.out.printf("Loaded configurations view\n");
    }
 
    @Override
@@ -134,9 +138,9 @@ public class RegisterBeaconsFX extends Application implements IBeaconInfo {
    }
 
    /**
-    * Shows the person overview inside the root layout.
+    * Shows the beacons view inside of the Beacons tab
     */
-   public void showBeaconsOverview() {
+   public void loadBeaconsOverview() {
       try {
          // Load the beacons
          beacons = manager.getBeacons();
@@ -156,7 +160,7 @@ public class RegisterBeaconsFX extends Application implements IBeaconInfo {
                beaconConfigByFactoryID.put(factoryID, config);
             }
          }
-         // Load person overview.
+         // Load beacons view
          FXMLLoader loader = new FXMLLoader();
          URL viewURL = RegisterBeaconsFX.class.getResource("view/BeaconsTable.fxml");
          loader.setLocation(viewURL);
@@ -168,8 +172,32 @@ public class RegisterBeaconsFX extends Application implements IBeaconInfo {
          controller.setBeaconModels(beacons);
 
          // Set the view as the content of the beacons tab
-         Tab beaconsTab = rootController.getBeaconsTab();
-         beaconsTab.setContent(beaconsView);
+         Tab tab = rootController.getBeaconsTab();
+         tab.setContent(beaconsView);
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+   }
+
+   /**
+    * Shows the beacon configs view inside of the Configuration tab
+    */
+   public void loadConfigsOverview() {
+      try {
+         // Load configuration view
+         FXMLLoader loader = new FXMLLoader();
+         URL viewURL = RegisterBeaconsFX.class.getResource("view/BeaconConfigsTable.fxml");
+         loader.setLocation(viewURL);
+         Pane beaconsView = loader.load();
+
+         // Give the controller the configuration data
+         BeaconConfigsViewController controller = loader.getController();
+         controller.setBeaconInfo(this);
+         controller.setConfigModels(beaconConfigurations.values());
+
+         // Set the view as the content of the configuration tab
+         Tab tab = rootController.getConfigurationTab();
+         tab.setContent(beaconsView);
       } catch (IOException e) {
          e.printStackTrace();
       }

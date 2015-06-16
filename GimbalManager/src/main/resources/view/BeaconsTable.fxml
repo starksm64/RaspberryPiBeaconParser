@@ -29,6 +29,25 @@
                   <Insets top="5.0" />
                </HBox.margin>
             </TextField>
+            <CheckBox fx:id="minorIDBox" mnemonicParsing="false" selected="true" text="MinorID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <tooltip>
+                  <Tooltip text="Filter by MinorID before all other properties" />
+               </tooltip>
+            </CheckBox>
+            <CheckBox fx:id="regexBox" mnemonicParsing="false" text="Regex">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </HBox.margin>
+            </CheckBox>
             <Label alignment="BOTTOM_CENTER" text="New:">
                <font>
                   <Font size="18.0" />
@@ -40,7 +59,7 @@
                   <Insets left="20.0" right="5.0" />
                </padding>
             </Label>
-            <Button fx:id="newBtn" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleNewBtnClick" text="Register...">
+            <Button fx:id="newBtn" alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleNewBtnClick" text="Register...">
                <font>
                   <Font size="18.0" />
                </font>

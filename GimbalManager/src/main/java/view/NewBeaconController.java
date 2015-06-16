@@ -39,6 +39,11 @@ public class NewBeaconController {
    }
 
    @FXML
+   public void handleEnterKey() {
+      handleOkBtnClick(null);
+   }
+
+   @FXML
    public void handleCancelBtnClick(ActionEvent event) {
       dialogStage.close();
    }

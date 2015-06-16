@@ -14,6 +14,8 @@ package view;
  * limitations under the License.
  */
 
+import javafx.beans.value.ObservableValue;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
@@ -47,8 +49,22 @@ public class RootController {
    public TabPane getTabPane() {
       return tabPane;
    }
+   public Tab getConfigurationTab() {
+      return configurationTab;
+   }
 
    public Tab getBeaconsTab() {
       return beaconsTab;
+   }
+
+   @FXML
+   public void tabChanged(ObservableValue<? extends Tab> ov, Tab t0, Tab t1) {
+       System.out.printf("Tab Selection tabChanged, ov=%s, t0=%s, t1=%s\n", ov, t0, t1);
+   }
+
+   @FXML
+   public void tabChanged(Event event) {
+      System.out.printf("Tab Selection tabChanged, event=%s\n", event);
+
    }
 }

@@ -25,6 +25,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -44,6 +45,10 @@ public class BeaconsViewController {
    private Button newBtn;
    @FXML
    private TextField filterField;
+   @FXML
+   private CheckBox minorIDBox;
+   @FXML
+   private CheckBox regexBox;
    @FXML
    private TableView<BeaconModel> beaconsTable;
    @FXML
@@ -70,6 +75,12 @@ public class BeaconsViewController {
       return beaconModels;
    }
 
+   @FXML
+   private void handleRegexClick(ActionEvent event) {
+      // If this is a regex
+      boolean isRegex = regexBox.isSelected();
+
+   }
    public void handleNewBtnClick(ActionEvent event) {
       String factoryID = showNewBeaconDialog();
       if(factoryID != null) {
@@ -90,7 +101,6 @@ public class BeaconsViewController {
          this.beaconModels.add(bm);
       }
    }
-
    /**
     * Initializes the controller class. This method is automatically called
     * after the fxml file has been loaded.
@@ -107,6 +117,7 @@ public class BeaconsViewController {
       // 1. Wrap the ObservableList in a FilteredList (initially display all data).
       FilteredList<BeaconModel> filteredData = new FilteredList<>(beaconModels, p -> true);
       // 2. Set the filter Predicate whenever the filter changes.
+      /*
       filterField.textProperty().addListener((observable, oldValue, newValue) -> {
          filteredData.setPredicate(beacon -> {
             // If filter text is empty, display all persons.
@@ -114,7 +125,7 @@ public class BeaconsViewController {
                return true;
             }
 
-            // Compare first name and last name of every person with filter text.
+            // Compare the beacon name and then factory id as partial strings by default
             String lowerCaseFilter = newValue.toLowerCase();
 
             if (beacon.getName().toLowerCase().contains(lowerCaseFilter)) {
@@ -125,6 +136,15 @@ public class BeaconsViewController {
             return false;
          });
       });
+      */
+
+      filterField.textProperty().addListener((observable, oldValue, newValue) -> {
+         final boolean prioritizeMinorID = minorIDBox.isSelected();
+         if(regexBox.isSelected())
+            filteredData.setPredicate(new BeaconRegex(newValue, prioritizeMinorID));
+         else
+            filteredData.setPredicate(new BeaconPredicate(newValue, prioritizeMinorID));
+         });
 
       // 3. Wrap the FilteredList in a SortedList.
       SortedList<BeaconModel> sortedData = new SortedList<>(filteredData);
