@@ -93,7 +93,10 @@ public class PlotBatteryRSSI {
          data.add(new Data<>(time, rssi));
       }
       browser.close();
-      System.out.printf("minTime=%s, maxTime=%s\n", minTime, maxTime);
+      long duration = maxTime - minTime;
+      long hours = duration / (3600*1000);
+      double days = hours / 24.0;
+      System.out.printf("minTime=%s, maxTime=%s, hours=%d, days=%.2f\n", minTime, maxTime, hours, days);
       return data;
    }
 }

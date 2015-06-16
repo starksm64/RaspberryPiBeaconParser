@@ -2,6 +2,7 @@ import org.jboss.summit2015.beacon.Beacon;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
+import java.util.Enumeration;
 
 /**
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
@@ -101,4 +102,14 @@ public class Utils {
        return accuracy;
      }
    }
+
+    public static void dumpMessage(Message msg) throws JMSException {
+       Enumeration<String> names = msg.getPropertyNames();
+       System.out.printf("Msg(%s):\n", msg.getClass());
+       while(names.hasMoreElements()) {
+          String name = names.nextElement();
+          Object value = msg.getObjectProperty(name);
+          System.out.printf("\t%s=%s(%s)\n", name, value, value.getClass());
+       }
+    }
 }

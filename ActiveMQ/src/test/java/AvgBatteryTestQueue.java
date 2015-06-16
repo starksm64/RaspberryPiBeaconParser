@@ -19,8 +19,8 @@ import java.util.Properties;
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
  */
 public class AvgBatteryTestQueue {
-   private static final String USER = "guest";
-   private static final String PASSWORD = "guest";
+   private static final String USER = "demo-user";
+   private static final String PASSWORD = "2015-summit-user";
 
 
    public static void main(String[] args) throws Exception {
@@ -28,7 +28,7 @@ public class AvgBatteryTestQueue {
       // Local connection
       Properties props = new Properties();
       props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
-      props.setProperty("connectionfactory.myFactoryLookup", "amqp://192.168.1.107:5672");
+      props.setProperty("connectionfactory.myFactoryLookup", "amqp://localhost:5672");
       Context context = new InitialContext(props);
       ConnectionFactory factory = (ConnectionFactory) context.lookup("myFactoryLookup");
       Connection connection = factory.createConnection(USER, PASSWORD);
