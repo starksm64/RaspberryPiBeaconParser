@@ -136,28 +136,12 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/2.3" />
-        <option name="gradleJvm" value="1.8latest" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ActiveMQ" />
-            <option value="$PROJECT_DIR$/ConfigManager" />
-            <option value="$PROJECT_DIR$/GimbalManager" />
-            <option value="$PROJECT_DIR$/ReplayService" />
-            <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/gui" />
-            <option value="$PROJECT_DIR$/proton" />
-            <option value="$PROJECT_DIR$/scanner" />
-          </set>
-        </option>
       </GradleProjectSettings>
     </option>
   </component>
   <component name="IdProvider" IDEtalkID="E576B153E5015CCAD552462C110221EB" />
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/ScannerStatus" libraries="{Node.js v0.12.0 Core Modules, ScannerStatus node_modules}" />
-    <file url="file://$PROJECT_DIR$/websocket" libraries="{Node.js v0.12.0 Core Modules}" />
-    <file url="PROJECT" libraries="{jquery}" />
+    <file url="file://$PROJECT_DIR$/ScannerStatus" libraries="{ScannerStatus node_modules}" />
     <includedPredefinedLibrary name="Node.js Globals" />
   </component>
   <component name="Palette2">
@@ -307,7 +291,7 @@
       <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8latest" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectRunConfigurationManager">
@@ -1069,10 +1053,7 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.0.6.RELEASE/ab7d5bc1f197801bf4cc20d86d98605d05f61c03/spring-webmvc-3.0.6.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="NodeJS node_modules" type="javaScript">
-      <properties>
-        <option name="frameworkName" value="node_modules" />
-      </properties>
+    <library name="NodeJS node_modules">
       <CLASSES>
         <root url="file://$PROJECT_DIR$/NodeJS/node_modules" />
       </CLASSES>
@@ -1089,26 +1070,14 @@
         <root url="jar://$USER_HOME$/.ideaLibSources/tyrus-standalone-client-jdk-1.8-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="ScannerHealth node_modules" type="javaScript">
-      <properties>
-        <option name="frameworkName" value="node_modules" />
-        <sourceFilesUrls>
-          <item url="file://$PROJECT_DIR$/ScannerHealth/node_modules" />
-        </sourceFilesUrls>
-      </properties>
+    <library name="ScannerHealth node_modules">
       <CLASSES>
         <root url="file://$PROJECT_DIR$/ScannerHealth/node_modules" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
     </library>
-    <library name="ScannerStatus node_modules" type="javaScript">
-      <properties>
-        <option name="frameworkName" value="node_modules" />
-        <sourceFilesUrls>
-          <item url="file://$PROJECT_DIR$/ScannerStatus/node_modules" />
-        </sourceFilesUrls>
-      </properties>
+    <library name="ScannerStatus node_modules">
       <CLASSES>
         <root url="file://$PROJECT_DIR$/ScannerStatus/node_modules" />
       </CLASSES>
