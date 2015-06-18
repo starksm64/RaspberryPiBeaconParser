@@ -147,24 +147,52 @@ public class MainController {
     }
     @FXML
     private void createSSHConfigAction() {
-
+        consoleArea.setText(scannersMap.keySet().toString());
+        scannersMap.forEach((name, node) -> {
+            ScannerInfo info = node.getInfo();
+            StringBuilder entry = new StringBuilder(String.format("\nHost %s\n", info.getScannerID().toLowerCase()));
+            entry.append("HostName ");
+            entry.append(info.getProperty(StatusProperties.HostIPAddress.name()));
+            entry.append('\n');
+            entry.append("IdentityFile ~/.ssh/scanners_root_rsa\n");
+            entry.append("KeepAlive yes\n");
+            entry.append("ServerAliveInterval 1\n");
+            entry.append("User root\n\n");
+            consoleArea.appendText(entry.toString());
+        });
+    }
+    @FXML
+    private void createScannerConfigAction() {
+        consoleArea.setText("Creating scanners config...\n");
+        StringBuilder config = new StringBuilder("\"scannerProperties\": [");
+        scannersMap.forEach((name, node) -> {
+            ScannerInfo info = node.getInfo();
+            String entry = String.format("{\n" +
+                "      \"scannerID\": \""+info.getScannerID()+"\",\n" +
+                "      \"macaddr\": \""+info.getProperty(StatusProperties.MACAddress.name())+"\",\n" +
+                "      \"hostname\": \"RaspberryPi2-Room201\",\n" +
+                "      \"heartbeatUUID\": \"DAF246CEF20011E4B116123B93F75CBA\",\n" +
+                "      \"destinationName\": \"beaconEvents\",\n" +
+                "      \"useQueues\": \"false\",\n" +
+                "      \"beaconID\": \"R4MQ-7RM41\",\n" +
+                "      \"beaconNo\": \"3\"\n" +
+                "    }", info.getScannerID().toLowerCase());
+            /*
+            entry.append("HostName ");
+            entry.append(info.getProperty(StatusProperties.HostIPAddress.name()));
+            entry.append('\n');
+            entry.append("IdentityFile ~/.ssh/scanners_root_rsa\n");
+            entry.append("KeepAlive yes\n");
+            entry.append("ServerAliveInterval 1\n");
+            entry.append("User root\n\n");
+            */
+            consoleArea.appendText(entry.toString());
+        });
     }
 
     @FXML
     private void handleCloseAction() {
-        consoleArea.setText(scannersMap.keySet().toString());
-        scannersMap.forEach((name, node) -> {
-            ScannerInfo info = node.getInfo();
-            StringBuilder entry = new StringBuilder(String.format("Host %s\n", info.getScannerID().toLowerCase()));
-            entry.append("HostName ");
-            entry.append(info.getProperty("HostIpAddress"));
-            entry.append('\n');
-            entry.append("IdentityFile ~/.ssh/scanners_root_rsa");
-            entry.append("KeepAlive yes");
-            entry.append("ServerAliveInterval 1");
-            entry.append("User root");
-            consoleArea.appendText(entry.toString());
-        });
+        System.exit(0);
     }
 
     private void doGitUpdate(String hostIP) {

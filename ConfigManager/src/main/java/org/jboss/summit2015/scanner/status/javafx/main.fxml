@@ -10,7 +10,8 @@
         <menus>
           <Menu mnemonicParsing="false" text="App">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#createSSHConfigAction" text="Generate Config" />
+                  <MenuItem mnemonicParsing="false" onAction="#createSSHConfigAction" text="SSH Config" />
+                  <MenuItem mnemonicParsing="false" onAction="#createScannerConfigAction" text="Scanner Config" />
               <MenuItem mnemonicParsing="false" onAction="#handleCloseAction" text="Close" />
             </items>
           </Menu>
