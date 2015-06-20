@@ -35,6 +35,7 @@ jar {
     archiveName = "${project.archivesBaseName}-service.jar"
 }
 
+
 // Tasks to install the scanner-configd and scannerd services
 task installSystemdConf(dependsOn: [processResources], type: Copy) {
     from "$buildDir/resources/main/systemd"

@@ -23,6 +23,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -85,7 +86,7 @@ public class TestJsonConfig {
    public void testBaseConfig() {
       BaseConfig config = new BaseConfig();
       config.setBrokerURL("host1:port");
-      config.setUser("user1");
+      config.setUsername("user1");
       config.setPassword("password1");
       ArrayList<Properties> roomProperties = new ArrayList<>();
 
@@ -126,6 +127,14 @@ public class TestJsonConfig {
       System.out.printf("findPropertiesByHardwareAddress: %s\n", testProps);
    }
 
+   @Test
+   public void testGetAll() throws Exception {
+      byte[] macaddr = {0x00, 0x50, 0x56, (byte) 0xc0, 0x00, 0x08};
+      String key = String.format("%02x:%02x:%02x:%02x:%02x:%02x", macaddr[0], macaddr[1], macaddr[2], macaddr[3], macaddr[4], macaddr[5]);
+      System.out.printf("test format: %s\n", key);
+      List<Utils.InterfaceConfig> allAddress = Utils.getAllAddress();
+      allAddress.forEach((ic) -> System.out.println(ic));
+   }
    @Test
    public void testDownloadConfig() throws Exception {
       Properties props = new Properties();

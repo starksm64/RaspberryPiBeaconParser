@@ -16,4 +16,4 @@ RemainAfterExit=yes
 Type=forking
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-username.target

@@ -17,9 +17,9 @@ var StatusController = (function () {
             _this.updateStatusView();
         };
         $interval(callback, 15000);
-        $scope.client = new WebSocket("ws://52.10.252.216:61614/stomp");
+        $scope.client = new WebSocket("ws://184.72.167.147:61614/stomp");
         $scope.client.addEventListener("open", function (evt) {
-            console.log("open: " + evt);
+            console.log("open: %O", evt);
             var command = ["CONNECT"];
             command.push("accept-version:1.2");
             command.push(StatusController.LF);
@@ -29,10 +29,10 @@ var StatusController = (function () {
             $scope.client.send(msg);
         });
         $scope.client.addEventListener("error", function (evt) {
-            console.log("error: " + evt);
+            console.log("error: %O", evt);
         });
         $scope.client.addEventListener("close", function (evt) {
-            console.log("close: " + evt);
+            console.log("close: %O", evt);
         });
         var messageCallback = function (message) {
             _this.messageCallback(message);
@@ -132,4 +132,3 @@ var StatusController = (function () {
     ];
     return StatusController;
 })();
-//# sourceMappingURL=StatusController.js.map

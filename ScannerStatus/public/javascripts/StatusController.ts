@@ -25,9 +25,9 @@ class StatusController {
         };
         $interval(callback, 15000);
 
-        $scope.client = new WebSocket("ws://52.10.252.216:61614/stomp");
+        $scope.client = new WebSocket("ws://184.72.167.147:61614/stomp");
         $scope.client.addEventListener("open", (evt: Event) => {
-            console.log("open: "+evt);
+            console.log("open: %O", evt);
             var command = ["CONNECT"];
             command.push("accept-version:1.2");
             command.push(StatusController.LF);
@@ -37,10 +37,10 @@ class StatusController {
             $scope.client.send(msg);
         });
         $scope.client.addEventListener("error", (evt: ErrorEvent) => {
-            console.log("error: "+evt);
+            console.log("error: %O", evt);
         });
         $scope.client.addEventListener("close", (evt: CloseEvent) => {
-            console.log("close: "+evt);
+            console.log("close: %O", evt);
         });
         var messageCallback = (message: any) => {
             this.messageCallback(message);

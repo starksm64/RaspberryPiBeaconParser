@@ -12,6 +12,8 @@
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#createSSHConfigAction" text="SSH Config" />
                   <MenuItem mnemonicParsing="false" onAction="#createScannerConfigAction" text="Scanner Config" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleStartConfigServer" text="Start ConfigServer" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
               <MenuItem mnemonicParsing="false" onAction="#handleCloseAction" text="Close" />
             </items>
           </Menu>
@@ -83,6 +85,8 @@
                               <Button mnemonicParsing="false" onAction="#handleGitPullAction" text="Git Pull" />
                               <Button mnemonicParsing="false" text="Update Services" />
                               <Button mnemonicParsing="false" onAction="#handleServiceStatusAction" text="Services Status" />
+                              <Button mnemonicParsing="false" onAction="#checkConfigAction" text="Check Config..." />
+                              <Button mnemonicParsing="false" onAction="#handleSCPAction" text="Scp Files..." />
                           </items>
                         </ToolBar>
                      </top>

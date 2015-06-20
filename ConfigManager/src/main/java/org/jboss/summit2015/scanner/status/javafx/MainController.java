@@ -10,23 +10,32 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.HPos;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.control.TitledPane;
 import javafx.scene.layout.GridPane;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import org.infinispan.util.StringPropertyReplacer;
+import org.jboss.summit2015.config.DynamicScannerConfig;
 import org.jboss.summit2015.scanner.status.StatusProperties;
 import org.jboss.summit2015.scanner.status.model.ScannerInfo;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.net.InetAddress;
+import java.net.URL;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.TreeMap;
 
 /**
@@ -133,6 +142,27 @@ public class MainController {
             consoleArea.setText(sw.toString());
         }
     }
+
+    @FXML
+    private void checkConfigAction() {
+        String hostIP = selectedInfo.getLastStatus().get(StatusProperties.HostIPAddress.name());
+        consoleArea.setText(String.format("Checking config for: %s\n", selectedInfo.getScannerID()));
+        Thread gitThread = new Thread(() -> doCheckConfig(hostIP));
+        gitThread.start();
+    }
+    private void doCheckConfig(String hostIP) {
+        TextStream consoleStream = text -> Platform.runLater(() -> consoleArea.appendText(text));
+        try {
+            String info = JSchUtils.checkScannerConfig(hostIP, consoleStream);
+            consoleArea.appendText("Done");
+        } catch (JSchException|IOException e) {
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            e.printStackTrace(pw);
+            consoleArea.appendText(sw.toString());
+        }
+    }
+
     @FXML
     private void handleSSHAction() {
 
@@ -191,6 +221,58 @@ public class MainController {
     }
 
     @FXML
+    private void handleSCPAction() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Open File for SCP");
+        Stage mainStage = (Stage) consoleArea.getScene().getWindow();
+        File selectedFile = fileChooser.showOpenDialog(mainStage);
+        if (selectedFile != null) {
+            TextInputDialog dialog = new TextInputDialog("");
+            dialog.setTitle("Target Directory");
+            dialog.setHeaderText("Specify target directory");
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()){
+                String targetPath = result.get();
+                String hostIP = selectedInfo.getLastStatus().get(StatusProperties.HostIPAddress.name());
+                consoleArea.setText(String.format("Beginning scp(%s) to: %s:%s\n", selectedFile, selectedInfo.getScannerID(), targetPath));
+                Thread scpThread = new Thread(() -> doSCP(hostIP, selectedFile, targetPath), "handleSCPAction");
+                scpThread.setDaemon(true);
+                scpThread.start();
+            }
+        }
+    }
+    private void doSCP(String hostIP, File selectedFile, String targetPath) {
+        TextStream consoleStream = text -> Platform.runLater(() -> consoleArea.appendText(text));
+        try {
+            JSchUtils.scpToRemote(hostIP, selectedFile, targetPath, consoleStream);
+            consoleArea.appendText("Done");
+        } catch (JSchException|IOException e) {
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            e.printStackTrace(pw);
+            consoleArea.appendText(sw.toString());
+        }
+    }
+
+    @FXML
+    private void handleStartConfigServer() throws IOException {
+        DynamicScannerConfig dynamicConfig = new DynamicScannerConfig();
+        Thread serverThread = new Thread(dynamicConfig::run, "DynamicScannerConfig");
+        URL fxml = getClass().getResource("serverConsole.fxml");
+        System.out.printf("Loading fxml: %s\n", fxml);
+        FXMLLoader loader = new FXMLLoader(fxml);
+        Parent root = loader.load();
+        ServerConsoleController controller = loader.getController();
+        dynamicConfig.setConsole(controller.getConsole());
+
+        Stage stage = new Stage();
+        stage.setTitle("Configure Server");
+        stage.setScene(new Scene(root, 600, 400));
+        stage.show();
+        serverThread.start();
+    }
+
+    @FXML
     private void handleCloseAction() {
         System.exit(0);
     }
@@ -241,6 +323,8 @@ public class MainController {
             StatusProperties.HostIPAddress,
             StatusProperties.MACAddress,
             StatusProperties.SystemTime,
+            StatusProperties.SystemType,
+            StatusProperties.SystemOS,
             StatusProperties.Uptime,
             StatusProperties.LoadAverage,
             StatusProperties.RawEventCount,

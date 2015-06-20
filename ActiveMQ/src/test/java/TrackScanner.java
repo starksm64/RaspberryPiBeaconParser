@@ -31,7 +31,7 @@ public class TrackScanner {
         props.setProperty(InitialContext.INITIAL_CONTEXT_FACTORY, "org.apache.qpid.jms.jndi.JmsInitialContextFactory");
         //props.setProperty("connectionfactory.myFactoryLookup", "amqp://192.168.1.107:5672");
         //props.setProperty("connectionfactory.myFactoryLookup", "amqp://52.10.252.216:5672");
-        props.setProperty("connectionfactory.myFactoryLookup", "amqp://184.72.167.147:5672");
+        props.setProperty("connectionfactory.myFactoryLookup", "amqp://184.72.167.147:5672?transport.tcpKeepAlive=true");
         Context context = new InitialContext(props);
         ConnectionFactory factory = (ConnectionFactory) context.lookup("myFactoryLookup");
         Connection connection = factory.createConnection(USER, PASSWORD);

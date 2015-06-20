@@ -60,4 +60,3 @@ var ScannerStatus;
     })();
     ScannerStatus.ScannerHealth = ScannerHealth;
 })(ScannerStatus || (ScannerStatus = {}));
-//# sourceMappingURL=scannerHealth.js.map

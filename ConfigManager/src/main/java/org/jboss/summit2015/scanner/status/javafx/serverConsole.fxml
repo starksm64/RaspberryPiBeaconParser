@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jboss.summit2015.scanner.status.javafx.ServerConsoleController">
+   <center>
+      <TitledPane text="ScannerConfigServer">
+         <content>
+            <TextArea fx:id="consoleArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </content>
+      </TitledPane>
+   </center>
+   <top>
+      <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleCloseAction" text="Button" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

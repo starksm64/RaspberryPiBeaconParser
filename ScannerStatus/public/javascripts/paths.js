@@ -3,4 +3,3 @@
 /// <reference path='StatusController.ts' />
 /// <reference path='scannerHealth.ts' />
 /// <reference path='IStatusScope.ts' />
-//# sourceMappingURL=paths.js.map

@@ -136,6 +136,19 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/2.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ActiveMQ" />
+            <option value="$PROJECT_DIR$/ConfigManager" />
+            <option value="$PROJECT_DIR$/GimbalManager" />
+            <option value="$PROJECT_DIR$/ReplayService" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/gui" />
+            <option value="$PROJECT_DIR$/proton" />
+            <option value="$PROJECT_DIR$/scanner" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

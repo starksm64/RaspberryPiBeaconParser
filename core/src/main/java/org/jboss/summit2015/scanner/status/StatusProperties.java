@@ -21,6 +21,7 @@ public enum StatusProperties {
    HostIPAddress,      // the ip address of the scanner host
    MACAddress,         // the MAC address of the scanner host
    SystemType,         // Type of the system; PiB, PiB+, P2B, IntelNUC, BeagleBoneBlack, ...
+   SystemOS,           // Type of the operating system; Pidora, Raspbian, ...
    SystemTime,         // strftime(timestr, 128, "%F %T", tm) = YYYY-MM-DD HH:MM:SS
    SystemTimeMS,       // system time in milliseconds since epoch
    Uptime,             // uptime of scanner process in seconds as string formatted as "uptime: %ld, days:%d, hrs: %d, min: %d"

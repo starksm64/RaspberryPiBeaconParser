@@ -19,13 +19,18 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.OpenSSHConfig;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.UserInfo;
+import org.jboss.summit2015.scanner.status.javafx.JSchUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 
 /**
  * Execute commands on scanners using ssh
@@ -49,7 +54,7 @@ public class TstJSch {
                      }
       );
       jsch = new JSch();
-      String host = "192.168.1.142";
+      String host = "192.168.1.47";
       String user = "root";
 
       ConfigRepository configRepository = OpenSSHConfig.parseFile("~/.ssh/config");
@@ -132,6 +137,91 @@ public class TstJSch {
         channel.setCommand("cd ~/NativeRaspberryPiBeaconParser; git pull");
         readOutput(channel);
         session.disconnect();
+    }
+
+    @Test
+    public void testSCP() throws Exception {
+        session.connect();
+        ChannelExec channel = (ChannelExec) session.openChannel("exec");
+        channel.setCommand("scp -t /usr/local/bin/ConfigManager-service.jar");
+
+// get I/O streams for remote scp
+        OutputStream out=channel.getOutputStream();
+        InputStream in=channel.getInputStream();
+
+        channel.connect();
+
+        if(checkAck(in)!=0){
+            System.exit(0);
+        }
+
+        File lfile = new File("/Users/starksm/Dev/IoT/BLE/RaspberryPiBeaconParser/ConfigManager/build/libs/ConfigManager-service.jar");
+
+        // send "C0644 filesize filename", where filename should not include '/'
+        long filesize=lfile.length();
+        String command="C0644 "+filesize+" " + lfile.getName();
+        /*???
+        if(lfile.lastIndexOf('/')>0){
+            command+=lfile.substring(lfile.lastIndexOf('/')+1);
+        }
+        else{
+            command+=lfile;
+        }
+        */
+        command+="\n";
+        out.write(command.getBytes()); out.flush();
+        if(checkAck(in)!=0){
+            System.exit(0);
+        }
+
+        // send a content of lfile
+        FileInputStream fis=new FileInputStream(lfile);
+        byte[] buf=new byte[1024];
+        while(true){
+            int len=fis.read(buf, 0, buf.length);
+            if(len<=0) break;
+            out.write(buf, 0, len); //out.flush();
+        }
+        fis.close();
+
+        // send '\0'
+        buf[0]=0;
+        out.write(buf, 0, 1);
+        out.flush();
+        if(checkAck(in)!=0){
+            throw new IOException("checkAck error");
+        }
+        out.close();
+
+        channel.disconnect();
+        session.disconnect();
+}
+
+    static int checkAck(InputStream in) throws IOException{
+        int b=in.read();
+        // b may be 0 for success,
+        //          1 for error,
+        //          2 for fatal error,
+        //          -1
+        if(b==0) return b;
+        if(b==-1) return b;
+
+        if(b==1 || b==2){
+            StringBuffer sb=new StringBuffer();
+            int c;
+            do {
+                c=in.read();
+                sb.append((char)c);
+            }
+            while(c!='\n');
+            if(b==1){ // error
+                System.out.print(sb.toString());
+            }
+            if(b==2){ // fatal error
+                System.out.print(sb.toString());
+            }
+        }
+        return b;
     }
 
     private void readOutput(ChannelExec channel) throws IOException, JSchException {
