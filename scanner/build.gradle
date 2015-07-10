@@ -18,3 +18,10 @@ dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
+
+task runJavaScanner(type: JavaExec, dependsOn: classes) {
+    main = 'org.jboss.summit2015.beacon.bluez.HCIDump'
+    systemProperty "java.library.path", "/usr/local/lib"
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}
