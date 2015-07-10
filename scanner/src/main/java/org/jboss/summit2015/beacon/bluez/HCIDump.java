@@ -86,6 +86,9 @@ public class HCIDump {
     }
 
     public static void main(String[] args) throws InterruptedException {
+        int device = 0;
+        if(args.length > 0)
+            device = Integer.parseInt(args[0]);
         try {
             // Load
             System.setProperty("java.library.path", "/tmp");
@@ -94,7 +97,7 @@ public class HCIDump {
             ByteBuffer bb = ByteBuffer.allocateDirect(beacon_info_SIZEOF);
             bb.order(ByteOrder.LITTLE_ENDIAN);
             HCIDump.theNativeBuffer = bb;
-            HCIDump.allocScanner(bb, 1);
+            HCIDump.allocScanner(bb, device);
             eventCount = 1;
             boolean running = true;
             while (running) {
