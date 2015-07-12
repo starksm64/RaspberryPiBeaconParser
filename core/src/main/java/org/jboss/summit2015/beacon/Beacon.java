@@ -48,9 +48,11 @@ public class Beacon implements Serializable {
    private int calibratedPower;
    private int rssi;
    private int messageType;
+   private int count;
    private long time;
+    private int scannerSequenceNo;
 
-   public Beacon() {
+    public Beacon() {
    }
    /**
     * Create a beacon
@@ -189,8 +191,25 @@ public class Beacon implements Serializable {
       this.messageType = messageType;
    }
 
+   public int getCount() {
+      return count;
+   }
+
+   public void setCount(int count) {
+      this.count = count;
+   }
+   public void incCount() {
+      this.count ++;
+   }
+
    public boolean isHeartbeat() {
       return messageType == MsgType.SCANNER_HEARTBEAT.ordinal();
+   }
+   public void setHeartbeat(boolean flag) {
+      if(flag)
+         messageType = MsgType.SCANNER_HEARTBEAT.ordinal();
+      else
+         messageType = MsgType.SCANNER_READ.ordinal();
    }
 
    public static Beacon fromByteMsg(byte[] msg) throws IOException {
@@ -311,4 +330,12 @@ public class Beacon implements Serializable {
       beacon.setMessageType(messageType);
       return beacon;
    }
+
+    public void setScannerSequenceNo(int scannerSequenceNo) {
+        this.scannerSequenceNo = scannerSequenceNo;
+    }
+
+    public int getScannerSequenceNo() {
+        return scannerSequenceNo;
+    }
 }
