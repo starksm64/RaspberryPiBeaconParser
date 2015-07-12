@@ -15,6 +15,9 @@ package org.jboss.summit2015.beacon.scanner;
 
 import org.jboss.logging.Logger;
 import org.jboss.summit2015.beacon.Beacon;
+import org.jboss.summit2015.beacon.common.MsgPublisher;
+import org.jboss.summit2015.beacon.common.ParseCommand;
+import org.jboss.summit2015.beacon.publishers.paho.MqttPublisher;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -131,7 +134,7 @@ public class ParserLogic extends AbstractParser {
             if(beacons != null)
                beacons.addLast(beacon);
             if(!parseCmd.skipPublish)
-               publisherClient.queueForPublish(parseCmd.topicName, MqttQOS.AT_MOST_ONCE, msg);
+               publisherClient.queueForPublish(parseCmd.destinationName, MqttQOS.AT_MOST_ONCE, msg);
          } else if(line.startsWith("> 04")) {
             log.debugf("No match: %s", line);
             line = br.readLine();

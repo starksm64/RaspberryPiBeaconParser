@@ -1,5 +1,7 @@
 package org.jboss.summit2015.beacon.bluez;
 
+import org.jboss.summit2015.beacon.Beacon;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
@@ -48,15 +50,94 @@ public class HCIDump {
      */
     private static ByteBuffer theNativeBuffer;
     private static volatile int eventCount = 0;
+    private static IRawEventCallback rawEventCallback;
+    private static IEventCallback eventCallback;
+    private static String scannerID;
+
     public native static void allocScanner(ByteBuffer bb, int device);
     public native static void freeScanner();
 
+    public static IRawEventCallback getRawEventCallback() {
+        return rawEventCallback;
+    }
+
+    public static void setRawEventCallback(IRawEventCallback rawEventCallback) {
+        HCIDump.rawEventCallback = rawEventCallback;
+    }
+
+    public static IEventCallback getEventCallback() {
+        return eventCallback;
+    }
+
+    public static void setEventCallback(IEventCallback eventCallback) {
+        HCIDump.eventCallback = eventCallback;
+    }
+
+    public static String getScannerID() {
+        return scannerID;
+    }
+
+    public static void setScannerID(String scannerID) {
+        HCIDump.scannerID = scannerID;
+    }
+
+    /**
+     * Setup the native scanner stack for the given hciDev interface. This allocates the direct ByteBuffer used by
+     * the native stack and starts the scanner running by calling allocScanner
+     * @param hciDev - the host controller interface (for example, hci0)
+     * @see #allocScanner(ByteBuffer, int)
+     */
+    public static void initScanner(String hciDev) {
+        char devNumber = hciDev.charAt(hciDev.length()-1);
+        int device = devNumber - '0';
+        ByteBuffer bb = ByteBuffer.allocateDirect(beacon_info_SIZEOF);
+        bb.order(ByteOrder.LITTLE_ENDIAN);
+        HCIDump.theNativeBuffer = bb;
+        HCIDump.allocScanner(bb, device);
+    }
+
+    /**
+     *
+     * @param info
+     * @param buffer
+     */
+    public static void freezeBeaconInfo(BeaconInfo info, ByteBuffer buffer) {
+        byte uuid[] = new byte[36];
+        int uuidLength = 0;
+        for (int n = 0; n < uuid.length; n++) {
+            byte bn = buffer.get(n);
+            if(bn == 0)
+                break;
+            uuid[n] = bn;
+            uuidLength ++;
+        }
+        info.uuid = new String(uuid, 0, uuidLength);
+        info.isHeartbeat = buffer.getInt(IS_HEARTBEAT_OFFSET) != 0;
+        info.count = buffer.getInt(count_OFFSET);
+        info.code = buffer.getInt(code_OFFSET);
+        info.manufacturer = buffer.getInt(manufacturer_OFFSET);
+        info.major = buffer.getInt(major_OFFSET);
+        info.minor = buffer.getInt(minor_OFFSET);
+        info.power = buffer.getInt(power_OFFSET);
+        info.calibrated_power = buffer.getInt(calibrated_power_OFFSET);
+        info.rssi = buffer.getInt(rssi_OFFSET);
+        info.time = buffer.getLong(time_OFFSET);
+    }
+
     /**
      * Callback from native code to indicate that theNativeBuffer has been updated with new event data. This happens
-     * from the thread that runs the scanner loop and has attached itself to this JavaVM instance.
+     * from the thread that runs the scanner loop and has attached itself to this JavaVM instance. This will dispatch
+     * to the rawEventCallback, eventCallback in that preferred order.
      */
-    public static void eventNotification() {
+    public static boolean eventNotification() {
+        boolean stop = false;
         eventCount ++;
+        if(rawEventCallback != null) {
+            byte[] rawBuffer = theNativeBuffer.array();
+            stop = rawEventCallback.beaconEvent(rawBuffer);
+            return stop;
+        }
+
         // Read the native buffer via theNativeBuffer
         try {
             byte uuid[] = new byte[36];
@@ -79,19 +160,33 @@ public class HCIDump {
             int calibrated_power = theNativeBuffer.getInt(calibrated_power_OFFSET);
             int rssi = theNativeBuffer.getInt(rssi_OFFSET);
             long time = theNativeBuffer.getLong(time_OFFSET);
-            System.out.printf("event: %s,%d,%d rssi=%d, time=%d\n", uuidStr, major, minor, rssi, time);
+            if(eventCallback != null) {
+                Beacon beacon = new Beacon(scannerID, uuidStr, code, manufacturer, major, minor, power, rssi, time);
+                beacon.setHeartbeat(isHeartbeat);
+                beacon.setCount(count);
+                stop = eventCallback.beaconEvent(beacon);
+            } else {
+                System.out.printf("event: %s,%d,%d rssi=%d, time=%d\n", uuidStr, major, minor, rssi, time);
+            }
         } catch (Throwable t) {
             t.printStackTrace();
         }
+        return stop;
     }
 
+    /**
+     * Simple main entry point to validate the receipt of the beacon info messages from the bluez stack. This
+     * sets the java.library.path to /usr/local/lib so that libscannerJni.so must be installed to that location.
+     * @param args
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws InterruptedException {
         int device = 0;
         if(args.length > 0)
             device = Integer.parseInt(args[0]);
         try {
             // Load
-            System.setProperty("java.library.path", "/tmp");
+            System.setProperty("java.library.path", "/usr/local/lib");
             System.loadLibrary("scannerJni");
 
             ByteBuffer bb = ByteBuffer.allocateDirect(beacon_info_SIZEOF);

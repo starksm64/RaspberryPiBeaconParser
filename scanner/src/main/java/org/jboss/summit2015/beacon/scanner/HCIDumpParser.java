@@ -16,6 +16,7 @@ package org.jboss.summit2015.beacon.scanner;
 import com.beust.jcommander.JCommander;
 import org.jboss.logging.Logger;
 import org.jboss.summit2015.beacon.Beacon;
+import org.jboss.summit2015.beacon.common.ParseCommand;
 import org.jboss.summit2015.beacon.ssh.SSHStreamParser;
 import org.jboss.summit2015.beacon.ssh.StreamSSHCommand;
 
