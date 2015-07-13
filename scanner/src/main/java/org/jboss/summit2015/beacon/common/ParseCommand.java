@@ -26,7 +26,7 @@ public class ParseCommand {
         description = "Specify the ID of the scanner reading the beacon events. If this is a string with a comma separated list of names, the scanner will cycle through them. If this is the string {IP}, the host ip address will be used.")
     public String scannerID = "{IP}";
     @Parameter(names = "-heartbeatUUID", description = "Specify the UUID of the beacon used to signal the scanner heartbeat event")
-    public String heartbeatUUID = null;
+    public String heartbeatUUID = "";
 
     @Parameter(names = "-clientID",
         description = "Specify the clientID to connect to the msg broker with")
