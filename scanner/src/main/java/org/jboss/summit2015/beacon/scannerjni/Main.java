@@ -15,6 +15,8 @@ public class Main {
     private static Logger log = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
+        System.loadLibrary("scannerJni");
+        log.info("Loaded native scannerJni library");
 
         ParseCommand cmdArgs = new ParseCommand();
         JCommander cmdArgParser = new JCommander(cmdArgs);
