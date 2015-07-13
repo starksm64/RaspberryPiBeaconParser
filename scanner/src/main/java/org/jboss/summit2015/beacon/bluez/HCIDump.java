@@ -135,6 +135,7 @@ public class HCIDump {
         if(rawEventCallback != null) {
             try {
                 ByteBuffer readOnly = theNativeBuffer.asReadOnlyBuffer();
+                readOnly.order(ByteOrder.LITTLE_ENDIAN);
                 stop = rawEventCallback.beaconEvent(readOnly);
                 return stop;
             } catch (Throwable e) {
@@ -173,6 +174,7 @@ public class HCIDump {
             } else {
                 System.out.printf("event: %s,%d,%d rssi=%d, time=%d\n", uuidStr, major, minor, rssi, time);
                 ByteBuffer readOnly = theNativeBuffer.asReadOnlyBuffer();
+                readOnly.order(ByteOrder.LITTLE_ENDIAN);
                 BeaconInfo info = new BeaconInfo(readOnly);
                 System.out.printf("%s\n", info);
             }
