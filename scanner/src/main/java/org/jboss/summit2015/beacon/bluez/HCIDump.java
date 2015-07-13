@@ -172,7 +172,7 @@ public class HCIDump {
                 beacon.setCount(count);
                 stop = eventCallback.beaconEvent(beacon);
             } else {
-                System.out.printf("event: %s,%d,%d rssi=%d, time=%d\n", uuidStr, major, minor, rssi, time);
+                System.out.printf("event(%d): %s,%d,%d rssi=%d, time=%d\n", System.currentTimeMillis(), uuidStr, major, minor, rssi, time);
                 ByteBuffer readOnly = theNativeBuffer.asReadOnlyBuffer();
                 readOnly.order(ByteOrder.LITTLE_ENDIAN);
                 BeaconInfo info = new BeaconInfo(readOnly);
