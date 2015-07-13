@@ -118,6 +118,7 @@ public class HCIDumpParser {
     public boolean beaconEvent(byte[] rawInfo) {
         // First get a read only ByteBuffer view for efficient testing of the event info
         BeaconInfo info = new BeaconInfo(rawInfo);
+        eventCount ++;
 
         // Check for a termination marker every 1000 events or 5 seconds
         boolean stop = false;
