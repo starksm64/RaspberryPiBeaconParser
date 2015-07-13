@@ -130,7 +130,7 @@ public class HCIDumpParser {
         if((eventCount % 1000) == 0 || elapsed > 5000) {
             lastMarkerCheckTime = info.time;
             stop = stopMarkerExists();
-            log.infof("beacon_event_callback, status eventCount=%d, stop=%b\n", eventCount, stop);
+            log.infof("beaconEvent(time=%d), status eventCount=%d, stop=%b\n", info.time, eventCount, stop);
         }
         // Check max event count limit
         if(maxEventCount > 0 && eventCount >= maxEventCount)
