@@ -60,6 +60,7 @@ public class StatusInformation {
 
     public void setStatusInterval(int statusInterval) {
         this.statusInterval = statusInterval;
+        statusWindow.reset(statusInterval);
     }
 
     public int getRawEventCount() {

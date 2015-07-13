@@ -9,7 +9,7 @@ import java.util.Map;
  * A class that represents a collection of Beacon events seen within a time window
  */
 public class EventsWindow {
-    int windowSizeSeconds;
+    int windowSizeSeconds = 1;
     // Current analyze window begin/end in milliseconds to be compatible with BeaconInfo.time
     long begin;
     long end;
