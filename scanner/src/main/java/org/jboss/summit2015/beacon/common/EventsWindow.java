@@ -78,7 +78,7 @@ public class EventsWindow {
             end += 1000*windowSizeSeconds;
             if(end < info.time) {
                 // Warn about this as it seems to happen
-                System.err.printf("Warn: next bucket end(%d) < info.time(%d)\n", end, info.time);
+                System.err.printf("Warn: next bucket(%d-%d) end < info.time(%d), now=%d\n", begin, end, info.time, System.currentTimeMillis());
                 resetCurrentBucket();
             }
             eventCount = 0;
