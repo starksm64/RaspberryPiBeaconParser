@@ -141,7 +141,7 @@ public class HCIDump {
         eventCount ++;
         if(rawEventCallback != null) {
             try {
-                byte[] rawBuffer = theNativeBuffer.array();
+                byte[] rawBuffer;
                 if(theNativeBuffer.hasArray()) {
                     rawBuffer = theNativeBuffer.array();
                 } else {
