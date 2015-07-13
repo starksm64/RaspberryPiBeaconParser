@@ -72,7 +72,7 @@ public class HCIDumpParser {
         else if (!parseCommand.isSkipPublish()) {
             String username = parseCommand.getUsername();
             String password = parseCommand.getPassword();
-            MsgPublisher mp = MsgPublisherFactory.newMsgPublisher(parseCommand.getPubType(), parseCommand.getBrokerURL(), clientID, username, password);
+            publisher = MsgPublisherFactory.newMsgPublisher(parseCommand.getPubType(), parseCommand.getBrokerURL(), clientID, username, password);
             publisher.setUseTopics(!parseCommand.isUseQueues());
             log.infof("setUseTopics: %s\n", publisher.isUseTopics() ? "true" : "false");
             publisher.setDestinationName(parseCommand.getDestinationName());
