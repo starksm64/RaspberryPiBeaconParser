@@ -133,9 +133,14 @@ public class HCIDump {
         boolean stop = false;
         eventCount ++;
         if(rawEventCallback != null) {
-            byte[] rawBuffer = theNativeBuffer.array();
-            stop = rawEventCallback.beaconEvent(rawBuffer);
-            return stop;
+            try {
+                byte[] rawBuffer = theNativeBuffer.array();
+                stop = rawEventCallback.beaconEvent(rawBuffer);
+                return stop;
+            } catch (Throwable e) {
+                System.err.printf("Error during dispatch to rawEventCallback");
+                e.printStackTrace(System.err);
+            }
         }
 
         // Read the native buffer via theNativeBuffer
