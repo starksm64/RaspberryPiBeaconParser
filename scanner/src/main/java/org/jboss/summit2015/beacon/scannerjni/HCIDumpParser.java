@@ -115,12 +115,12 @@ public class HCIDumpParser {
      * Callback from native stack
      * @param rawInfo - the raw direct ByteBuffer store shared with native stack
      */
-    public boolean beaconEvent(byte[] rawInfo) {
+    public boolean beaconEvent(ByteBuffer rawInfo) {
         // First get a read only ByteBuffer view for efficient testing of the event info
         BeaconInfo info = new BeaconInfo(rawInfo);
         eventCount ++;
         if(log.isTraceEnabled()) {
-            log.tracef("beaconEvent(rawInfo.size=%d), uuid=%s, major=%d, minor=%d, rssi=%d\n", rawInfo.length,
+            log.tracef("beaconEvent(), uuid=%s, major=%d, minor=%d, rssi=%d\n",
                 info.uuid, info.major, info.minor, info.rssi);
         }
 

@@ -49,7 +49,6 @@ public class HCIDump {
         offsetof(beacon_info.time) = 72
      */
     private static ByteBuffer theNativeBuffer;
-    private static byte[] theNativeArray;
     private static volatile int eventCount = 0;
     private static IRawEventCallback rawEventCallback;
     private static IEventCallback eventCallback;
@@ -92,12 +91,6 @@ public class HCIDump {
         char devNumber = hciDev.charAt(hciDev.length()-1);
         int device = devNumber - '0';
         ByteBuffer bb = ByteBuffer.allocateDirect(beacon_info_SIZEOF);
-        if(bb.hasArray()) {
-            theNativeArray = bb.array();
-        } else {
-            theNativeArray = new byte[beacon_info_SIZEOF];
-            bb.get(theNativeArray);
-        }
         bb.order(ByteOrder.LITTLE_ENDIAN);
         HCIDump.theNativeBuffer = bb;
         HCIDump.allocScanner(bb, device);
@@ -141,15 +134,8 @@ public class HCIDump {
         eventCount ++;
         if(rawEventCallback != null) {
             try {
-                byte[] rawBuffer;
-                if(theNativeBuffer.hasArray()) {
-                    rawBuffer = theNativeBuffer.array();
-                } else {
-                    rawBuffer = theNativeArray;
-                    theNativeBuffer.get(rawBuffer);
-                }
-
-                stop = rawEventCallback.beaconEvent(rawBuffer);
+                ByteBuffer readOnly = theNativeBuffer.asReadOnlyBuffer();
+                stop = rawEventCallback.beaconEvent(readOnly);
                 return stop;
             } catch (Throwable e) {
                 System.err.printf("Error during dispatch to rawEventCallback");
