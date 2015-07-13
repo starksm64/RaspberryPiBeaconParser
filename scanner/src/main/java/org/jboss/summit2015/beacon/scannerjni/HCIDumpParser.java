@@ -66,7 +66,7 @@ public class HCIDumpParser {
         statusInformation.setBcastPort(parseCommand.getBcastPort());
 
         if (parseCommand.isAnalyzeMode()) {
-            log.infof("Running in analyze mode, window=%d seconds, begin=%lld\n", parseCommand.getAnalyzeWindow(),
+            log.infof("Running in analyze mode, window=%d seconds, begin=%d\n", parseCommand.getAnalyzeWindow(),
                 timeWindow.getBegin());
         }
         else if (!parseCommand.isSkipPublish()) {
@@ -119,6 +119,10 @@ public class HCIDumpParser {
         // First get a read only ByteBuffer view for efficient testing of the event info
         BeaconInfo info = new BeaconInfo(rawInfo);
         eventCount ++;
+        if(log.isTraceEnabled()) {
+            log.tracef("beaconEvent(rawInfo.size=%d), uuid=%s, major=%d, minor=%d, rssi=%d\n", rawInfo.length,
+                info.uuid, info.major, info.minor, info.rssi);
+        }
 
         // Check for a termination marker every 1000 events or 5 seconds
         boolean stop = false;
@@ -126,7 +130,7 @@ public class HCIDumpParser {
         if((eventCount % 1000) == 0 || elapsed > 5000) {
             lastMarkerCheckTime = info.time;
             stop = stopMarkerExists();
-            log.infof("beacon_event_callback, status eventCount=%ld, stop=%d\n", eventCount, stop);
+            log.infof("beacon_event_callback, status eventCount=%d, stop=%d\n", eventCount, stop);
         }
         // Check max event count limit
         if(maxEventCount > 0 && eventCount >= maxEventCount)
