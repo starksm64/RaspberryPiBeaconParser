@@ -24,7 +24,7 @@ import com.beust.jcommander.Parameters;
 public class ParseCommand {
     @Parameter(names = "-scannerID",
         description = "Specify the ID of the scanner reading the beacon events. If this is a string with a comma separated list of names, the scanner will cycle through them. If this is the string {IP}, the host ip address will be used.")
-    public String scannerID = null;
+    public String scannerID = "{IP}";
     @Parameter(names = "-heartbeatUUID", description = "Specify the UUID of the beacon used to signal the scanner heartbeat event")
     public String heartbeatUUID = null;
 
