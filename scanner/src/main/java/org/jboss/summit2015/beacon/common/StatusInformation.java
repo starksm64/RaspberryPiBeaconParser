@@ -18,7 +18,7 @@ public class StatusInformation {
     private int heartbeatCount;
     private EventsWindow statusWindow = new EventsWindow();
     private EventsBucket lastWindow;
-    private SMA heartbeatRSSI;
+    private SMA heartbeatRSSI = new SMA(10);
     Properties lastStatus;
     private volatile boolean statusUpdated;
 
@@ -107,12 +107,8 @@ public class StatusInformation {
         this.lastWindow = lastWindow;
     }
 
-    public SMA getHeartbeatRSSI() {
-        return heartbeatRSSI;
-    }
-
-    public void setHeartbeatRSSI(SMA heartbeatRSSI) {
-        this.heartbeatRSSI = heartbeatRSSI;
+    public int getHeartbeatRSSI() {
+        return heartbeatRSSI.avg();
     }
 
     public Properties getLastStatus() {
