@@ -131,7 +131,6 @@ public class HealthStatus {
             if (line != null) {
                 // 18:25  up 3 days,  9:01, 12 users, load averages: 1.78 2.10 2.23
                 // 01:25:06 up 1 day,  7:03,  2 users,  load average: 0.09, 0.16, 0.14
-                System.out.printf("Parsing: %s\n", line);
                 Pattern parse = Pattern.compile("((\\d+) day[s]?,)?\\s+(\\d+):(\\d+),.*(load average[s]?:.*)");
                 Matcher matcher = parse.matcher(line);
                 if (matcher.find()) {
@@ -213,19 +212,23 @@ public class HealthStatus {
             long ms = System.currentTimeMillis();
             String timestr = new Date(ms).toString();
             statusProperties.put(SystemTime, timestr);
-            statusProperties.put(SystemTimeMS, ""+ms);
-            log.infof("--- HealthStatus: %s\n", timestr);
+            statusProperties.put(SystemTimeMS, "" + ms);
+            StringBuilder status = new StringBuilder("--- HealthStatus: ");
+            status.append(timestr);
+            status.append('\n');
 
             // Get the load average
             SystemInfo info = getSystemInfo();
             // Create the status message properties
             statusProperties.put(LoadAverage, info.getLoadAverages());
             statusProperties.put(RawEventCount, ""+statusInformation.getRawEventCount());
-            statusProperties.put(PublishEventCount, ""+statusInformation.getPublishEventCount());
-            statusProperties.put(HeartbeatCount, ""+statusInformation.getHeartbeatCount());
-            statusProperties.put(HeartbeatRSSI, ""+statusInformation.getHeartbeatRSSI());
-            log.infof("RawEventCount: %d, PublishEventCount: %d, HeartbeatCount: %d, HeartbeatRSSI: %d\n", statusInformation.getRawEventCount(),
-                statusInformation.getPublishEventCount(), statusInformation.getHeartbeatCount(), statusInformation.getHeartbeatRSSI());
+            statusProperties.put(PublishEventCount, "" + statusInformation.getPublishEventCount());
+            statusProperties.put(HeartbeatCount, "" + statusInformation.getHeartbeatCount());
+            statusProperties.put(HeartbeatRSSI, "" + statusInformation.getHeartbeatRSSI());
+            String tmp = String.format("RawEventCount: %d, PublishEventCount: %d, HeartbeatCount: %d, HeartbeatRSSI: %d\n",
+                statusInformation.getRawEventCount(), statusInformation.getPublishEventCount(),
+                statusInformation.getHeartbeatCount(), statusInformation.getHeartbeatRSSI());
+            status.append(tmp);
 
             // Events bucket info
             EventsBucket eventsBucket = statusInformation.getStatusWindow();
@@ -233,7 +236,7 @@ public class HealthStatus {
                 StringBuilder eventsBucketStr = new StringBuilder();
                 eventsBucket.toSimpleString(eventsBucketStr);
                 statusProperties.put(EventsWindow, eventsBucketStr.toString());
-                log.infof("EventsBucket[%ld]: %s\n", eventsBucket.size(), eventsBucketStr.toString());
+                status.append(String.format("EventsBucket[%d]: %s\n", eventsBucket.size(), eventsBucketStr.toString()));
                 statusProperties.put(ActiveBeacons, ""+eventsBucket.size());
             }
 
@@ -246,7 +249,10 @@ public class HealthStatus {
             long seconds = uptimeDiff - days * 24*3600 - hours*3600 - minute*60;
             String uptime = String.format("uptime: %d, days:%d, hrs:%d, min:%d, sec:%d", uptimeDiff, days, hours, minute, seconds);
             statusProperties.put(Uptime, uptime);
-            log.infof("Scanner %s", uptime);
+            status.append("Scanner ");
+            status.append(uptime);
+            status.append('\n');
+
             // Calcualte system uptime
             uptimeDiff = info.uptime;
             days = uptimeDiff / (24*3600);
@@ -255,18 +261,23 @@ public class HealthStatus {
             seconds = uptimeDiff - days * 24*3600 - hours*3600 - minute*60;
             uptime = String.format("uptime: %d, days:%d, hrs:%d, min:%d, sec:%d", uptimeDiff, days, hours, minute, seconds);
             statusProperties.put(SystemUptime, uptime);
-            log.infof("System %s\n", uptime);
+            status.append("System ");
+            status.append(uptime);
+            status.append('\n');
 
-            log.infof("loadavg: %s\n", info.loadAverages);
+            status.append("loadavg: ");
+            status.append(info.loadAverages);
+            status.append('\n');
             statusProperties.put(LoadAverage, info.loadAverages);
 
             statusProperties.put(MemTotal, ""+info.totalram);
             statusProperties.put(MemActive, ""+(info.totalram - info.freeram));
             statusProperties.put(MemFree, ""+info.freeram);
-            log.infof("MemTotal: %d;  MemFree: %d\n", info.totalram, info.freeram);
+            status.append(String.format("MemTotal: %d;  MemFree: %d\n", info.totalram, info.freeram));
 
             // Publish the status
             statusInformation.setLastStatus(statusProperties);
+            log.info(status.toString());
 
             // Wait for statusInterval before next status message
             try {
@@ -277,5 +288,4 @@ public class HealthStatus {
             }
         }
     }
-
 }
