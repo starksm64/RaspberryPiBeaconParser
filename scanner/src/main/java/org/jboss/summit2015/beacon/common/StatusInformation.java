@@ -16,7 +16,7 @@ public class StatusInformation {
     private int rawEventCount;
     private int publishEventCount;
     private int heartbeatCount;
-    private EventsWindow statusWindow;
+    private EventsWindow statusWindow = new EventsWindow();
     private EventsBucket lastWindow;
     private SMA heartbeatRSSI;
     Properties lastStatus;
