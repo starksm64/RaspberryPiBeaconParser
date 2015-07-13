@@ -42,6 +42,7 @@ runJavaScannerHCIDump.doFirst {
 task runJavaScanner(type: JavaExec, dependsOn: classes) {
     main = 'org.jboss.summit2015.beacon.scannerjni.Main'
     systemProperty "java.library.path", "/usr/local/lib"
+    systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
     classpath sourceSets.main.runtimeClasspath
     classpath configurations.runtime
 }
