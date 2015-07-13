@@ -85,6 +85,7 @@ public class HealthStatus {
         this.statusInformation = statusInformation;
         this.publisher = publisher;
         monitorThread = new Thread(this::monitorStatus, "HealthStatus");
+        monitorThread.start();
         log.infof("HealthStatus::start, runnnig with statusInterval: %d\n", statusInformation.getStatusInterval());
     }
 
