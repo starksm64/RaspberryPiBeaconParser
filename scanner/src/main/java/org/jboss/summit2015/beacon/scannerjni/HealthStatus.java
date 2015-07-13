@@ -126,8 +126,7 @@ public class HealthStatus {
             Process uptimeProc = runtime.exec("uptime");
             BufferedReader in = new BufferedReader(new InputStreamReader(uptimeProc.getInputStream()));
             String line = in.readLine();
-            long uptime;
-            String loadAvgs;
+            long uptimeMS;
             if (line != null) {
                 // 18:25  up 3 days,  9:01, 12 users, load averages: 1.78 2.10 2.23
                 // 01:25:06 up 1 day,  7:03,  2 users,  load average: 0.09, 0.16, 0.14
@@ -137,12 +136,18 @@ public class HealthStatus {
                     String _days = matcher.group(2);
                     String _hours = matcher.group(3);
                     String _minutes = matcher.group(4);
-                    loadAvgs = matcher.group(5);
-                    int days = _days != null ? Integer.parseInt(_days) : 0;
-                    int hours = _hours != null ? Integer.parseInt(_hours) : 0;
-                    int minutes = _minutes != null ? Integer.parseInt(_minutes) : 0;
-                    uptime = (minutes * 60000) + (hours * 60000 * 60) + (days * 6000 * 60 * 24);
-                    systemInfo = new SystemInfo(uptime, loadAvgs);
+                    String loadAvgs = matcher.group(5);
+
+                    long days = _days != null ? Integer.parseInt(_days) : 0;
+                    long hours = _hours != null ? Integer.parseInt(_hours) : 0;
+                    long minutes = _minutes != null ? Integer.parseInt(_minutes) : 0;
+                    uptimeMS = (minutes * 60*1000) + (hours * 3600 * 1000) + (days * 24*3600*1000);
+
+                    days = uptimeMS / (24*3600*1000);
+                    hours = (uptimeMS - days * 24*3600*1000) / (3600*1000);
+                    minutes = (uptimeMS - days * 24*3600*1000 - hours*3600*1000) / (60*1000);
+                    long seconds = (uptimeMS - days * 24*3600*1000 - hours*3600*1000 - minutes*60*1000) / 1000;
+                    systemInfo = new SystemInfo(uptimeMS, loadAvgs);
                 }
             }
             if(systemInfo != null) {
@@ -243,11 +248,11 @@ public class HealthStatus {
             // System uptime, load, procs, memory info
             int mb = 1024*1024;
             long uptimeDiff = info.uptime - beginInfo.uptime;
-            long days = uptimeDiff / (24*3600);
-            long hours = (uptimeDiff - days * 24*3600) / 3600;
-            long minute = (uptimeDiff - days * 24*3600 - hours*3600) / 60;
-            long seconds = uptimeDiff - days * 24*3600 - hours*3600 - minute*60;
-            String uptime = String.format("uptime: %d, days:%d, hrs:%d, min:%d, sec:%d", uptimeDiff, days, hours, minute, seconds);
+            long days = uptimeDiff / (24*3600*1000);
+            long hours = (uptimeDiff - days * 24*3600*1000) / (3600*1000);
+            long minutes = (uptimeDiff - days * 24*3600*1000 - hours*3600*1000) / (60*1000);
+            long seconds = (uptimeDiff - days * 24*3600*1000 - hours*3600*1000 - minutes*60*1000) / 1000;
+            String uptime = String.format("uptime: %d, days:%d, hrs:%d, min:%d, sec:%d", uptimeDiff, days, hours, minutes, seconds);
             statusProperties.put(Uptime, uptime);
             status.append("Scanner ");
             status.append(uptime);
@@ -255,11 +260,11 @@ public class HealthStatus {
 
             // Calcualte system uptime
             uptimeDiff = info.uptime;
-            days = uptimeDiff / (24*3600);
-            hours = (uptimeDiff - days * 24*3600) / 3600;
-            minute = (uptimeDiff - days * 24*3600 - hours*3600) / 60;
-            seconds = uptimeDiff - days * 24*3600 - hours*3600 - minute*60;
-            uptime = String.format("uptime: %d, days:%d, hrs:%d, min:%d, sec:%d", uptimeDiff, days, hours, minute, seconds);
+            days = uptimeDiff / (24*3600*1000);
+            hours = (uptimeDiff - days * 24*3600*1000) / (3600*1000);
+            minutes = (uptimeDiff - days * 24*3600*1000 - hours*3600*1000) / (60*1000);
+            seconds = (uptimeDiff - days * 24*3600*1000 - hours*3600*1000 - minutes*60*1000) / 1000;
+            uptime = String.format("uptime: %d, days:%d, hrs:%d, min:%d, sec:%d", uptimeDiff, days, hours, minutes, seconds);
             statusProperties.put(SystemUptime, uptime);
             status.append("System ");
             status.append(uptime);
@@ -272,7 +277,7 @@ public class HealthStatus {
 
             statusProperties.put(MemTotal, ""+info.totalram);
             statusProperties.put(MemActive, ""+(info.totalram - info.freeram));
-            statusProperties.put(MemFree, ""+info.freeram);
+            statusProperties.put(MemFree, "" + info.freeram);
             status.append(String.format("MemTotal: %d;  MemFree: %d\n", info.totalram, info.freeram));
 
             // Publish the status

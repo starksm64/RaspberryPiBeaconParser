@@ -50,3 +50,8 @@ runJavaScanner.doFirst {
     println(commandString(commandLine))
     println("Output:\n")
 }
+
+task runTestUptime(type: JavaExec, dependsOn: testClasses) {
+    main = 'TestUptime'
+    classpath sourceSets.test.runtimeClasspath
+}
