@@ -25,10 +25,10 @@ import java.util.regex.Pattern;
 public class HealthStatus {
     private static Logger log = Logger.getLogger(HealthStatus.class);
 
-    MsgPublisher publisher;
-    StatusInformation statusInformation;
-    Thread monitorThread;
-    volatile boolean running;
+    private MsgPublisher publisher;
+    private StatusInformation statusInformation;
+    private Thread monitorThread;
+    private volatile boolean running;
 
     static class SystemInfo {
         private long uptime;

@@ -2,6 +2,7 @@ package org.jboss.summit2015.beacon.common;
 
 import org.jboss.summit2015.beacon.bluez.BeaconInfo;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -9,13 +10,11 @@ import java.util.Map;
  */
 public class EventsWindow {
     int windowSizeSeconds;
-    // Current analyze window begin/end in milliseconds to be compatible with Beacon.time
+    // Current analyze window begin/end in milliseconds to be compatible with BeaconInfo.time
     long begin;
     long end;
-    long bucketStart;
-    long bucketEnd;
     int eventCount;
-    Map<Integer, BeaconInfo> eventsMap;
+    Map<Integer, BeaconInfo> eventsMap = new HashMap<>();
 
     public int getWindowSizeSeconds() {
         return windowSizeSeconds;
