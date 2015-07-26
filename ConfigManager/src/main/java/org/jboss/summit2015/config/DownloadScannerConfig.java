@@ -1,6 +1,7 @@
 package org.jboss.summit2015.config;
 
 import org.jboss.logging.Logger;
+import org.jboss.summit2015.util.Inet;
 
 import javax.jms.BytesMessage;
 import javax.jms.Connection;
@@ -104,7 +105,7 @@ public class DownloadScannerConfig {
         Properties scannerProperties = getScannerConfig(configQueue, session);
 
         if (scannerProperties == null) {
-            List<String> addresses = Utils.getAllHardwareAddress();
+            List<String> addresses = Inet.getAllHardwareAddress();
             log.warnf("Failed to find scanner properties from addresses: %s\n", addresses);
             // Try to query the dynamic scanner config queue for the scanner properties
             scannerProperties = getDynamicScannerConfig(dynamicConfigQueue, session);
@@ -127,7 +128,7 @@ public class DownloadScannerConfig {
      * @throws Exception
      */
     Properties getDynamicScannerConfig(String dynamicConfigQueue, Session session) throws Exception {
-        List<Utils.InterfaceConfig> ifaces = Utils.getAllAddress();
+        List<Inet.InterfaceConfig> ifaces = Inet.getAllAddress();
         // Request
         Queue requestQueue = session.createQueue(dynamicConfigQueue+"Requests");
         MessageProducer producer = session.createProducer(requestQueue);
@@ -135,7 +136,7 @@ public class DownloadScannerConfig {
         BytesMessage request = session.createBytesMessage();
         request.setIntProperty("interfaceCount", ifaces.size());
         for(int n = 0; n < ifaces.size(); n ++) {
-            Utils.InterfaceConfig ic = ifaces.get(n);
+            Inet.InterfaceConfig ic = ifaces.get(n);
             String key0 = "mac" + n;
             request.setStringProperty(key0, ic.getMacaddr());
             String key1 = "addressCount" + n;
