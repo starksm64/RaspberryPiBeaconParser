@@ -37,11 +37,9 @@ public class ParseCommand {
     @Parameter(names = "-password",
         description = "Specify the sshPassword to connect to the msg broker with")
     public String password = null;
-
     @Parameter(names = "-brokerURL",
         description = "Specify the brokerURL to connect to the msg broker with; default tcp://localhost:1883")
     public String brokerURL = "tcp://localhost:1883";
-
     @Parameter(names = "-destinationName",
         description = "Specify the name of the destination on the msg broker to publish to; default beaconEvents")
     public String destinationName = "beaconEvents";
@@ -58,6 +56,7 @@ public class ParseCommand {
     @Parameter(names = "-useQueues",
         description = "Specify whether destination is a queue; default false == destination is a topic")
     public boolean useQueues = false;
+
 
     @Parameter(names = "-analyzeWindow",
         description = "Specify the number of seconds in the analyzeMode time window, default is 1.")
@@ -98,6 +97,13 @@ public class ParseCommand {
     @Parameter(names = "-batchCount",
         description = "Specify a maxium number of events the scanner should combine before sending to broker; default 0 means no batching")
     public int batchCount = 0;
+
+    @Parameter(names = "-beaconMapping",
+        description = "Specify the source of the beacon id to user name mapping. The following formats are understood:\n"
+            + "string of id1=user1,id2=user2,... mappings"
+            + "file:path to java properties file with beaconid=userid mappings\n"
+    )
+    public String beaconMapping = null;
 
     public String getScannerID() {
         return scannerID;

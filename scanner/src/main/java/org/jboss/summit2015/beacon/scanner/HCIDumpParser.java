@@ -35,6 +35,7 @@ import java.util.concurrent.LinkedBlockingDeque;
  * Sample command lines:
  *
  * @author Scott Stark (sstark@redhat.com) (C) 2014 Red Hat Inc.
+ * @deprecated see org.jboss.summit2015.beacon.scannerjni.HCIDumpParser
  */
 public class HCIDumpParser {
    private static Logger log = Logger.getLogger(HCIDumpParser.class);
