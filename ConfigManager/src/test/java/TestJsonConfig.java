@@ -3,6 +3,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 import org.jboss.summit2015.config.BaseConfig;
 import org.jboss.summit2015.config.Utils;
+import org.jboss.summit2015.util.Inet;
 import org.junit.Test;
 
 import javax.jms.Connection;
@@ -132,7 +133,7 @@ public class TestJsonConfig {
       byte[] macaddr = {0x00, 0x50, 0x56, (byte) 0xc0, 0x00, 0x08};
       String key = String.format("%02x:%02x:%02x:%02x:%02x:%02x", macaddr[0], macaddr[1], macaddr[2], macaddr[3], macaddr[4], macaddr[5]);
       System.out.printf("test format: %s\n", key);
-      List<Utils.InterfaceConfig> allAddress = Utils.getAllAddress();
+      List<Inet.InterfaceConfig> allAddress = Inet.getAllAddress();
       allAddress.forEach((ic) -> System.out.println(ic));
    }
    @Test
