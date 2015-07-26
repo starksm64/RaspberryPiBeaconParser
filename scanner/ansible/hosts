@@ -1,0 +1,18 @@
+# Vargrant test hosts
+vagrant1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222
+vagrant2 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200
+vagrant3 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201
+
+[scanners]
+#pi1 ansible_ssh_host=192.168.1.180 ansible_ssh_user=root ansible_ssh_pass=root0FPi
+pi2 ansible_ssh_host=192.168.1.230 ansible_ssh_user=root ansible_ssh_pass=root0FPi
+
+# Group variables for the scanners
+[scanners:vars]
+brokerURL=192.168.1.107:5672
+
+[vagrant]
+vagrant1
+vagrant2
+vagrant3
+

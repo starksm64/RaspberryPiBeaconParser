@@ -1,0 +1,26 @@
+#!/usr/bin/env ansible-playbook
+# Ansible playbook to take the scanners from a minimal raspbian install to a sufficient environment to build and
+# run the java/native scanner
+
+- name: "Build up network scanner with dependencies/scanner code/raspbian"
+  hosts: scanners
+  tasks:
+  - name: "install developer tools"
+    apt: name="libglib2.0-dev,libdbus-c++-dev,libssl-dev,libreadline-dev,libudev-dev,uuid-dev,build-essential,git,cmake"
+
+  - name: install java
+    apt: name=oracle-java8-jdk
+
+  - name: install bluez
+    apt: name=bluez
+  - name: install bluez-hcidump
+    apt: name=bluez-hcidump
+  - name: libbluetooth-dev
+    apt: name=libbluetooth-dev
+
+# Clone the native and java repositories for the scanner
+  - name: clone repos
+    git: dest=/root/RaspberryPiBeaconParser
+      repo='https://github.com/starksm64/RaspberryPiBeaconParser'
+    git: dest=/root/NativeRaspberryPiBeaconParser
+      repo='https://github.com/starksm64/NativeRaspberryPiBeaconParser'
