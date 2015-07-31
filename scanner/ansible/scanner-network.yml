@@ -5,8 +5,23 @@
 - name: "Build up network scanner with dependencies/scanner code/raspbian"
   hosts: scanners
   tasks:
-  - name: "install developer tools"
+
+# Need to update the apt sources list to allow installation of gcc-4.8 which supports c++ 2011()
+  - name: "update the apt sources"
+    copy: src=sources.list dest=/etc/apt/sources.list
+    copy: src=apt.preferences dest=/etc/apt/preferences
+  - name: update the apt packages
+    command: apt-get update
+
+  - name: install gcc 4.8
+    command: apt-get install -t jessie gcc-4.8 g++-4.8
+  - name: install developer libs
     apt: name="libglib2.0-dev,libdbus-c++-dev,libssl-dev,libreadline-dev,libudev-dev,uuid-dev,build-essential,git,cmake"
+
+# update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 20
+# update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 50
+# update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.6 20
+# update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 50
 
   - name: install java
     apt: name=oracle-java8-jdk
@@ -18,9 +33,20 @@
   - name: libbluetooth-dev
     apt: name=libbluetooth-dev
 
-# Clone the native and java repositories for the scanner
+# Clone the native repository for the scanner
   - name: clone repos
-    git: dest=/root/RaspberryPiBeaconParser
-      repo='https://github.com/starksm64/RaspberryPiBeaconParser'
-    git: dest=/root/NativeRaspberryPiBeaconParser
-      repo='https://github.com/starksm64/NativeRaspberryPiBeaconParser'
+    git: dest=/root/BeaconScannerJNI
+      repo='https://github.com/starksm64/BeaconScannerJNI.git'
+
+# Build the scannerJni library
+  - name: list  BeaconScannerJNI
+    command: ls /root/BeaconScannerJNI
+    register: output
+  - debug: var=output
+
+  - name: install scannerJni lib
+    command: /root/BeaconScannerJNI/install.sh
+    args:
+      chdir: /root/BeaconScannerJNI
+    register: output
+  - debug: var=output
